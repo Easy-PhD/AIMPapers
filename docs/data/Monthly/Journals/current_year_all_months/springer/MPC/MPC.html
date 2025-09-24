@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MPC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="mpc">MPC - 16</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Adaptive sieving: A dimension reduction technique for sparse optimization problems. <em>MPC</em>, <em>17</em>(3), 585-616. (<a href='https://doi.org/10.1007/s12532-025-00282-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose an adaptive sieving (AS) strategy for solving general sparse machine learning models by effectively exploring the intrinsic sparsity of the solutions, wherein only a sequence of reduced problems with much smaller sizes need to be solved. We further apply the proposed AS strategy to generate solution paths for large-scale sparse optimization problems efficiently. We establish the theoretical guarantees for the proposed AS strategy including its finite termination property. Extensive numerical experiments are presented in this paper to demonstrate the effectiveness and flexibility of the AS strategy to solve large-scale machine learning models.},
+  archive      = {J_MPC},
+  author       = {Yuan, Yancheng and Lin, Meixia and Sun, Defeng and Toh, Kim-Chuan},
+  doi          = {10.1007/s12532-025-00282-2},
+  journal      = {Mathematical Programming Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {585-616},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Adaptive sieving: A dimension reduction technique for sparse optimization problems},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Polynomial optimization relaxations for generalized semi-infinite programs. <em>MPC</em>, <em>17</em>(3), 547-583. (<a href='https://doi.org/10.1007/s12532-025-00280-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies generalized semi-infinite programs (GSIPs) given by polynomials. We propose a hierarchy of polynomial optimization relaxations to solve them. They are based on Lagrange multiplier expressions and polynomial extensions. Moment-SOS relaxations are applied to solve the polynomial optimization. The convergence of this hierarchy is shown under certain conditions. In particular, the classical semi-infinite programs can be solved as a special case of GSIPs. We also study GSIPs that have convex infinity constraints and show that they can be solved exactly by a single polynomial optimization relaxation. The computational efficiency is demonstrated by extensive numerical results.},
+  archive      = {J_MPC},
+  author       = {Hu, Xiaomeng and Nie, Jiawang},
+  doi          = {10.1007/s12532-025-00280-4},
+  journal      = {Mathematical Programming Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {547-583},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Polynomial optimization relaxations for generalized semi-infinite programs},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MATRS: Heuristic methods for noisy derivative-free bound-constrained mixed-integer optimization. <em>MPC</em>, <em>17</em>(3), 505-546. (<a href='https://doi.org/10.1007/s12532-025-00281-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces MATRS, a novel matrix adaptation trust-region strategy designed to solve noisy derivative-free mixed-integer optimization problems with simple bounds in low dimensions. MATRS operates through a repeated cycle of five phases: mutation, selection, recombination, trust-region, and mixed-integer, executed in this sequence. But if in the mutation phase a new best point (the point with the lowest inexact function value among all evaluated points so far) is found, the selection, recombination, and trust-region phases are skipped. Similarly, if the recombination phase finds a new best point, the trust-region phase is skipped. The mixed-integer phase is always performed. To search for a new best point, the mutation and recombination phases use extrapolation whereas the mixed-integer phase performs a mixed-integer line search along directions estimated to go into a valley. Numerical results on several collections of test problems show that MATRS is competitive with state-of-the-art derivative-free mixed-integer solvers.},
+  archive      = {J_MPC},
+  author       = {Kimiaei, Morteza and Neumaier, Arnold},
+  doi          = {10.1007/s12532-025-00281-3},
+  journal      = {Mathematical Programming Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {505-546},
+  shortjournal = {Math. Program. Comput.},
+  title        = {MATRS: Heuristic methods for noisy derivative-free bound-constrained mixed-integer optimization},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Globally solving concave quadratic programs via doubly nonnegative relaxation. <em>MPC</em>, <em>17</em>(3), 451-503. (<a href='https://doi.org/10.1007/s12532-025-00279-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the problem of maximizing a convex quadratic function over a bounded polyhedral set. We design a new framework based on SDP relaxations and cutting plane methods for solving the associated reference value problem. The major novelty is a new way to generate valid cuts through the doubly nonnegative (DNN) relaxation. We establish various theoretical properties of the DNN relaxation, including its equivalence with the Shor relaxation of an equivalent quadratically constrained problem, the strong duality, and the generation of valid cuts from an approximate solution of the DNN relaxation returned by an arbitrary SDP solver. Computational results on both real and synthetic data demonstrate the efficiency of the proposed method and its ability to solve high-dimensional problems with dense data. In particular, our new algorithm successfully solves in 3 days the reference value problem arising from computational biology for a dataset containing more than 300,000 instances of dimension 78. In contrast, CPLEX or Gurobi is estimated to require years of computational time for the same dataset on the same computing platform.},
+  archive      = {J_MPC},
+  author       = {Qu, Zheng and Zeng, Tianyou and Lou, Yuchen},
+  doi          = {10.1007/s12532-025-00279-x},
+  journal      = {Mathematical Programming Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {451-503},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Globally solving concave quadratic programs via doubly nonnegative relaxation},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning to use local cuts. <em>MPC</em>, <em>17</em>(3), 437-450. (<a href='https://doi.org/10.1007/s12532-025-00278-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An essential component in modern solvers for mixed-integer (linear) programs (MIPs) is the separation of additional inequalities (cutting planes) to tighten the linear programming relaxation. Various algorithmic decisions are necessary when integrating cutting plane methods into a branch-and-bound (B&B) solver as there is always the trade-off between the efficiency of the cuts and their overhead, given that they tend to slow down the solution time of the relaxation. One of the most crucial questions is: Should cuts only be generated globally at the root or also locally at nodes of the tree? We address this question by a machine learning approach for which we train a regression forest to predict the speed-up (or slow-down) provided by using local cuts. We demonstrate with an open implementation that this helps to improve the performance of the FICO Xpress MIP solver on a public test set of general MIP instances. We further report on the impact of a practical implementation inside Xpress on a large, diverse set of real-world industry MIPs.},
+  archive      = {J_MPC},
+  author       = {Berthold, Timo and Francobaldi, Matteo and Hendel, Gregor},
+  doi          = {10.1007/s12532-025-00278-y},
+  journal      = {Mathematical Programming Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {437-450},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Learning to use local cuts},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Instance-specific linear relaxations of semidefinite optimization problems. <em>MPC</em>, <em>17</em>(2), 385-435. (<a href='https://doi.org/10.1007/s12532-025-00275-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce a generic technique to obtain linear relaxations of semidefinite programs with provable guarantees based on the commutativity of the constraint and the objective matrices. We study conditions under which the optimal value of the SDP and the proposed linear relaxation match, which we then relax to provide a flexible methodology to derive effective linear relaxations. We specialize these results to provide linear programs that approximate well-known semidefinite programs for the max cut problem proposed by Poljak and Rendl, and the Lovász theta number; we prove that the linear program proposed for max cut certifies a known eigenvalue bound for the maximum cut value and is in fact stronger. Our ideas can be used to warm-start algorithms that solve semidefinite programs by iterative polyhedral approximation of the feasible region. We verify this capability through multiple experiments on the max cut semidefinite program, the Lovász theta number and on three families of semidefinite programs obtained as convex relaxations of certain quadratically constrained quadratic problems.},
+  archive      = {J_MPC},
+  author       = {de Roux, Daniel and Carr, Robert and Ravi, R.},
+  doi          = {10.1007/s12532-025-00275-1},
+  journal      = {Mathematical Programming Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {385-435},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Instance-specific linear relaxations of semidefinite optimization problems},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). K-shortest simple paths using biobjective path search. <em>MPC</em>, <em>17</em>(2), 349-384. (<a href='https://doi.org/10.1007/s12532-025-00276-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper we introduce a new algorithm for the k-Shortest Simple Paths ( $$k$$ -SSP) problem with an asymptotic running time matching the state of the art from the literature. It is based on a black-box algorithm due to Roditty and Zwick [30] that solves at most 2k instances of the Second Shortest Simple Path ( $$2$$ -SSP) problem without specifying how this is done. We fill this gap using a novel approach: we turn the scalar $$2$$ -SSP into instances of the Biobjective Shortest Path problem. Our experiments on grid graphs and on road networks show that the new algorithm is very efficient in practice.},
+  archive      = {J_MPC},
+  author       = {Maristany de las Casas, Pedro and Sedeño-Noda, Antonio and Borndörfer, Ralf and Huneshagen, Max},
+  doi          = {10.1007/s12532-025-00276-0},
+  journal      = {Mathematical Programming Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {349-384},
+  shortjournal = {Math. Program. Comput.},
+  title        = {K-shortest simple paths using biobjective path search},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On o(n) algorithms for projection onto the top-k-sum sublevel set. <em>MPC</em>, <em>17</em>(2), 307-348. (<a href='https://doi.org/10.1007/s12532-024-00273-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The top-k-sum operator computes the sum of the largest k components of a given vector. The Euclidean projection onto the top-k-sum sublevel set serves as a crucial subroutine in iterative methods to solve composite superquantile optimization problems. In this paper, we introduce a solver that implements two finite-termination algorithms to compute this projection. Both algorithms have O(n) complexity of floating point operations when applied to a sorted n-dimensional input vector, where the absorbed constant is independent of k. This stands in contrast to an existing grid-search-inspired method that has $$O(k(n-k))$$ complexity, a partition-based method with $$O(n+D\log D)$$ complexity, where $$D\le n$$ is the number of distinct elements in the input vector, and a semismooth Newton method with a finite termination property but unspecified floating point complexity. The improvement of our methods over the first method is significant when k is linearly dependent on n, which is frequently encountered in practical superquantile optimization applications. In instances where the input vector is unsorted, an additional cost is incurred to (partially) sort the vector, whereas a full sort of the input vector seems unavoidable for the other two methods. To reduce this cost, we further derive a rigorous procedure that leverages approximate sorting to compute the projection, which is particularly useful when solving a sequence of similar projection problems. Numerical results show that our methods solve problems of scale $$n=10^7$$ and $$k=10^4$$ within 0.05 s, whereas the most competitive alternative, the semismooth Newton-based method, takes about 1 s. The existing grid-search method and Gurobi’s QP solver can take from minutes to hours.},
+  archive      = {J_MPC},
+  author       = {Roth, Jake and Cui, Ying},
+  doi          = {10.1007/s12532-024-00273-9},
+  journal      = {Mathematical Programming Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {307-348},
+  shortjournal = {Math. Program. Comput.},
+  title        = {On o(n) algorithms for projection onto the top-k-sum sublevel set},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LinA: A faster approach to piecewise linear approximations using corridors and its application to mixed-integer optimization. <em>MPC</em>, <em>17</em>(2), 265-306. (<a href='https://doi.org/10.1007/s12532-024-00274-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we address the problem of approximating and over/under-estimating univariate functions with piecewise linear (PWL) functions with the minimum number of linear segments given a bound on the allowed pointwise approximation error. Through a new geometric approach and building on the work of Ngueveu (Eur J Oper Res 275:1058–1071, 2019), we develop new algorithms that can solve the problem in quasi-logarithmic time on a very broad class of error types. Such algorithms find many applications, mostly related to solving certain classes of (mixed-integer) nonlinear and nonconvex programming (MINLP) problems by mixed-integer linear programming (MILP) techniques. An efficient implementation of our algorithms is available as a Julia package. Benchmarks are also provided to showcase how our method outperforms the state-of-the-art for this problem. Finally, we show how our algorithms can be used to efficiently solve certain classes of MINLP problems through a case study on multicommodity network design problems with congestion.},
+  archive      = {J_MPC},
+  author       = {Codsi, Julien and Ngueveu, Sandra Ulrich and Gendron, Bernard},
+  doi          = {10.1007/s12532-024-00274-8},
+  journal      = {Mathematical Programming Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {265-306},
+  shortjournal = {Math. Program. Comput.},
+  title        = {LinA: A faster approach to piecewise linear approximations using corridors and its application to mixed-integer optimization},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fix and bound: An efficient approach for solving large-scale quadratic programming problems with box constraints. <em>MPC</em>, <em>17</em>(2), 231-263. (<a href='https://doi.org/10.1007/s12532-024-00270-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose a branch-and-bound algorithm for solving nonconvex quadratic programming problems with box constraints (BoxQP). Our approach combines existing tools, such as semidefinite programming (SDP) bounds strengthened through valid inequalities, with a new class of optimality-based linear cuts which leads to variable fixing. The most important effect of fixing the value of some variables is the size reduction along the branch-and-bound tree, allowing to compute bounds by solving SDPs of smaller dimension. Extensive computational experiments over large dimensional (up to $$n=200$$ ) test instances show that our method is the state-of-the-art solver on large-scale BoxQPs. Furthermore, we test the proposed approach on the class of binary QP problems, where it exhibits competitive performance with state-of-the-art solvers.},
+  archive      = {J_MPC},
+  author       = {Locatelli, Marco and Piccialli, Veronica and Sudoso, Antonio M.},
+  doi          = {10.1007/s12532-024-00270-y},
+  journal      = {Mathematical Programming Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {231-263},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Fix and bound: An efficient approach for solving large-scale quadratic programming problems with box constraints},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CDOpt: A python package for a class of riemannian optimization. <em>MPC</em>, <em>17</em>(2), 173-230. (<a href='https://doi.org/10.1007/s12532-025-00277-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optimization over an embedded submanifold defined by equality constraints $$c(x) = 0$$ has attracted much interest over the past few decades due to its wide applications in various areas, including computer vision, signal processing, numerical linear algebra, and deep learning. For solving such problems, many related optimization packages have been developed based on Riemannian optimization approaches, which rely on some basic geometrical materials of Riemannian manifolds, including Riemannian gradients, retractions, vector transports, etc. These geometrical materials can be challenging to determine in general. In fact, existing packages only accommodate a few well-known manifolds whose geometrical materials are more easily accessible. For other manifolds that are not contained in these packages, the users have to develop the geometric materials by themselves. In addition, it is not always tractable to adapt the advanced features from various state-of-the-art unconstrained optimization solvers to Riemannian optimization approaches. Here we introduce a user-friendly Python package, CDOpt (available at https://cdopt.github.io/ under BSD 3-clause license), for solving a class of Riemannian optimization problems. CDOpt is designed to complement existing Riemannian optimization packages by transforming Riemannian optimization problems into their unconstrained counterparts through the constraint dissolving approach. We prove that the when the penalty parameter in the constraint dissolving approach is sufficiently large, Riemannian optimization problems and their unconstrained counterparts are equivalent. Therefore, solving Riemannian optimization problems through CDOpt can directly benefit from various existing solvers and the rich expertise gained over the past few decades for unconstrained optimization. Moreover, all the computations in CDOpt related to any manifold in question are conducted through its constraints expression, hence users can easily define new manifolds in CDOpt without any background on differential geometry. Furthermore, CDOpt extends the neural layers from PyTorch and Flax, thus allowing users to train manifold constrained neural networks directly by the solvers for unconstrained optimization. Extensive numerical experiments demonstrate that CDOpt is highly efficient and robust in solving various classes of Riemannian optimization problems.},
+  archive      = {J_MPC},
+  author       = {Xiao, Nachuan and Hu, Xiaoyin and Liu, Xin and Toh, Kim-Chuan},
+  doi          = {10.1007/s12532-025-00277-z},
+  journal      = {Mathematical Programming Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {173-230},
+  shortjournal = {Math. Program. Comput.},
+  title        = {CDOpt: A python package for a class of riemannian optimization},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Minimizing total tardiness for the single-machine identical-jobs order scheduling problem with a learning effect. <em>MPC</em>, <em>17</em>(1), 141-171. (<a href='https://doi.org/10.1007/s12532-024-00271-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper considers a single machine identical-jobs order scheduling problem with a position-dependent learning effect (SIOSLE) to minimize the total tardiness. A learning effect is common in the identical-jobs order manufacturing, such as clothing, bicycles, shoes, and so on, but its impact on the order scheduling problem has not been studied, especially for orders with different numbers of the same type of jobs. A mixed integer programming (MIP) model is first formulated for SIOSLE and serves as a benchmark. A new branch-and-bound algorithm was developed to handle computational complexity based on the Dominance, Split, Elimination, and Decomposition rules revised from the traditional job scheduling problem and new lower and upper bounds. Numerical experiments demonstrate that the proposed branch-and-bound algorithm is computationally better than the performance of using Gurobi, a popular commercial solver, to solve the MIP. The experiments for large-sized problems found that the proposed branch-and-bound algorithm can solve instances with up to 120 orders. The algorithm is more efficient for instances with a strong or weak learning effect, with tight or loose due dates, or with heterogeneous due dates. The effectiveness of the Dominance, Split, Elimination, and Decomposition rules varies with parameter settings. In addition, the proposed branch-and-bound algorithm can yield better solutions than traditional meta-heuristic algorithms but may require longer run time for large instances.},
+  archive      = {J_MPC},
+  author       = {Hu, Jinchang and Jin, Mingzhou},
+  doi          = {10.1007/s12532-024-00271-x},
+  journal      = {Mathematical Programming Computation},
+  month        = {3},
+  number       = {1},
+  pages        = {141-171},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Minimizing total tardiness for the single-machine identical-jobs order scheduling problem with a learning effect},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A fix-propagate-repair heuristic for mixed integer programming. <em>MPC</em>, <em>17</em>(1), 111-139. (<a href='https://doi.org/10.1007/s12532-024-00269-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We describe a diving heuristic framework based on constraint propagation for mixed integer linear programs. The proposed approach is an extension of the common fix-and-propagate scheme, with the addition of solution repairing after each step. The repair logic is loosely based on the WalkSAT strategy for boolean satisfiability. Different strategies for variable ranking and value selection, as well as other options, yield different diving heuristics. The overall method is relatively inexpensive, as it is basically LP-free: the full linear programming relaxation is solved only at the beginning (and only for the ranking strategies that make use of it), while additional, typically much smaller, LPs are only used to compute values for the continuous variables (if any), once at the bottom of a dive. While individual strategies are not very robust in finding feasible solutions on a heterogeneous testbed, a portfolio approach proved quite effective. In particular, it could consistently find feasible solutions in 189 out of 240 instances from the public MIPLIB 2017 benchmark testbed, in a matter of a few seconds of runtime. The framework has also been implemented inside the commercial MIP solver Xpress and shown to give a small performance improvement in time to optimality on a large internal heterogeneous testbed.},
+  archive      = {J_MPC},
+  author       = {Salvagnin, Domenico and Roberti, Roberto and Fischetti, Matteo},
+  doi          = {10.1007/s12532-024-00269-5},
+  journal      = {Mathematical Programming Computation},
+  month        = {3},
+  number       = {1},
+  pages        = {111-139},
+  shortjournal = {Math. Program. Comput.},
+  title        = {A fix-propagate-repair heuristic for mixed integer programming},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LCQPow: A solver for linear complementarity quadratic programs. <em>MPC</em>, <em>17</em>(1), 81-109. (<a href='https://doi.org/10.1007/s12532-024-00272-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper we introduce an open-source software package written in C++ for efficiently finding solutions to quadratic programming problems with linear complementarity constraints. These problems arise in a wide range of applications in engineering and economics, and they are challenging to solve due to their structural violation of standard constraint qualifications, and highly nonconvex, nonsmooth feasible sets. This work extends a previously presented algorithm based on a sequential convex programming approach applied to a standard penalty reformulation. We examine the behavior of local convergence and introduce new algorithmic features. Competitive performance profiles are presented in comparison to state-of-the-art solvers and solution variants in both existing and new benchmarks.},
+  archive      = {J_MPC},
+  author       = {Hall, Jonas and Nurkanović, Armin and Messerer, Florian and Diehl, Moritz},
+  doi          = {10.1007/s12532-024-00272-w},
+  journal      = {Mathematical Programming Computation},
+  month        = {3},
+  number       = {1},
+  pages        = {81-109},
+  shortjournal = {Math. Program. Comput.},
+  title        = {LCQPow: A solver for linear complementarity quadratic programs},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Approximate maximum likelihood estimators for linear regression with independent component-wise design matrix uncertainty. <em>MPC</em>, <em>17</em>(1), 53-79. (<a href='https://doi.org/10.1007/s12532-024-00268-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper we consider regression problems subject to noise in the operator or design matrix. This characterization appropriately models many physical phenomena with uncertainty in the regressors. Although the problem has been studied extensively for ordinary/total least squares, and via models that implicitly or explicitly assume Gaussianity, less attention has been paid to improving estimation for regression problems under general independent component-wise uncertainty in the design matrix. To address difficulties encountered when dealing with distributions of sums of random variables, we rely on the saddle point method to estimate densities and form an approximate log-likelihood to maximize. We show that the proposed method performs favorably against other classical methods.},
+  archive      = {J_MPC},
+  author       = {Clancy, Richard J. and Becker, Stephen},
+  doi          = {10.1007/s12532-024-00268-6},
+  journal      = {Mathematical Programming Computation},
+  month        = {3},
+  number       = {1},
+  pages        = {53-79},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Approximate maximum likelihood estimators for linear regression with independent component-wise design matrix uncertainty},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the B-differential of the componentwise minimum of two affine vector functions. <em>MPC</em>, <em>17</em>(1), 1-52. (<a href='https://doi.org/10.1007/s12532-024-00266-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper focuses on the description and computation of the B-differential of the componentwise minimum of two affine vector functions. This issue arises in the reformulation of the linear complementarity problem with the Min C-function. The question has many equivalent formulations and we identify some of them in linear algebra, convex analysis and discrete geometry. These formulations are used to state some properties of the B-differential, like its symmetry, condition for its completeness, its connectivity, bounds on its cardinality, etc. The set to specify has a finite number of elements, which may grow exponentially with the range space dimension of the functions, so that its description is most often algorithmic. We first present an incremental-recursive approach avoiding to solve any optimization subproblem, unlike several previous approaches. It is based on the notion of matroid circuit and the related introduced concept of stem vector. Next, we propose modifications, adapted to the problem at stake, of an algorithm introduced by Rada and Černý (SIAM J Discret Math 32(1):455-473, 2018, https://doi.org/10.1137/15M1027930 ) to determine the cells of an arrangement in the space of hyperplanes having a point in common. Measured in CPU time on the considered test-problems, the mean acceleration ratios of the proposed algorithms, with respect to the one of Rada and Černý, are in the range 15..31, and this speed-up can exceed 100, depending on the problem, the approach and the chosen linear optimization and matroid solvers.},
+  archive      = {J_MPC},
+  author       = {Dussault, Jean-Pierre and Gilbert, Jean Charles and Plaquevent-Jourdain, Baptiste},
+  doi          = {10.1007/s12532-024-00266-8},
+  journal      = {Mathematical Programming Computation},
+  month        = {3},
+  number       = {1},
+  pages        = {1-52},
+  shortjournal = {Math. Program. Comput.},
+  title        = {On the B-differential of the componentwise minimum of two affine vector functions},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>
