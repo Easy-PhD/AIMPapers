@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2 id="tmlr">TMLR - 1030</h2>
+<h2 id="tmlr">TMLR - 1040</h2>
 <ul>
 <li><details>
 <summary>
@@ -1427,6 +1427,186 @@
   shortjournal = {Trans. Mach. Learn. Res.},
   title        = {Wasserstein convergence of score-based generative models under semiconvexity and discontinuous gradients},
   url          = {https://openreview.net/forum?id=vS9iVRB7XF},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Taxonomy, opportunities, and challenges of representation engineering for large language models. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=2U1KIfmaU9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Representation Engineering (RepE) is a novel paradigm for controlling the behavior of LLMs. Unlike traditional approaches that modify inputs or fine-tune the model, RepE directly manipulates the model's internal representations. As a result, it may offer more effective, interpretable, data-efficient, and flexible control over models' behavior. We present the first comprehensive survey of RepE for LLMs, reviewing the rapidly growing literature to address key questions: What RepE methods exist and how do they differ? For what concepts and problems has RepE been applied? What are the strengths and weaknesses of RepE compared to other methods? To answer these, we propose a unified framework describing RepE as a pipeline comprising representation identification, operationalization, and control. We posit that while RepE methods offer significant potential, challenges remain, including managing multiple concepts, ensuring reliability, and preserving models' performance. Towards improving RepE, we identify opportunities for experimental and methodological improvements and construct a guide for best practices.},
+  archive      = {J_TMLR},
+  author       = {Jan Wehner and Sahar Abdelnabi and Daniel Chee Hian Tan and David Krueger and Mario Fritz},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Taxonomy, opportunities, and challenges of representation engineering for large language models},
+  url          = {https://openreview.net/forum?id=2U1KIfmaU9},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Local distribution-based adaptive oversampling for imbalanced regression. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=6qYTR9iJdm'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Imbalanced regression occurs when continuous target variables have skewed distributions, creating sparse regions that are difficult for machine learning models to predict accurately. This issue particularly affects neural networks, which often struggle with imbalanced data. While class imbalance in classification has been extensively studied, imbalanced regression remains relatively unexplored, with few effective solutions. Existing approaches often rely on arbitrary thresholds to categorize samples as rare or frequent, ignoring the continuous nature of target distributions. These methods can produce synthetic samples that fail to improve model performance and may discard valuable information through undersampling. To address these limitations, we propose LDAO (Local Distribution-based Adaptive Oversampling), a novel data-level approach that avoids categorizing individual samples as rare or frequent. Instead, LDAO learns the global distribution structure by decomposing the dataset into a mixture of local distributions, each preserving its statistical characteristics. LDAO then models and samples from each local distribution independently before merging them into a balanced training set. LDAO achieves a balanced representation across the entire target range while preserving the inherent statistical structure within each local distribution. In extensive evaluations on 45 imbalanced datasets, LDAO outperforms state-of-the-art oversampling methods on both frequent and rare target values, demonstrating its effectiveness for addressing the challenge of imbalanced regression.},
+  archive      = {J_TMLR},
+  author       = {Shayan Alahyari and Mike Domaratzki},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Local distribution-based adaptive oversampling for imbalanced regression},
+  url          = {https://openreview.net/forum?id=6qYTR9iJdm},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generalized orders of magnitude for scalable, parallel, high-dynamic-range computation. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=SUuzb0SOGu'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many domains, from deep learning to finance, require compounding real numbers over long sequences, often leading to catastrophic numerical underflow or overflow. We introduce generalized orders of magnitude (GOOMs), a principled extension of traditional orders of magnitude that incorporates floating-point numbers as a special case, and which in practice enables stable computation over significantly larger dynamic ranges of real numbers than previously possible. We implement GOOMs, along with an efficient custom parallel prefix scan, to support native execution on parallel hardware such as GPUs. We demonstrate that our implementation of GOOMs outperforms traditional approaches with three representative experiments, all of which were previously considered impractical or impossible, and now become possible and practical: (1) compounding real matrix products {\em far} beyond standard floating-point limits; (2) estimating spectra of Lyapunov exponents in parallel, {\em orders of magnitude faster} than with previous methods, applying a novel selective-resetting method to prevent state colinearity; and (3) capturing long-range dependencies in deep recurrent neural networks with {\em non-diagonal recurrent states, computed in parallel via a prefix scan, without requiring any form of stabilization}. Our results show that our implementation of GOOMs, combined with efficient parallel scanning, offers a scalable and numerically robust alternative to conventional floating-point numbers for high-dynamic-range applications.},
+  archive      = {J_TMLR},
+  author       = {Franz A. Heinsen and Leo Kozachkov},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Generalized orders of magnitude for scalable, parallel, high-dynamic-range computation},
+  url          = {https://openreview.net/forum?id=SUuzb0SOGu},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LLMs can learn self-restraint through iterative self-reflection. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=SvKPfchVKX'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In order to be deployed safely, Large Language Models (LLMs) must be capable of dynamically adapting their behavior based on their level of knowledge and uncertainty associated with specific topics. This adaptive behavior, which we refer to as self-restraint, is non-trivial to teach since it depends on the internal knowledge of an LLM. By default, LLMs are trained to maximize the next token likelihood, which does not teach the model to modulate its answer based on its level of uncertainty. In order to learn self-restraint, we devise a utility function that can encourage the model to produce responses only when its level of confidence is above a user-specified target accuracy $\rho^*$. This utility function can be used to score generation of different length and abstention. To optimize this function, we introduce ReSearch, a process of ``self-reflection'' consisting of iterative self-prompting and self-evaluation. We use the ReSearch algorithm to generate synthetic data on which we finetune our models. ReSearch elegantly incorporates the ability to abstain by augmenting the samples generated by the model during the search procedure with an answer expressing abstention. Compared to their original versions, our resulting models generate fewer hallucinations overall at no additional inference cost, for both known and unknown topics, as the model learns to selectively restrain itself. In addition, we show that our iterative search is more efficient as a function of tokens than naive search. Finally, we show that by modifying the target accuracy $\rho^*$, our trained models exhibit different behaviors.},
+  archive      = {J_TMLR},
+  author       = {Alexandre Piché and Aristides Milios and Dzmitry Bahdanau and Christopher Pal},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {LLMs can learn self-restraint through iterative self-reflection},
+  url          = {https://openreview.net/forum?id=SvKPfchVKX},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Segmenting text and learning their rewards for improved RLHF in language model. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=YhLlqD0UNi'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reinforcement learning from human feedback (RLHF) has been widely adopted to align language models (LMs) with human preference. Previous RLHF works typically take a bandit formulation, which, though intuitive, ignores the sequential nature of LM generation and can suffer from the sparse reward issue. While recent works propose dense token-level RLHF, treating each token as an action may be oversubtle to proper reward assignment. In this paper, we seek to get the best of both by training and utilizing a segment-level reward model, which assigns a reward to each semantically complete text segment that spans over a short sequence of tokens. For reward learning, our method allows dynamic text segmentation and compatibility with standard sequence-preference datasets. For effective RL-based LM training against segment reward, we generalize the classical scalar bandit reward normalizers into location-aware normalizer functions and interpolate the segment reward for further densification. Our method performs competitively on three popular RLHF benchmarks for LM policy: AlpacaEval 2.0, Arena-Hard, and MT-Bench. Ablation studies are conducted to further demonstrate our method.},
+  archive      = {J_TMLR},
+  author       = {Yueqin Yin and Shentao Yang and Yujia Xie and Ziyi Yang and Yuting Sun and Hany Hassan Awadalla and Weizhu Chen and Mingyuan Zhou},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Segmenting text and learning their rewards for improved RLHF in language model},
+  url          = {https://openreview.net/forum?id=YhLlqD0UNi},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). VColRL: Learn to solve the vertex coloring problem using reinforcement learning. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=a9AQRieTne'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Vertex Coloring Problem (VCP) is a fundamental NP-hard problem with applications in wireless networks, compiler design, scheduling, etc. We present VColRL, a deep reinforcement learning (DRL) framework that learns to color graphs quickly by leveraging a reduction-based approach that progressively reduces the graph at each step. The core novelty of VColRL is a new Markov Decision Process (MDP) formulation tailored for VCP that assigns colors to multiple vertices at each step, incorporates a rollback mechanism to revert all conflicting vertices to the undecided state, and employs a reward function designed to minimize the highest-indexed color used. Experiments on synthetic and benchmark graphs show that VColRL improves color usage over optimization solvers and prior learning-based methods, remains competitive with search-based heuristics and metaheuristics, and achieves fast runtime, while generalizing well to diverse graph families despite being trained only on synthetic graphs from a single family.},
+  archive      = {J_TMLR},
+  author       = {Abhinav Anand and Subrahmanya Swamy Peruru and Amitangshu Pal},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {VColRL: Learn to solve the vertex coloring problem using reinforcement learning},
+  url          = {https://openreview.net/forum?id=a9AQRieTne},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Curvature diversity-driven deformation and domain alignment for point cloud. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=ePXWnH7rGk'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unsupervised Domain Adaptation is crucial for point cloud learning due to geometric variations across different generation methods and sensors. To tackle this challenge, we propose Curvature Diversity-Driven Nuclear-Norm Wasserstein Domain Alignment (CDND). We first introduce a Curvature Diversity-driven Deformation Reconstruction (CurvRec) task, enabling the model to extract salient features from semantically rich regions of a given point cloud. We then propose a theoretical framework for Deformation-based Nuclear-norm Wasserstein Discrepancy (D-NWD), extending the Nuclear-norm Wasserstein Discrepancy to original and deformed samples. Our theoretical analysis demonstrates that D-NWD is effective for any deformation method. Empirical experiment results show that our CDND achieves state-of-the-art performance by a noticeable margin over existing approaches.},
+  archive      = {J_TMLR},
+  author       = {Mengxi Wu and Hao Huang and Yi Fang and Mohammad Rostami},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Curvature diversity-driven deformation and domain alignment for point cloud},
+  url          = {https://openreview.net/forum?id=ePXWnH7rGk},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Simple and nearly-optimal sampling for rank-1 tensor completion via gauss-jordan. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=ggAphfUt1J'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We revisit the sample and computational complexity of the rank-1 tensor completion problem in $\otimes_{i=1}^{N} \mathbb{R}^{d}$, given a uniformly sampled subset of entries. We present a characterization of the problem which reduces to solving a pair of random linear systems. For example, when $N$ is a constant, we prove it requires no more than $m = O(d^2 \log d)$ samples and runtime $O(md^2)$. Moreover, we show that a broad class of algorithms require $\Omega(d\log d)$ samples, even under higher rank scenarios. In contrast, existing upper bounds on the sample complexity are at least as large as $d^{1.5} \mu^{\Omega(1)} \log^{\Omega(1)} d$, where $\mu$ can be $\Theta(d)$ in the worst case. Prior work obtained these looser guarantees in higher rank versions of our problem, and tend to involve more complicated algorithms.},
+  archive      = {J_TMLR},
+  author       = {Alejandro Gomez-Leos and Oscar Lopez},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Simple and nearly-optimal sampling for rank-1 tensor completion via gauss-jordan},
+  url          = {https://openreview.net/forum?id=ggAphfUt1J},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cross-domain graph anomaly detection via test-time training with homophily-guided self-supervision. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=sB3LqdOlNb'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph Anomaly Detection (GAD) has demonstrated great effectiveness in identifying unusual patterns within graph-structured data. However, while labeled anomalies are often scarce in emerging applications, existing supervised GAD approaches are either ineffective or not applicable when moved across graph domains due to distribution shifts and heterogeneous feature spaces. To address these challenges, we present GADT3, a novel test-time training framework for cross-domain GAD. GADT3 combines supervised and self-supervised learning during training while adapting to a new domain during test time using only self-supervised learning by leveraging a homophily-based affinity score that captures domain-invariant properties of anomalies. Our framework introduces four key innovations to cross-domain GAD: an effective self-supervision scheme, an attention-based mechanism that dynamically learns edge importance weights during message passing, domain-specific encoders for handling heterogeneous features, and class-aware regularization to address imbalance. Experiments across multiple cross-domain settings demonstrate that GADT3 significantly outperforms existing approaches, achieving average improvements of over 8.2\% in AUROC and AUPRC compared to the best competing model.},
+  archive      = {J_TMLR},
+  author       = {Delaram Pirhayatifard and Arlei Silva},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Cross-domain graph anomaly detection via test-time training with homophily-guided self-supervision},
+  url          = {https://openreview.net/forum?id=sB3LqdOlNb},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The accuracy cost of weakness: A theoretical analysis of fixed-segment weak labeling for events in time. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=tTw8wXBQ18'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate labels are critical for deriving robust machine learning models. Labels are used to train supervised learning models and to evaluate most machine learning paradigms. In this paper, we model the accuracy and cost of a common weak labeling process where annotators assign presence or absence labels to fixed-length data segments for a given event class. The annotator labels a segment as "present" if it sufficiently covers an event from that class, e.g., a birdsong sound event in audio data. We analyze how the segment length affects the label accuracy and the required number of annotations, and compare this fixed-length labeling approach with an oracle method that uses the true event activations to construct the segments. Furthermore, we quantify the gap between these methods and verify that in most realistic scenarios the oracle method is better than the fixed-length labeling method in both accuracy and cost. Our findings provide a theoretical justification for adaptive weak labeling strategies that mimic the oracle process, and a foundation for optimizing weak labeling processes in sequence labeling tasks.},
+  archive      = {J_TMLR},
+  author       = {John Martinsson and Olof Mogren and Tuomas Virtanen and Maria Sandsten},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {9},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {The accuracy cost of weakness: A theoretical analysis of fixed-segment weak labeling for events in time},
+  url          = {https://openreview.net/forum?id=tTw8wXBQ18},
   year         = {2025},
 }
 </textarea>
