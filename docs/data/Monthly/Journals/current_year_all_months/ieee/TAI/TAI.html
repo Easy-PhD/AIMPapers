@@ -25,8 +25,533 @@
 </head>
 <body>
 
-<h2 id="tai">TAI - 195</h2>
+<h2 id="tai">TAI - 220</h2>
 <ul>
+<li><details>
+<summary>
+(2025). Malicious clients and contribution co-aware federated unlearning. <em>TAI</em>, <em>6</em>(10), 2848-2857. (<a href='https://doi.org/10.1109/TAI.2025.3556092'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing federated unlearning methods to eliminate the negative impact of malicious clients on the global model are influenced by unreasonable assumptions (e.g., an auxiliary dataset) or fail to balance model performance and efficiency. To overcome these shortcomings, we propose a malicious clients and contribution co-aware federated unlearning (MCC-Fed) method. Specifically, we introduce a method for detecting malicious clients to reduce their impact on the global model. Next, we design a contribution-aware metric, which accurately quantifies the negative impact of malicious clients on the global calculating their historical contribution ratio. Then, based on this metric, we propose a novel federated unlearning method in which benign clients use the contribution-aware metric as a regularization term to unlearn the influence of malicious clients, and restoring model performance. Experimental results demonstrate that our method effectively addresses the issue of excessive unlearning during the unlearning process, improves the efficiency of performance recovery, and enhances robustness against malicious clients. Federated unlearning effectively removes malicious clients’ influence while reducing training costs compared to retraining.},
+  archive      = {J_TAI},
+  author       = {Yang Wang and Xue Li and Siguang Chen},
+  doi          = {10.1109/TAI.2025.3556092},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2848-2857},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Malicious clients and contribution co-aware federated unlearning},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Maximum margin-based activation clipping for posttraining overfitting mitigation in DNN classifiers. <em>TAI</em>, <em>6</em>(10), 2840-2847. (<a href='https://doi.org/10.1109/TAI.2025.3552686'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sources of overfitting in deep neural net (DNN) classifiers include: 1) large class imbalances; 2) insufficient training set diversity; and 3) over-training. Recently, it was shown that backdoor data-poisoning also induces overfitting, with unusually large maximum classification margins (MMs) to the attacker’s target class. This is enabled by (unbounded) ReLU activation functions, which allow large signals to propagate in the DNN. Thus, an effective posttraining backdoor mitigation approach (with no knowledge of the training set and no knowledge or control of the training process) was proposed, informed by a small, clean (poisoning-free) data set and choosing saturation levels on neural activations to limit the DNN’s MMs. Here, we show that nonmalicious sources of overfitting also exhibit unusually large MMs. Thus, we propose novel posttraining MM-based regularization that substantially mitigates nonmalicious overfitting due to class imbalances and overtraining. Whereas backdoor mitigation and other adversarial learning defenses often trade off a classifier’s accuracy to achieve robustness against attacks, our approach, inspired by ideas from adversarial learning, helps the classifier’s generalization accuracy: as shown for CIFAR-10 and CIFAR-100, our approach improves both the accuracy for rare categories as well as overall. Moreover, unlike other overfitting mitigation methods, it does so with no knowledge of class imbalances, no knowledge of the training set, and without control of the training process.},
+  archive      = {J_TAI},
+  author       = {Hang Wang and David J. Miller and George Kesidis},
+  doi          = {10.1109/TAI.2025.3552686},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2840-2847},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Maximum margin-based activation clipping for posttraining overfitting mitigation in DNN classifiers},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A Deterministic–Probabilistic approach to neural network pruning. <em>TAI</em>, <em>6</em>(10), 2830-2839. (<a href='https://doi.org/10.1109/TAI.2025.3558718'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern deep networks are highly over-parameterized. Thus, training and testing such models in various applications are computationally intensive with excessive memory and energy requirements. Network pruning aims to find smaller subnetworks from within these dense networks that do not compromise on the test accuracy. In this article, we present a probabilistic and deterministic pruning methodology which determines the likelihood of retention of the weight parameters by modeling the layer-specific distribution of extreme values of the weights. Our method automatically finds the sparsity in each layer, unlike existing pruning techniques which require an explicit input of the sparsity information. Experiments in the present work show that deterministic–probabilistic pruning consistently achieves high sparsity levels, ranging from 65 to 95%, while maintaining comparable or improved testing accuracy across multiple datasets such as MNIST, CIFAR-10, and Tiny ImageNet, on architectures including VGG-16, ResNet-18, and ResNet-50.},
+  archive      = {J_TAI},
+  author       = {Soumyadipta Banerjee and Jiaul H. Paik},
+  doi          = {10.1109/TAI.2025.3558718},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2830-2839},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {A Deterministic–Probabilistic approach to neural network pruning},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive perception for unified visual multimodal object tracking. <em>TAI</em>, <em>6</em>(10), 2819-2829. (<a href='https://doi.org/10.1109/TAI.2025.3558482'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, many multimodal trackers have prioritized RGB as the dominant modality, treating other modalities as auxiliary, and fine-tuning separately various multimodal tasks. This imbalance in modality dependence limits the ability of methods to dynamically utilize complementary information from each modality in complex scenarios, making it challenging to fully perceive the advantages of multimodal. As a result, a unified parameter model often underperforms in various multimodal tracking tasks. To address this issue, we propose APTrack, a novel unified tracker designed for multimodal adaptive perception. Unlike previous methods, APTrack explores a unified representation through an equal modeling strategy. This strategy allows the model to dynamically adapt to various modalities and tasks without requiring additional fine-tuning between different tasks. Moreover, our tracker integrates an adaptive modality interaction (AMI) module that efficiently bridges cross-modality interactions by generating learnable tokens. Experiments conducted on five diverse multimodal datasets (RGBT234, LasHeR, VisEvent, DepthTrack, and VOT-RGBD2022) demonstrate that APTrack not only surpasses existing state-of-the-art unified multimodal trackers but also outperforms trackers designed for specific multimodal tasks.},
+  archive      = {J_TAI},
+  author       = {Xiantao Hu and Bineng Zhong and Qihua Liang and Liangtao Shi and Zhiyi Mo and Ying Tai and Jian Yang},
+  doi          = {10.1109/TAI.2025.3558482},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2819-2829},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Adaptive perception for unified visual multimodal object tracking},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Metalearning based adaptive compact modeling framework for advanced transistors across technology nodes. <em>TAI</em>, <em>6</em>(10), 2810-2818. (<a href='https://doi.org/10.1109/TAI.2025.3557775'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article presents an adaptive and automated device modeling framework valid across different technology nodes and device structures. A novel metalearning-based surrogate model using prior knowledge input with difference artificial neural network (PKID ANN) combined with advanced transfer learning (TL) is developed. This approach is validated using various advanced FET devices. In addition to transferring weights and biases from pretrained model, a scaled low-fidelity model is developed for efficient training of different primary target models. Two TL techniques, full and partial knowledge transfer, are compared, with PKID ANN with partial transfer learning (PKID-PTL) showing significant speed-up in all phases of model development. The proposed PKID-PTL technique is a potential candidate for efficient device modeling allowing seamless model automation across technology nodes and devices with the least human intervention.},
+  archive      = {J_TAI},
+  author       = {Srishti Parandiyal and Abhishek Kumar and M. Ehteshamuddin and Anamika Singh and Kumar Sheelvardhan and Samrat Ray and Abhishek Somani and Sourajeet Roy and Avirup Dasgupta},
+  doi          = {10.1109/TAI.2025.3557775},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2810-2818},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Metalearning based adaptive compact modeling framework for advanced transistors across technology nodes},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MLCNN-LSTM-COV: A multilabel convolutional neural network and long short-term memory-based framework for predicting adverse COVID drug reactions. <em>TAI</em>, <em>6</em>(10), 2798-2809. (<a href='https://doi.org/10.1109/TAI.2025.3557769'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to the worldwide COVID-19 pandemic, developing a specific drug to combat the Coronavirus disease (COVID) has been essential. However, pinpointing potential adverse reactions to these drugs pose challenges in the quest for efficacious COVID treatment. Recent improvements in computational models employed in pharmaceutical production have opened novel avenues for detecting such adverse reactions. In response to the pressing demand for developing effective COVID drugs, this research introduces a methodology that combines a multilabel convolutional neural network and long short-term memory (MLCNN-LSTM-COV). The experimental evaluations here use COVID drug “ball and stick” chemical conformers. The distinctive features of the chemical conformers are represented through the RGB color channel, and features are extracted by employing a convolutional neural network, MaxPooling2D, and long short-term memory (LSTM) layers. The results showcase the superior efficiency of the MLCNN-LSTM-COV model, surpassing the performance of the previous study. Notably, the proposed model achieves the highest accuracy of 95.33% and a co-occurrence adverse drug reaction detection rate of 78.12%. This research represents a notable advancement in modeling adverse drug reactions (ADR), especially in COVID treatment.},
+  archive      = {J_TAI},
+  author       = {Pranab Das and Dilwar Hussain Mazumder},
+  doi          = {10.1109/TAI.2025.3557769},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2798-2809},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {MLCNN-LSTM-COV: A multilabel convolutional neural network and long short-term memory-based framework for predicting adverse COVID drug reactions},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fuzzy logic strikes back: Fuzzy ODEs for dynamic modeling and uncertainty quantification. <em>TAI</em>, <em>6</em>(10), 2788-2797. (<a href='https://doi.org/10.1109/TAI.2025.3557765'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traditionally, system identification (SysID) has emphasized point predictions and model accuracy, with limited exploration of prediction intervals (PIs) to assess uncertainty. Type-2 (T2) fuzzy logic systems (FLSs) are well-suited for uncertainty quantification (UQ), yet few methods have extended their application to learning temporal dynamics and generating prediction intervals (PIs) for SysID tasks. This article introduces fuzzy ordinary differential equations (FODEs), a novel network integrating the UQ capabilities of T2-FLSs with the representational strength of neural ordinary differential equations (NODEs) for system identification (SysID). Our model, FODE, leverages the nonlinearity representation capabilities of FLSs to capture system dynamics while its T2 variant is capable of producing PIs alongside point predictions. This article presents in-depth the mathematical foundations of Type-1, Interval T2, and General T2 (GT2) FODEs. We demonstrate that IT2-FODE and GT2-FODE effectively generate interval and granular uncertainty estimates, respectively. For training FODE, we present a deep-learning framework and introduce a modified Relaxed Quantile Regression loss to train T2-FODEs effectively for time-series data, incorporating both position-based and velocity-based components to enhance PI learning. Through extensive benchmarking across different SysID problems, we demonstrate FODE’s superior performance in both accuracy and high-quality PI generation, outperforming NODEs, particularly with General T2 FODEs. This work highlights FODEs as a solution for SysID problems with inherent UQ, offering a more comprehensive approach to understanding and predicting system behavior.},
+  archive      = {J_TAI},
+  author       = {Yusuf Güven and Tufan Kumbasar},
+  doi          = {10.1109/TAI.2025.3557765},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2788-2797},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Fuzzy logic strikes back: Fuzzy ODEs for dynamic modeling and uncertainty quantification},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Understanding connection between PMP and HJB equations from the perspective of hamilton dynamics. <em>TAI</em>, <em>6</em>(10), 2777-2787. (<a href='https://doi.org/10.1109/TAI.2025.3557399'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reinforcement learning (RL) is widely used to tackle optimal control problems, with optimality conditions as the principle of algorithm design. Two key optimality conditions are the Pontryagin maximum principle (PMP) and the Hamilton–Jacobi–Bellman (HJB) equation. The relationship between these conditions is vital for developing effective policy learning algorithms. Existing studies mainly focus on their relationship in the open-loop optimality, but this property cannot be directly extended to nonoptimal or closed-loop cases due to the absence of extreme condition and the existence of nonzero partial derivative term. This article unifies the relationship between PMP and HJB equations in all cases by considering optimal control problems as nonholonomic Lagrange systems, and proves the intrinsic equivalence between value function and costate variable from the perspective of Hamilton dynamics. We redefine costate variable as Legendre transformation of state derivative in nonholonomic Lagrange systems, where the Weierstrass condition is selected as a constraint for optimal cases while the fixed policy condition is chosen for nonoptimal cases. By utilizing the anti-symmetric property of canonical equations, we identify conservation properties in optimal control where symplectic form remains invariant across all cases. Additionally, we prove that the costate variable has the identical differential equation and boundary conditions as the partial derivative of value function with respect to state in both optimal and nonoptimal, open-loop, and closed-loop cases. Numerical experiments are conducted to verify our theoretical results. This discovery can establish more readily available conservation conditions, thereby providing a high-level view angle on algorithm designs.},
+  archive      = {J_TAI},
+  author       = {Xiangteng Zhang and Yao Lyu and Shengbo Eben Li and Jingliang Duan and Guojian Zhan and Chang Liu and Bo Cheng and Keqiang Li},
+  doi          = {10.1109/TAI.2025.3557399},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2777-2787},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Understanding connection between PMP and HJB equations from the perspective of hamilton dynamics},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep-learning-based dual denoising algorithm for shielding-free magnetic resonance imaging. <em>TAI</em>, <em>6</em>(10), 2766-2776. (<a href='https://doi.org/10.1109/TAI.2025.3556997'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Electromagnetic shielding is crucial in magnetic resonance imaging (MRI), particularly at low- and ultralow-magnetic fields. However, the cost of employing physical enclosures for shielding can be prohibitively high. In this study, we introduce a comprehensive dual denoising algorithm, leveraging deep-learning techniques, specifically tailored for shielding-free MRI. This algorithm is structured into two distinct steps. In the first step, we employ a residual convolution neural network (residual CNN) to establish a mapping between the electromagnetic interference (EMI) signals detected by two EMI sensing coils and those detected by the MRI receive coils. In the subsequent step, we introduce triple generators Wasserstein generative adversarial network (TWGAN), a unique composite neural network architecture comprising three generators, to refine the denoised outputs from the first step. Furthermore, we have devised a methodology to construct a denoising dataset that comprises realistic clean-noise pairs, addressing the challenges associated with obtaining such datasets in different field (especially in low field and ultralow field) MRI scenarios. We implemented the algorithm on a shielding-free 0.11-T low-field (LF) MRI system and conducted experiments on healthy human subjects. In comparing with the convergence speed of the first step with existing algorithms, our results revealed that the utilization of residual CNN significantly accelerated the convergence process. Following the second step, we achieved cleaner images. Additionally, we applied the second step to shielding-free 0.055-T ultralow-field (ULF) MRI images, and the outcomes demonstrated that our method effectively addresses the limited denoising capabilities of existing algorithms in highly noise-contaminated MR images. These results highlight the potential of our algorithm for wider application and generalization in scenarios with complex electromagnetic noise.},
+  archive      = {J_TAI},
+  author       = {Yang Hu and Yiman Huang and Shuxian Qu and Yushu Xie and Yanwen Fang and Xiaotong Zhang},
+  doi          = {10.1109/TAI.2025.3556997},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2766-2776},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Deep-learning-based dual denoising algorithm for shielding-free magnetic resonance imaging},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Resource-efficient CNN based atrial fibrillation detection using P-wave and RR interval features for edge-AI cardiac health monitoring devices. <em>TAI</em>, <em>6</em>(10), 2754-2765. (<a href='https://doi.org/10.1109/TAI.2025.3556995'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Atrial fibrillation (AF) is a cardiac arrhythmia which leads to ischemic stroke. This article presents a real-time AF detection method with reduction in energy consumption and false alarms for wearable devices. The method is designed with a 1-D-convolutional neural network (CNN), RR interval (RRI), and P-wave features. The training dataset contains the Fourier magnitude spectrum (FMS) and RRI of 10-s electrocardiogram (ECG) segments from five benchmark ECG databases (1-lead, 2-lead, and 12-lead). The 1-D-CNN-based AF detection methods are tested with two untrained datasets (2-lead and 12-lead) and 20% of the trained dataset. The optimal trade-off between performance and computational complexity is achieved using 5-layer-CNN model (activation function: exponential linear unit and kernel size: 4 $\times$ 1) with a model size of 4.33 MB and processing time of 0.100 ms. The CNN-RRI-FMS based AF detection method has an overall accuracy, sensitivity, and specificity of 99.44%, 98.76%, and 99.81%, respectively. The method is validated on Raspberry-Pi. The method has an average latency and energy consumption of 3.52 ms and 10.76 mJ for a 10-s ECG segment on Raspberry Pi. Comparative analysis with prior studies and existing deep-learning networks signifies the superiority of the method in terms of performance, computational complexity, and energy efficiency. The experimental results emphasize its suitability for real-time implementations in cardiac health monitoring devices.},
+  archive      = {J_TAI},
+  author       = {Nabasmita Phukan and M. Sabarimalai Manikandan and Ram Bilas Pachori},
+  doi          = {10.1109/TAI.2025.3556995},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2754-2765},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Resource-efficient CNN based atrial fibrillation detection using P-wave and RR interval features for edge-AI cardiac health monitoring devices},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A cervical cell classification framework based on multiview supervised contrastive learning. <em>TAI</em>, <em>6</em>(10), 2744-2753. (<a href='https://doi.org/10.1109/TAI.2025.3556990'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cervical cell classification is fundamental for early cervical cancer detection. Deep convolutional neural networks (CNNs) have made great progress in enhancing the performance of cervical cell classification. However, most current methods have overlooked two major concerns: the pattern variations in cervical cells caused by data acquisition process and the misclassification of cervical cells with similar pathological properties. To address these issues, we develop a new cervical cell classification framework that incorporates supervised contrastive learning (SCL) with CNN. To simulate the pattern variations of cervical cells, we first adopt data augmentation to generate multiple views of cell images, which are then fed into three main components of the model, including the encoder, contrastive, and classification modules. Moreover, we design a hybrid loss to jointly train the model to learn more robust cell representations by introducing the supervised contrastive loss into the traditional classification loss. Experimental results on four cell image datasets demonstrate that the proposed method achieves better performance than the competing methods. Our hybrid loss yields the highest F-score, improving the classification and supervised contrastive losses by 3.3% and 2.6%, respectively, further illustrating the superiority of our method in cervical cell classification. Through the combination of SCL and traditional classification, our method obtains better representations from cervical cell images, enhancing the model robustness.},
+  archive      = {J_TAI},
+  author       = {Ming Fang and Jin Liu and Francis Bui and Bo Liao and Xiujuan Lei and Fang-Xiang Wu},
+  doi          = {10.1109/TAI.2025.3556990},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2744-2753},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {A cervical cell classification framework based on multiview supervised contrastive learning},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ILeAD: An EMG-based adaptive shared control framework for exoskeleton assistance via deep reinforcement learning. <em>TAI</em>, <em>6</em>(10), 2732-2743. (<a href='https://doi.org/10.1109/TAI.2025.3556983'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article introduces the intelligent learning assistive devices (iLeAD) framework, a shared control architecture for an elbow exoskeleton that adapts in real time to changing external conditions using deep reinforcement learning (RL). iLeAD employs a latent guidance encoder (LGE) to encode shoulder configurations and external loads into latent variables, guiding the exoskeleton control policy (ExoCoP) to provide adaptive torque assistance. An online latent estimator (OLE), trained via knowledge distillation, enables the exoskeleton to continuously infer these latent factors from its own observations. To model human arm motion, a separate RL-based musculoskeletal control policy (MusCoP) generates muscle activations, which we validate against static optimization (SO) and computed muscle control (CMC) in a high-fidelity musculoskeletal simulation. All experiments are performed in this simulation environment, demonstrating that iLeAD achieves precise elbow tracking and robust adaptation to dynamic loads and shoulder configurations. These results highlight a promising approach for intuitive, effective human-exoskeleton interaction and advance the potential for practical human power augmentation.},
+  archive      = {J_TAI},
+  author       = {Masoud Karimi and Mojtaba Ahmadi},
+  doi          = {10.1109/TAI.2025.3556983},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2732-2743},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {ILeAD: An EMG-based adaptive shared control framework for exoskeleton assistance via deep reinforcement learning},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GPA: Grover policy agent for generating optimal quantum sensor circuits. <em>TAI</em>, <em>6</em>(10), 2722-2731. (<a href='https://doi.org/10.1109/TAI.2025.3556979'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study proposes a grover policy agent (GPA) for designing optimal quantum sensor circuits (QSCs) to address complex quantum physics problems. The GPA consists of two parts: the quantum policy evaluation (QPE) and the quantum policy improvement (QPI). The QPE performs phase estimation to generate the search space, while the QPI utilizes Grover search and amplitude amplification techniques to efficiently identify an optimal policy that generates optimal QSCs. The GPA generates QSCs by selecting sequences of gates that maximize the quantum Fisher information (QFI) while minimizing the number of gates. The QSCs generated by the GPA are capable of producing entangled quantum states, specifically the squeezed states. High QFI indicates increased sensitivity to parameter changes, making the circuit useful for quantum state estimation and control tasks. Evaluation of the GPA on a QSC that consists of two qubits and a sequence of $\boldsymbol{R}_{\boldsymbol{x}}$, $\boldsymbol{R}_{\boldsymbol{y}}$, and $\boldsymbol{S}$ gates demonstrates its efficiency in generating optimal QSCs with a QFI of 1. Compared to existing quantum agents, the GPA achieves higher QFI with fewer gates, demonstrating a more efficient and scalable approach to the design of QSCs. This work illustrates the potential computational power of quantum agents for solving quantum physics problems.},
+  archive      = {J_TAI},
+  author       = {Ahmad Alomari and Sathish A. P. Kumar},
+  doi          = {10.1109/TAI.2025.3556979},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2722-2731},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {GPA: Grover policy agent for generating optimal quantum sensor circuits},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generalization error bounds for graph neural networks in unseen domains. <em>TAI</em>, <em>6</em>(10), 2712-2721. (<a href='https://doi.org/10.1109/TAI.2025.3556978'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The shift in data distribution between training and testing presents challenges for graph neural networks (GNNs), especially in out-of-distribution (OOD) scenarios. Most analyses focus on graph domain adaptation, where the target domain is known during training. However, real-world applications often require GNNs to generalize to unseen domains, a problem that lacks sufficient theoretical analysis, particularly regarding interpretable error bounds. In this work, we bridge this gap by using the linear combination of source domains as a reference object for unseen domains. We derive generalization error bounds for GNNs based on the mixture distribution of the source domains, emphasizing the importance of domain diversity and domain-invariant feature learning for strong generalization. Furthermore, we explore a special case where the mixed distribution degenerates to the distribution of the source domains, introducing the maximum Wasserstein distance as a measure of the difference between the source domain and the unseen domains, and derive tighter error bounds. Our analysis highlights the importance of balancing domain diversity and invariance, demonstrating how these factors affect the generalization performance of GNNs in unseen domains.},
+  archive      = {J_TAI},
+  author       = {Peiyao Wang and Liang Bai and Xian Yang and Xi Wang and Jiye Liang},
+  doi          = {10.1109/TAI.2025.3556978},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2712-2721},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Generalization error bounds for graph neural networks in unseen domains},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Advancements in image interpretation: Self-supervised learning of object structures for enhanced classification and segmentation. <em>TAI</em>, <em>6</em>(10), 2700-2711. (<a href='https://doi.org/10.1109/TAI.2025.3556804'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent studies indicate that traditional classification models often emphasize the most distinctive parts of an object, overlooking its overall structure. To address this, the look-into-object (LIO) framework was developed, but it relies on supervised learning with labeled data for initial image representation, requiring pretraining with annotated datasets. We propose an enhancement to the LIO framework by replacing its supervised learning classifier with a self-supervised learning (SSL) strategy, enabling the framework to learn comprehensive object structures without labeled data. Additionally, we introduce a warm-up strategy to reduce reliance on pretrained models. Experimental results show that our enhanced model consistently focuses on the entire object, improving classification accuracy (Acc) by integrating object structure knowledge. This approach is adaptable across various computer vision applications, including semantic segmentation, demonstrating its broad applicability. GitHub link: https://github.com/maikurufeza/Self-supervised-with-object-structure-information.},
+  archive      = {J_TAI},
+  author       = {Hung-Min Sun and Chao-Yen Chung and Zong-Han Lin and Qi-Xian Huang},
+  doi          = {10.1109/TAI.2025.3556804},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2700-2711},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Advancements in image interpretation: Self-supervised learning of object structures for enhanced classification and segmentation},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mobile network traffic prediction using temporal fusion transformer. <em>TAI</em>, <em>6</em>(10), 2685-2699. (<a href='https://doi.org/10.1109/TAI.2025.3556627'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The continuous development of mobile communication technologies has led to a rapid increase in cellular network traffic. Therefore, traffic prediction models have become very important for the design of mobile communication networks, as they are essential for increasing the quality of service (QoS) and ensuring a high level of quality of experience (QoE). Accurate and timely prediction of network traffic volume enables efficient planning of radio resource allocation, improves network energy efficiency, and reduces network congestion and operational costs. However, the task of mobile network traffic prediction is inherently challenging due to the dynamic, multivariate nature of traffic patterns that are influenced by diverse factors such as location, user behavior, and temporal variations. In this article, we propose a novel prediction model based on deep learning techniques. Specifically, we develop a customized temporal fusion transformer (TFT) for accurate time series prediction that effectively captures the complex dependencies in mobile network traffic and ensures resilience to unexpected variations, which is critical for efficient network management and QoE enhancement. The prediction model is evaluated and tested against state-of-the-art prediction models using real-world cellular network data as the training dataset. The experimental results validate the excellence of this customized transformer architecture in capturing the complex temporal dynamics of cellular network traffic by exploiting attention-based mechanisms.},
+  archive      = {J_TAI},
+  author       = {Georgios Kougioumtzidis and Vladimir K. Poulkov and Pavlos I. Lazaridis and Zaharias D. Zaharis},
+  doi          = {10.1109/TAI.2025.3556627},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2685-2699},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Mobile network traffic prediction using temporal fusion transformer},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TSTNet: Temporal semantic transformer-based computing power network for automatic driving in the internet of vehicles. <em>TAI</em>, <em>6</em>(10), 2669-2684. (<a href='https://doi.org/10.1109/TAI.2025.3556375'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automatic driving systems face critical challenges, including limited computational resources, complex data processing demands, and disruptions caused by high vehicular mobility, all of which hinder real-time decision-making and system accuracy. Existing solutions, such as edge computing and distributed architectures, partially address these issues but often fail to integrate semantic communication and mobility-aware optimizations. To tackle these challenges, we propose a temporal semantic transformer (TSTNet)-based edge computing network architecture (TSTNet) that enhances decision-making accuracy and reduces latency in automatic driving systems. TSTNet overcomes three key challenges in automatic driving. First, it efficiently utilizes limited computational resources by optimizing the processing of large-scale multimodal data through lightweight semantic extractors and attention-based feature integration, significantly reducing computational overhead. Second, it preserves semantic and behavioral continuity by ensuring seamless transitions of vehicle behavior and surrounding scene semantics during mobility and service handovers. This ensures consistent situational awareness even in highly dynamic vehicular environments. Third, TSTNet reduces decision-making latency by leveraging semantic inheritance to minimize redundant computations, enabling real-time performance and improving the reliability of driver-assist systems. Experimental results demonstrate that TSTNet improves task accuracy by over 90% while reducing decision-making latency by over 50% compared to conventional methods. This architecture offers a scalable, efficient, and robust solution to the computational and mobility challenges in automatic driving, enabling enhanced real-time adaptability in complex traffic scenarios.},
+  archive      = {J_TAI},
+  author       = {Tiankuo Yu and Hui Yang and Qiuyan Yao and Zhiwei Wang and Jie Zhang and Athanasios V. Vasilakos and Mohamed Cheriet},
+  doi          = {10.1109/TAI.2025.3556375},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2669-2684},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {TSTNet: Temporal semantic transformer-based computing power network for automatic driving in the internet of vehicles},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed fixed-time algorithms for time-varying constrained optimization problems. <em>TAI</em>, <em>6</em>(10), 2656-2668. (<a href='https://doi.org/10.1109/TAI.2025.3556095'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, the distributed form of the zeroing neural network for solving time-varying optimal problems is put forward. Compared with traditional centralized algorithms, distributed algorithms possess better privacy and scalability. This article initially proposes a centralized time-varying optimization algorithm with fixed-time convergence and certain robustness, which is based on the integration-enhanced zeroing neural network. Subsequently, the algorithm is enhanced, and two distributed algorithms are designed separately. Both of these two algorithms have a fixed convergence time and certain robustness. Additionally, this article utilizes the penalty function approach to handle time-varying optimization problems with inequality constraints, thereby making the algorithm more widely applicable. The effectiveness of the algorithm is verified through several numerical examples, and the applicability of the algorithm is demonstrated by solving the package-level state-of-charge balancing problem.},
+  archive      = {J_TAI},
+  author       = {Xing He and Yue Li and Meng Zhang and Tingwen Huang},
+  doi          = {10.1109/TAI.2025.3556095},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2656-2668},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Distributed fixed-time algorithms for time-varying constrained optimization problems},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Active gradient manipulation for privacy breaching in vertical federated learning. <em>TAI</em>, <em>6</em>(10), 2645-2655. (<a href='https://doi.org/10.1109/TAI.2025.3556094'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated learning (FL) has emerged as a promising approach for privacy-preserving collaborative machine learning. Specifically, vertical FL (vFL) allows various devices in multi-agent systems to collectively train models on vertically partitioned data while safeguarding sensitive information. Recent research on vFL privacy analysis primarily explores passive settings where attackers adhere to the FL protocol. This perspective may underestimate the threats posed by vFL, as practical adversaries can deviate from the protocol to enhance their attack capabilities. In response, this work proposes two novel active data reconstruction attacks to compromise data privacy. Each attack induces gradient manipulation during the training phase to breach data privacy. Including an active inversion network (AIN), our first attack exploits a subset of known data in the training set to make passive parties train an auto-encoder (AE) to reconstruct their private data. The second attack introduces an active generative network (AGN) that relies only on the data distribution to train a conditional generative adversarial network (C-GAN) for private feature reconstruction. Our experiments demonstrate the effectiveness of both attacks in three real-world datasets: MNIST, CIFAR10, and USCensus. Additionally, we provide valuable insights and guidelines for enhancing the security of vFL systems through the application of calibrated noise via local differential privacy (LDP).},
+  archive      = {J_TAI},
+  author       = {Tre’ R. Jeter and Minh N. Vu and Raed Alharbi and Jung Taek Seo and My T. Thai},
+  doi          = {10.1109/TAI.2025.3556094},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2645-2655},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Active gradient manipulation for privacy breaching in vertical federated learning},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design of an ultra-thin metamaterial absorber with machine learning-assisted absorption prediction. <em>TAI</em>, <em>6</em>(10), 2630-2644. (<a href='https://doi.org/10.1109/TAI.2025.3554732'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An absorber is a block of material employed to absorb a portion of the energy of an incident particle. Research on absorbers is rapidly expanding as a result of their prospective applications in several fields, including wireless communications and military purposes. However, conventional absorbers have dense size and design complexity that make them unsuitable for a multitude of practical applications. Metamaterial-based absorbers (MMAs) have garnered significant attention with respect to their low density, narrow layers, and high absorption capacity. In this article, we introduce a new ultra-thin tri-layered Ni–MgF2–Ni metamaterial absorber structure, which is designed using machine learning. It has a balanced and symmetrical layout with a metal-dielectric-metal arrangement and a high-temperature endurance. Its resonator design is defined by mathematical deduction from the Conference matrix. The performance of MMA has been evaluated at wavelengths ranging from 250 to 1150 nm, as well as in various modes-TM, TE, and TEM. The results demonstrate that the proposed MMA has exceptional absorption capacities, with an overall absorption of 96.18% within the test range. It offers excellent mean absorption percentages of 99% in the optical region (350 to 750 nm), 95.23% in the ultraviolet (UV) range, and 94.38% in the near-infrared (NIR) range. Furthermore, MMA exhibits an absorption efficiency of 99.99% at a particular wavelength of 424.93 nm. In this work, various machine learning techniques have been applied to predict the absorption of the proposed MMA design. The XGBoost meta-learner-based Stacking ensemble machine learning technique achieves the highest prediction efficiency. Finally, the explainable AI technique with the LIME framework has been used to analyze the predictions of applied machine learning models.},
+  archive      = {J_TAI},
+  author       = {Md. Jakir Hossain and Nafisa Mubashsara and Riasat Khan and Mohammad Abdul Matin and Panagiotis Sarigiannidis and Sotirios K. Goudos},
+  doi          = {10.1109/TAI.2025.3554732},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2630-2644},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Design of an ultra-thin metamaterial absorber with machine learning-assisted absorption prediction},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ShadowMaskFormer: Mask augmented patch embedding for shadow removal. <em>TAI</em>, <em>6</em>(10), 2618-2629. (<a href='https://doi.org/10.1109/TAI.2025.3554605'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transformer recently emerged as the de facto model for computer vision tasks and has also been successfully applied to shadow removal. However, these existing methods heavily rely on intricate modifications to the attention mechanisms within the transformer blocks while using a generic patch embedding. As a result, it often leads to complex architectural designs requiring additional computation resources. In this work, we aim to explore the efficacy of incorporating shadow information within the early processing stage. Accordingly, we propose a transformer-based framework with a novel patch embedding that is tailored for shadow removal, dubbed ShadowMaskFormer. Specifically, we present a simple and effective mask-augmented patch embedding to integrate shadow information and promote the model’s emphasis on acquiring knowledge for shadow regions. Extensive experiments conducted on the ISTD, ISTD+, and SRD benchmark datasets demonstrate the efficacy of our method against state-of-the-art approaches while using fewer model parameters. Our implementation is available at https://github.com/lizhh268/ShadowMaskFormer.},
+  archive      = {J_TAI},
+  author       = {Zhuohao Li and Guoyang Xie and Guannan Jiang and Zhichao Lu},
+  doi          = {10.1109/TAI.2025.3554605},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2618-2629},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {ShadowMaskFormer: Mask augmented patch embedding for shadow removal},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic broad metric learning. <em>TAI</em>, <em>6</em>(10), 2603-2617. (<a href='https://doi.org/10.1109/TAI.2025.3553832'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many existing metric learning methods are based on fixed similarity constraints. However, the quality of fixed similarity constraints is usually hard to guarantee, and inflexible constraints also limit the performance of metric learning. Moreover, when new training samples are acquired, retraining the model is usually inefficient for many classical metric learning methods. This article proposes a novel dynamic broad metric learning (DynBML) method to overcome the above limitations. DynBML trains a broad network with dynamic similarity constraints between samples and their target points to learn a discriminative data transformation with high representation ability. To overcome the weaknesses of fixed constraints, DynBML dynamically updates the target points to produce new constraints during the learning process. A force-directed reference points generation (FD-RPG) algorithm is designed to generate reference points from the currently learned space, which encourages the new target points to be more discriminative. A new objective function is proposed to simultaneously learn the new target points and train the data transformation with the guidance of the reference points. Additionally, to avoid retraining the model from scratch when new data arrive, the incremental learning scheme of DynBML (I-DynBML) is developed, which efficiently updates the trained model of DynBML by generating and satisfying new constraints of new input. DynBML is evaluated on ten datasets to demonstrate its superiority. Experiment results show that the dynamic constraints constructed in DynBML improve the learning performance. The effectiveness and efficiency of the incremental learning scheme of DynBML are also verified.},
+  archive      = {J_TAI},
+  author       = {Xiaoman Hu and C. L. Philip Chen and Tong Zhang},
+  doi          = {10.1109/TAI.2025.3553832},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2603-2617},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Dynamic broad metric learning},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CenFormer: Transformer-based network from centroid generation for point cloud completion. <em>TAI</em>, <em>6</em>(10), 2588-2602. (<a href='https://doi.org/10.1109/TAI.2025.3553456'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Point clouds captured from 3-D scanners are often sparse and incomplete due to occlusions, limited viewpoints, and sensor constraints. These limitations hinder applications in robotics, autonomous navigation, and augmented reality. Hence, point cloud completion is crucial for generating reliable 3-D object representations. Existing methods often struggle to capture structural patterns effectively, which leads to low-quality reconstructions. To address these challenges, we propose Centroid Transformer (CenFormer), a novel transformer-based network for point cloud completion. CenFormer introduces two distinct types of centroids, namely Preserved and Dispersed, to facilitate fine-grained reconstruction. The proposed design includes three innovations: 1) a Centroid Generation Block to aggregate features for preserved centroids; 2) a Centroid Dispersion Block to predict offsets for dispersed centroids; and 3) a Fine-grained Point Generation Block to refine local patterns around centroids. These components jointly enable the network to effectively capture local structural details and strategically target missing regions for fine-grained 3-D shape reconstruction. Experiments on various benchmark datasets demonstrate that CenFormer significantly outperforms state-of-the-art methods in both visualization results and quantitative metrics.},
+  archive      = {J_TAI},
+  author       = {Tran Thanh Phong Nguyen and Son Lam Phung and Vinod Gopaldasani and Jane Whitelaw and Hoang Thanh Le and Abdesselam Bouzerdoum},
+  doi          = {10.1109/TAI.2025.3553456},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2588-2602},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {CenFormer: Transformer-based network from centroid generation for point cloud completion},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GradCFA: A hybrid gradient-based counterfactual and feature attribution explanation algorithm for local interpretation of neural networks. <em>TAI</em>, <em>6</em>(10), 2575-2587. (<a href='https://doi.org/10.1109/TAI.2025.3552057'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Explainable Artificial Intelligence (XAI) is increasingly essential as AI systems are deployed in critical fields such as healthcare and finance, offering transparency into AI-driven decisions. Two major XAI paradigms, counterfactual explanations (CFX) and feature attribution (FA), serve distinct roles in model interpretability. This study introduces GradCFA, a hybrid framework combining CFX and FA to improve interpretability by explicitly optimizing feasibility, plausibility, and diversity—key qualities often unbalanced in existing methods. Unlike most CFX research focused on binary classification, GradCFA extends to multiclass scenarios, supporting a wider range of applications. We evaluate GradCFA’s validity, proximity, sparsity, plausibility, and diversity against state-of-the-art methods, including Wachter, DiCE, CARE for CFX, and SHAP for FA. Results show GradCFA effectively generates feasible, plausible, and diverse counterfactuals while offering valuable FA insights. By identifying influential features and validating their impact, GradCFA advances AI interpretability.},
+  archive      = {J_TAI},
+  author       = {Jacob Sanderson and Hua Mao and Wai Lok Woo},
+  doi          = {10.1109/TAI.2025.3552057},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2575-2587},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {GradCFA: A hybrid gradient-based counterfactual and feature attribution explanation algorithm for local interpretation of neural networks},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Recommender systems based on nonnegative matrix factorization: A survey. <em>TAI</em>, <em>6</em>(10), 2554-2574. (<a href='https://doi.org/10.1109/TAI.2025.3559053'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recommender systems (RSs) have gained significant attention for their ability to model user preferences and predict future trends. Collaborative filtering (CF), particularly through nonnegative matrix factorization (NMF), is a popular method for building these systems. This article presents a comprehensive survey of NMF-based methods in RSs, exploring enhancements that leverage key features such as sparsity, implicit feedback, and contextual information. We categorize developments into two main directions: pure NMF variants (including constrained, structured, and generalized NMF) and integrated NMF (INMF) approaches (combining NMF with traditional and deep learning models). Our survey provides researchers and practitioners with a structured overview of the field’s progress, identifies current challenges, and highlights promising directions for future research in NMF-based RSs.},
+  archive      = {J_TAI},
+  author       = {Sajad Ahmadian and Kamal Berahmand and Mehrdad Rostami and Saman Forouzandeh and Parham Moradi and Mahdi Jalili},
+  doi          = {10.1109/TAI.2025.3559053},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {10},
+  number       = {10},
+  pages        = {2554-2574},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Recommender systems based on nonnegative matrix factorization: A survey},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2025). Learning from N-tuple similarities and unlabeled data. <em>TAI</em>, <em>6</em>(9), 2542-2551. (<a href='https://doi.org/10.1109/TAI.2025.3552687'>www</a>)

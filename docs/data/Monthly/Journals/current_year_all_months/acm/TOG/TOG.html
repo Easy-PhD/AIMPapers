@@ -25,8 +25,218 @@
 </head>
 <body>
 
-<h2 id="tog">TOG - 157</h2>
+<h2 id="tog">TOG - 167</h2>
 <ul>
+<li><details>
+<summary>
+(2025). ReSTIR BDPT: Bidirectional ReSTIR path tracing with caustics. <em>TOG</em>, <em>44</em>(5), 1-16. (<a href='https://doi.org/10.1145/3744898'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent spatiotemporal resampling algorithms (ReSTIR) accelerate real-time path tracing by reusing samples between pixels and frames. However, existing methods are limited by the sampling quality of path tracing, making them inefficient for scenes with caustics and hard-to-reach lights. We develop a ReSTIR variant incorporating bidirectional path tracing that significantly improves the sampling quality in these scenes. Combining bidirectional path tracing and ReSTIR introduces multiple challenges: the generalized resampled importance sampling (GRIS) behind ReSTIR is, by default, not aware of how a path was sampled, which complicates reuse of bidirectional paths. Light tracing is also challenging since light subpaths can contribute to all pixels. To address these challenges, we apply GRIS in a sampling technique-aware extended path space, design a bidirectional hybrid shift mapping, and introduce caustics reservoirs that can accumulate caustics across frames. Our method takes around 50ms per frame across our test scenes, and achieves significantly lower error compared to prior unidirectional ReSTIR variants running in equal time.},
+  archive      = {J_TOG},
+  author       = {Trevor Hedstrom and Markus Kettunen and Daqi Lin and Chris Wyman and Tzu-Mao Li},
+  doi          = {10.1145/3744898},
+  journal      = {ACM Transactions on Graphics},
+  month        = {9},
+  number       = {5},
+  pages        = {1-16},
+  shortjournal = {ACM Trans. Graph.},
+  title        = {ReSTIR BDPT: Bidirectional ReSTIR path tracing with caustics},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Single-shot HDR using conventional image sensor shutter functions and optical randomization. <em>TOG</em>, <em>44</em>(5), 1-20. (<a href='https://doi.org/10.1145/3748718'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-dynamic-range (HDR) imaging is an essential technique for overcoming the dynamic range limits of image sensors. The classic method relies on multiple exposures, which slows capture time, resulting in motion artifacts when imaging dynamic scenes. Single-shot HDR imaging alleviates this issue by encoding HDR data in a single exposure, then computationally recovering it. Many established methods use strong image priors to recover improperly exposed detail; these approaches struggle with extended highlight regions. In this work, we demonstrate a novel single-shot HDR capture method that utilizes the global reset release (GRR) shutter mode commonly found in off-the-shelf sensors. GRR shutter mode applies a longer exposure time to rows closer to the bottom of the sensor. We use optics that relay a randomly permuted (shuffled) image onto the sensor, effectively creating spatially randomized exposures across the scene. The resulting exposure diversity allows us to recover HDR data by solving an optimization problem with a simple total variation image prior. In simulation, we demonstrate that our method outperforms other single-shot methods when many sensor pixels are saturated (10% or more), and is competitive at modest saturation (1%). Finally, we demonstrate a physical lab prototype that uses an off-the-shelf random fiber bundle for the optical shuffling. The fiber bundle is coupled to a low-cost commercial sensor operating in GRR shutter mode. Our prototype achieves a dynamic range of up to 73dB using an 8-bit sensor with 48dB dynamic range.},
+  archive      = {J_TOG},
+  author       = {Xiang Dai and Kyrollos Yanny and Kristina Monakhova and Nicholas Antipa},
+  doi          = {10.1145/3748718},
+  journal      = {ACM Transactions on Graphics},
+  month        = {9},
+  number       = {5},
+  pages        = {1-20},
+  shortjournal = {ACM Trans. Graph.},
+  title        = {Single-shot HDR using conventional image sensor shutter functions and optical randomization},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Magic fixup: Streamlining photo editing by watching dynamic videos. <em>TOG</em>, <em>44</em>(5), 1-25. (<a href='https://doi.org/10.1145/3750722'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a generative model that, given a coarsely edited image, synthesizes a photorealistic output that follows the prescribed layout. Our method transfers fine details from the original image and preserve the identity of its parts. Yet, it adapts it to the lighting and context defined by the new layout. Our key insight is that videos are a powerful source of supervision for this task: objects and camera motions provide many observations of how the world changes with viewpoint, lighting, and physical interactions. We construct an image dataset in which each sample is a pair of source and target frames extracted from the same video at randomly chosen time intervals. We warp the source frame toward the target using two motion models that mimic the expected test-time user edits. We supervise our model to translate the warped image into the ground truth, starting from a pretrained diffusion model. Our model design explicitly enables fine detail transfer from the source frame to the generated image, while closely following the user-specified layout. We show that by using simple segmentations and coarse 2D manipulations, we can synthesize a photorealistic edit faithful to the user’s input while addressing second-order effects like harmonizing the lighting and physical interactions between edited objects. Project page and code can be found at https://magic-fixup.github.io.},
+  archive      = {J_TOG},
+  author       = {Hadi Alzayer and Zhihao Xia and Xuaner (Cecilia) Zhang and Eli Shechtman and Jia-Bin Huang and Michael Gharbi},
+  doi          = {10.1145/3750722},
+  journal      = {ACM Transactions on Graphics},
+  month        = {9},
+  number       = {5},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Graph.},
+  title        = {Magic fixup: Streamlining photo editing by watching dynamic videos},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Convection augmented gauss reconstruction for unoriented point clouds. <em>TOG</em>, <em>44</em>(5), 1-18. (<a href='https://doi.org/10.1145/3750723'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unoriented surface reconstructions based on the Gauss formula have attracted much attention due to their mathematical formulation and good experimental performance. However, the formula’s isotropy limits its capacity to leverage the directional features of point clouds. In this study, we introduce a convection augmentation term to extend the classic Gauss formula. This new term allows our method to leverage point clouds’ directional characteristics effectively. With the proper choice of the velocity field, this method could construct more equations to calculate a more precise indicator function. Furthermore, an adaptive selection strategy of the velocity field is proposed. For large-scale point clouds, we propose a CUDA-and-octree-based acceleration algorithm with O(N) space complexity and O(N log N) time complexity. Our method can complete the orientation and reconstruction tasks of point clouds with up to 500K within a few seconds. Extensive experiments demonstrate that our method achieves state-of-the-art performance and manages various challenging situations, especially for models with thin structures or small holes. The source code is publicly available at https://github.com/mayueji/CAGR .},
+  archive      = {J_TOG},
+  author       = {Yueji Ma and Dong Xiao and Zuoqiang Shi and Bin Wang},
+  doi          = {10.1145/3750723},
+  journal      = {ACM Transactions on Graphics},
+  month        = {9},
+  number       = {5},
+  pages        = {1-18},
+  shortjournal = {ACM Trans. Graph.},
+  title        = {Convection augmented gauss reconstruction for unoriented point clouds},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Self-supervised texture filtering. <em>TOG</em>, <em>44</em>(5), 1-13. (<a href='https://doi.org/10.1145/3744899'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Decomposing an image I into the combination of structure S and texture T components is an important problem in computational photography and image analysis. Traditional solutions are basically non-learning based, because it is difficult to construct datasets containing ground-truth decompositions or find effective structure/texture supervisions. In this article, we present a self-supervised framework for smoothing out textures while maintaining the image structures. At the core of our method is a texture-inversion observation — if structure S and texture T are well disentangled, then S-T will produce a texture-inverted image that is symmetric to the input image I=S+T and the two will be visually highly similar, while for other conditions that structure and texture are not effectively separated, the generated texture-inverted images will be less similar to the input. Based on the observation, we propose to learn texture filtering from unlabeled data by encouraging the texture inverted image generated from the filtering output to be visually more similar to the input via contrastive learning. Experiments show that our method can robustly produce high-quality texture smoothing results, and also enables various applications.},
+  archive      = {J_TOG},
+  author       = {Hao Jiang and Rongjia Zheng and Yongwei Nie and Chunxia Xiao and Wei-Shi Zheng and Qing Zhang},
+  doi          = {10.1145/3744899},
+  journal      = {ACM Transactions on Graphics},
+  month        = {8},
+  number       = {5},
+  pages        = {1-13},
+  shortjournal = {ACM Trans. Graph.},
+  title        = {Self-supervised texture filtering},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NESI: Neural explicit-shape-intersection-based geometry representation. <em>TOG</em>, <em>44</em>(5), 1-23. (<a href='https://doi.org/10.1145/3742893'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Compressed representations of 3D shapes that are compact, accurate, and can be processed efficiently directly in compressed form, are extremely useful for digital media applications. Recent approaches in this space focus on learned implicit or parametric representations. While implicits are well suited for tasks such as in-out queries, they lack natural 2D parameterization, complicating tasks such as texture or normal mapping. Conversely, parametric representations support the latter tasks but are ill-suited for occupancy queries. We propose a novel learned alternative to these approaches, based on intersections of localized explicit , or height-field , surfaces. Since explicits can be trivially expressed both implicitly and parametrically, NESI directly supports a wider range of processing operations than implicit alternatives, including occupancy queries and parametric access. We represent input shapes using a collection of differently oriented height-field bounded half-spaces combined using volumetric Boolean intersections. We first tightly bound each input using a pair of oppositely oriented height-fields, forming a Double Height-Field (DHF) Hull . We refine this hull by intersecting it with additional localized height-fields (HFs) that capture surface regions in its interior. We minimize the number of HFs necessary to accurately capture each input and compactly encode both the DHF hull and the local HFs as neural functions defined over subdomains of \(\mathbb {R}^2\) . This reduced dimensionality encoding delivers high-quality compact approximations. Given similar parameter count, or storage capacity, NESI significantly reduces approximation error compared to the state-of-the-art, especially at lower parameter counts.},
+  archive      = {J_TOG},
+  author       = {Congyi Zhang and Jinfan Yang and Eric Hedlin and Suzuran Takikawa and Nicholas Vining and Kwang Moo Yi and Wenping Wang and Alla Sheffer},
+  doi          = {10.1145/3742893},
+  journal      = {ACM Transactions on Graphics},
+  month        = {7},
+  number       = {5},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Graph.},
+  title        = {NESI: Neural explicit-shape-intersection-based geometry representation},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exact predicates, exact constructions and combinatorics for mesh CSG.. <em>TOG</em>, <em>44</em>(5), 1-27. (<a href='https://doi.org/10.1145/3744642'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article introduces a general mesh intersection algorithm that exactly computes the so-called Weiler model (also called a 3D arrangement) and that uses it to implement boolean operations with arbitrary multi-operand expressions, CSG (constructive solid geometry) and some mesh repair operations. From an input polygon soup, the algorithm first computes the co-refinement, with an exact representation of the intersection points. Then, the decomposition of 3D space into volumetric regions (Weiler model) is constructed, by sorting the facets around the non-manifold intersection edges (radial sort), using specialized exact predicates. Finally, based on the input boolean expression, the triangular facets that belong to the boundary of the result are classified. The main contribution is a 2D Constrained Delaunay Triangulation with exact coordinates that represent the intersections, thanks to two geometric kernels that are proposed, tested and discussed (arithmetic expansions and multi-precision floating-point). As a guiding principle, the combinatorial information shared between each step is kept as simple as possible. It is made possible by treating all the particular cases in the kernel. In particular, triangles with intersections are remeshed using the (uniquely defined) Constrained Delaunay Triangulation, with symbolic perturbations to disambiguate configurations with co-cyclic points. It makes it easy to discard the duplicated triangles that appear when remeshing overlapping facets. The method is tested and compared with previous work, on the existing “thingi10K” dataset (to test co-refinement and mesh repair) and on a new “thingiCSG” dataset made publicly available 1 (to test the full CSG pipeline) on a variety of interesting examples featuring different types of “pathologies”.},
+  archive      = {J_TOG},
+  author       = {Bruno Levy},
+  doi          = {10.1145/3744642},
+  journal      = {ACM Transactions on Graphics},
+  month        = {7},
+  number       = {5},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Graph.},
+  title        = {Exact predicates, exact constructions and combinatorics for mesh CSG.},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). High-order continuous geometrical validity. <em>TOG</em>, <em>44</em>(5), 1-19. (<a href='https://doi.org/10.1145/3745763'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a conservative algorithm to test the geometrical validity of simplicial (triangles, tetrahedra), tensor product (quadrilaterals, hexahedra), and mixed (prisms) elements of arbitrary polynomial order as they deform linearly within a time interval. Our algorithm uses a combination of adaptive Bézier refinement and bisection search to determine if, when, and where the Jacobian determinant of an element’s polynomial geometric map becomes negative in the transition from one configuration to another. In elastodynamic simulation, our algorithm guarantees that the system remains physically valid during the entire trajectory, not only at discrete time steps. Unlike previous approaches, physical validity is preserved even when our method is implemented using floating point arithmetic. Hence, our algorithm is only slightly slower than existing non-conservative methods while providing guarantees and while being an easy drop-in replacement for current validity tests. To prove the practical effectiveness of our algorithm, we demonstrate its use in a high-order Incremental Potential Contact (IPC) elastodynamic simulator and experimentally show that it prevents invalid, simulation-breaking configurations that would otherwise occur using non-conservative methods.},
+  archive      = {J_TOG},
+  author       = {Federico Sichetti and Zizhou Huang and Marco Attene and Denis Zorin and Enrico Puppo and Daniele Panozzo},
+  doi          = {10.1145/3745763},
+  journal      = {ACM Transactions on Graphics},
+  month        = {7},
+  number       = {5},
+  pages        = {1-19},
+  shortjournal = {ACM Trans. Graph.},
+  title        = {High-order continuous geometrical validity},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Noise-coded illumination for forensic and photometric video analysis. <em>TOG</em>, <em>44</em>(5), 1-16. (<a href='https://doi.org/10.1145/3742892'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The proliferation of advanced tools for manipulating video has led to an arms race, pitting those who wish to sow disinformation against those who want to detect and expose it. Unfortunately, time favors the ill-intentioned in this race, with fake videos growing increasingly difficult to distinguish from real ones. At the root of this trend is a fundamental advantage held by those manipulating media: equal access to a distribution of what we consider authentic (i.e., “natural”) video. In this paper, we show how coding very subtle, noise-like modulations into the illumination of a scene can help combat this advantage by creating an information asymmetry that favors verification. Our approach effectively adds a temporal watermark to any video recorded under coded illumination. However, rather than encoding a specific message, this watermark encodes an image of the unmanipulated scene as it would appear lit only by the coded illumination. We show that even when an adversary knows that our technique is being used, creating a plausible coded fake video amounts to solving a second, more difficult version of the original adversarial content creation problem at an information disadvantage. This is a promising avenue for protecting high-stakes settings like public events and interviews, where the content on display is a likely target for manipulation, and while the illumination can be controlled, the cameras capturing video cannot.},
+  archive      = {J_TOG},
+  author       = {Peter Michael and Zekun Hao and Serge Belongie and Abe Davis},
+  doi          = {10.1145/3742892},
+  journal      = {ACM Transactions on Graphics},
+  month        = {6},
+  number       = {5},
+  pages        = {1-16},
+  shortjournal = {ACM Trans. Graph.},
+  title        = {Noise-coded illumination for forensic and photometric video analysis},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Free-form surface approximation using rotational patches. <em>TOG</em>, <em>44</em>(5), 1-14. (<a href='https://doi.org/10.1145/3744707'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a method to approximate free-form surfaces using assemblies of rotational patches for architectural rationalization. Rotational surface patches inherently allow for the simultaneous repetition of multiple building elements along the arc direction. By assembling multiple patches, we can create diverse free-form-like geometries to satisfy broad design intents, while preserving local symmetry to enable cost-effective element fabrication. The main challenge lies in the strict constraint of maintaining local rotational symmetry, while ensuring the final tessellated form is seamless, smooth, and closely resembles the target surface. To address this, we propose a patch layout creation approach that segments the input surface into patches, resembling untrimmed rotational patches within a prescribed error threshold. Additionally, we develop a B-spline-based optimization framework to refine the fitted rotational patches for smooth connections and faithful surface approximation. To facilitate practical architectural applications, we provide a post-processing tool that converts the discrete patch assembly into a seamless, smooth quad mesh composed of locally repeated elements. We demonstrate that our approach is applicable to a variety of free-form surfaces, including those that mimic iconic architectural designs, and can address various practical requirements for a wide range of application scenarios.},
+  archive      = {J_TOG},
+  author       = {Yuanpeng Liu and Yi Min Xie and Ting-Uei Lee and Ziqi Wang and Nico Pietroni},
+  doi          = {10.1145/3744707},
+  journal      = {ACM Transactions on Graphics},
+  month        = {6},
+  number       = {5},
+  pages        = {1-14},
+  shortjournal = {ACM Trans. Graph.},
+  title        = {Free-form surface approximation using rotational patches},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2025). Correct your balance heuristic: Optimizing balance-style multiple importance sampling weights. <em>TOG</em>, <em>44</em>(4), 1-14. (<a href='https://doi.org/10.1145/3730819'>www</a>)

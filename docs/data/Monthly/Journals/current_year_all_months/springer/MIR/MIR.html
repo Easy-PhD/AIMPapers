@@ -25,8 +25,260 @@
 </head>
 <body>
 
-<h2 id="mir">MIR - 50</h2>
+<h2 id="mir">MIR - 62</h2>
 <ul>
+<li><details>
+<summary>
+(2025). Motion-guided visual tracking. <em>MIR</em>, <em>22</em>(5), 983-998. (<a href='https://doi.org/10.1007/s11633-023-1477-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Motion information is a crucial cue to build a robust tracker, especially in handling object occlusion and fast drift caused by cameras and objects. However, it has not been fully exploited. In this study, we attempt to exploit motion cues to guide visual trackers without bells and whistles. First, we decouple motion into two types: camera motion and object motion. Then, we predict them individually via the proposed camera motion modeling and object trajectory prediction. Each module contains a motion detector and a verifier. As for camera motion, we apply the off-the-shelf keypoint matching method to detect camera movement and propose a novel self-supervised camera motion verifier to validate its confidence. Given the previous object trajectory, object trajectory prediction aims to predict the future location of the target and select a reliable trajectory to handle fast object motion and occlusion. Numerous experiments on several mainstream tracking datasets, including OTB100, DTB70, TC128, UAV123, VOT2018 and GOT10k, demonstrate the effectiveness and generalization ability of our module, with real-time speed.},
+  archive      = {J_MIR},
+  author       = {Zhang, Pengyu and Lai, Simiao and Wang, Dong and Lu, Huchuan},
+  doi          = {10.1007/s11633-023-1477-x},
+  journal      = {Machine Intelligence Research},
+  month        = {10},
+  number       = {5},
+  pages        = {983-998},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Motion-guided visual tracking},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HAGAN: Hybrid augmented generative adversarial network for medical image synthesis. <em>MIR</em>, <em>22</em>(5), 969-982. (<a href='https://doi.org/10.1007/s11633-024-1528-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Medical image synthesis (MIS) can greatly save the economic and time costs of medical diagnosis. However, due to the complexity of medical images and similar characteristics of different tissue cells, existing methods face great challenges in meeting their biological consistency. To this end, we propose the hybrid augmented generative adversarial network (HAGAN) to maintain the authenticity of structural texture and tissue cells. HAGAN contains attention mixed (AttnMix) generator, hierarchical discriminator and reverse skip connection between discriminator and generator. The AttnMix consistency differentiable regularization encourages the perception in structural and textural variations between real and fake images, which improves the pathological integrity of synthetic images and the accuracy of features in local areas. The hierarchical discriminator introduces pixel-by-pixel discriminant feedback to generator for enhancing the saliency and discriminance of global and local details simultaneously. The reverse skip connection further improves the accuracy for fine details by fusing real and synthetic distribution features. Our experimental evaluations on two datasets of different scales, i.e., ACDC and BraTS2018, demonstrate that HAGAN outperforms the existing methods and achieves state-of-the-art performance in both high-resolution and low-resolution.},
+  archive      = {J_MIR},
+  author       = {Ju, Zhihan and Zhou, Wanting and Kong, Longteng and Chen, Yu and Li, Yi and Sun, Zhenan and Shan, Caifeng},
+  doi          = {10.1007/s11633-024-1528-y},
+  journal      = {Machine Intelligence Research},
+  month        = {10},
+  number       = {5},
+  pages        = {969-982},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {HAGAN: Hybrid augmented generative adversarial network for medical image synthesis},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LiDAR-camera cooperative semantic segmentation. <em>MIR</em>, <em>22</em>(5), 956-968. (<a href='https://doi.org/10.1007/s11633-024-1508-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {LiDAR and cameras are two prominent sources for parsing the semantics of the scene. While the former provides accurate physical measurements, it lacks the colour and texture appearance that the latter excels in. Fully exploiting the rich information of multimodal data is beneficial for comprehensive perception of the environment. To cope with the dual challenges of heterogeneity and consistency faced by multimodal features, we propose a unified multimodal cooperative segmentation workflow. By establishing cross-view cooperation paths, we achieve cross-view feature interactions and missing modality completions. The pre-synchronisation mechanism preserves the alignment semantics and geometry while decoupling the processing of multimodal data augmentation. Notably, our workflow jointly performs LiDAR-based 3D semantic segmentation and image-based 2D semantic segmentation with promising results on two public benchmarks: the SemanticKITTI dataset and the Waymo Open dataset.},
+  archive      = {J_MIR},
+  author       = {Guan, He and Song, Chunfeng and Zhang, Zhaoxiang},
+  doi          = {10.1007/s11633-024-1508-2},
+  journal      = {Machine Intelligence Research},
+  month        = {10},
+  number       = {5},
+  pages        = {956-968},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {LiDAR-camera cooperative semantic segmentation},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning knowledge enhanced text-image feature selection network for chest X-ray image classification. <em>MIR</em>, <em>22</em>(5), 941-955. (<a href='https://doi.org/10.1007/s11633-024-1530-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Discriminant feature representation of chest X-ray images is crucial for predicting diseases. Currently, large-scale language models predominantly utilize linear classifier for disease prediction, which ignores the semantic correlations between different diseases and potentially leads to the omission of discriminative visual details. To this end, this work proposes a novel knowledge enhanced text-image feature selection network (KT-FSN), comprising three main components: multi-relationship image encoder module, knowledge-enhanced text encoder module, and text-image label prediction module. Specifically, the multi-relationship image encoder (MRIE) module captures the visual relationships among images and incorporates a multi-relation graph to fuse relevant image information, thereby enhancing the image features. Then, we develop a novel knowledge-enhanced text encoder (KETE) module based on a large-scale language model to learn disease label word embeddings guided by medical domain expertise. Additionally, it employs a graph convolutional network (GCN) to capture the co-occurrence and interdependence of different disease labels. Finally, we propose a novel text-image label prediction (TILP) module based on transformer decoder, which adaptively selects discriminative image spatial features under the guidance of disease label word embeddings, ultimately leading to the accurate chest diseases prediction from chest X-ray images. Extensive experimental results on the publicly available ChestX-ray14 and CheXpert datasets validate the effectiveness and superiority of the proposed KT-FSN model. The source code will be available at https://github.com/GXY-20000/KT-FSN .},
+  archive      = {J_MIR},
+  author       = {Gao, Xinyue and Wang, Xixi and Jiang, Bo and Wang, Xiao and Tang, Jin and Li, Chuanfu},
+  doi          = {10.1007/s11633-024-1530-4},
+  journal      = {Machine Intelligence Research},
+  month        = {10},
+  number       = {5},
+  pages        = {941-955},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Learning knowledge enhanced text-image feature selection network for chest X-ray image classification},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing federated reinforcement learning: A consensus-based approach for both homogeneous and heterogeneous agents. <em>MIR</em>, <em>22</em>(5), 929-940. (<a href='https://doi.org/10.1007/s11633-025-1550-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated reinforcement learning (FedRL) is an emerging paradigm in data-driven control where a group of decision-making agents cooperate to learn optimal control laws through a distributed reinforcement learning procedure, with the peculiarity of having the constraints of not sharing any process/control data. In the typical FedRL setting, a centralized entity is responsible for orchestrating the distributed training process. To remove this design limitation, this work proposes a solution to enable a fully decentralized approach leveraging on results from consensus theory. The proposed algorithm, named FedRLCon, can then deal with: 1) scenarios with homogeneous agents, which can share their actor and, possibly, the critic networks; 2) scenarios with heterogeneous agents, in which agents may share their critic network only. The proposed algorithms are validated on two scenarios, consisting of a resource management problem in a communication network and a smart grid case study. Our tests show that practically no performance is lost for the decentralization.},
+  archive      = {J_MIR},
+  author       = {Giuseppi, Alessandro and Menegatti, Danilo and Pietrabissa, Antonio},
+  doi          = {10.1007/s11633-025-1550-8},
+  journal      = {Machine Intelligence Research},
+  month        = {10},
+  number       = {5},
+  pages        = {929-940},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Enhancing federated reinforcement learning: A consensus-based approach for both homogeneous and heterogeneous agents},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Prompting large language models for automatic question tagging. <em>MIR</em>, <em>22</em>(5), 917-928. (<a href='https://doi.org/10.1007/s11633-024-1509-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automatic question tagging (AQT) represents a crucial task in community question answering (CQA) websites. Its pivotal role lies in substantially augmenting user experience through the optimization of question-answering efficiency. Existing question tagging models focus on the features of questions and tags, ignoring the external knowledge of the real world. Large language models can work as knowledge engines for incorporating real-world facts for different tasks. However, it is difficult for large language models to output tags in the database of CQA websites. To address this challenge, we propose a large language model enhanced question tagging method called LLMEQT to perform the question tagging task. In LLMEQT, a traditional question tagging method is first applied to pre-retrieve tags for questions. Then prompts are formulated for LLMs to comprehend the task and select more suitable tags from the candidate tags for questions. Results of our experiments on two real-world datasets demonstrate that LLMEQT significantly enhances the automatic question tagging performance for CQA, surpassing the performance of state-of-the-art methods.},
+  archive      = {J_MIR},
+  author       = {Xu, Nuojia and Xue, Dizhan and Qian, Shengsheng and Fang, Quan and Hu, Jun},
+  doi          = {10.1007/s11633-024-1509-1},
+  journal      = {Machine Intelligence Research},
+  month        = {10},
+  number       = {5},
+  pages        = {917-928},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Prompting large language models for automatic question tagging},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RULER: Source-free domain adaptive person re-identification via uncertain label refinery. <em>MIR</em>, <em>22</em>(5), 900-916. (<a href='https://doi.org/10.1007/s11633-025-1543-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Source-free domain adaptive person re-identification (ReID) aims to address the cross-domain person ReID task with a well-trained source model, which solves the limitations of data privacy and transmission costs in real-world scenarios. Existing methods mainly generate pseudo labels for target data, which are unreliable because of distribution shifts. First, the ubiquitous difficult samples may lead to the ambiguity of the model prediction. Second, the source model may have a bias towards certain classes. To alleviate these two problems, we propose a source-free domain adaptive person ReID method via the uncertain label refinery (RULER). RULER consists of uncertainty-aware pseudo-labeling refinery (UPLR) and frequency-weighted contrastive learning (FCL). To reduce the ambiguity of predictions caused by sample label uncertainty, UPLR generates pseudo labels by clustering samples after multiple random dropouts and then integrates the results to obtain high-confidence pseudo labels. Moreover, FCL defines the frequency of each class as the sample weight and introduces a frequency-weighted contrastive loss to alleviate the class biases of the model. RULER improves the quality of pseudo labels and mitigates the source model′s bias towards certain classes. We achieve competitive results compared to state-of-the-art methods on both real-to-real and synthetic-to-real source-free domain adaptation scenarios, validating the effectiveness of RULER.},
+  archive      = {J_MIR},
+  author       = {Zheng, Aihua and Fei, Zhihao and Ding, Yuhe and Li, Chenglong and Luo, Bin},
+  doi          = {10.1007/s11633-025-1543-7},
+  journal      = {Machine Intelligence Research},
+  month        = {10},
+  number       = {5},
+  pages        = {900-916},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {RULER: Source-free domain adaptive person re-identification via uncertain label refinery},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring salient embeddings for gait recognition. <em>MIR</em>, <em>22</em>(5), 888-899. (<a href='https://doi.org/10.1007/s11633-025-1545-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Gait recognition aims to identify individuals by distinguishing unique walking patterns based on video-level pedestrian silhouettes. Previous studies have focused on designing powerful feature extractors to model the spatio-temporal dependencies of gait, thereby obtaining gait features that contain rich semantic information. However, they have overlooked the potential of feature maps to construct discriminative gait embeddings. In this work, we propose a novel model, EmbedGait, which is designed to learn salient gait embeddings for improved recognition results. Specifically, our framework starts with a frame-level spatial alignment to maintain inter-sequence consistency. Then, horizontal salient mapping (HSM) module is designed to extract the representative embeddings and discard the background information by a designed pooling operation. The subsequent adaptive embedding weighting (AEW) module is used to adaptively highlight the salient embeddings of different body parts and channels. Extensive experiments on the Gait3D, GREW and SUSTech1K datasets demonstrate that our approach improves comparable performance in several benchmarks tests. For example, our proposed EmbedGait achieves rank-1 accuracies of 77.3%, 79.0% and 79.6% on Gait3D, GREW and SUSTech1K, respectively.},
+  archive      = {J_MIR},
+  author       = {Hu, Jiacong and Liu, Kun and Peng, Yuheng and Zeng, Ming and Kang, Wenxiong},
+  doi          = {10.1007/s11633-025-1545-5},
+  journal      = {Machine Intelligence Research},
+  month        = {10},
+  number       = {5},
+  pages        = {888-899},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Exploring salient embeddings for gait recognition},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multimodal learning-based prediction for nonalcoholic fatty liver disease. <em>MIR</em>, <em>22</em>(5), 871-887. (<a href='https://doi.org/10.1007/s11633-024-1506-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Nonalcoholic fatty liver disease (NAFLD) is the most common cause of chronic liver disease, and if it is accurately predicted, severe fibrosis and cirrhosis can be prevented. While liver biopsies, the gold standard for NAFLD diagnosis, is intrusive, expensive, and prone to sample errors, noninvasive studies are extremely promising but are still in their infancy due to a dearth of comprehensive study data and sophisticated multimodal data methodologies. This paper proposes a novel approach for diagnosing NAFLD by integrating a comprehensive clinical dataset with a multimodal learning-based prediction method. The dataset comprises physical examinations, laboratory and imaging studies, detailed questionnaires, and facial photographs of a substantial number of participants, totaling more than 6 000. This comprehensive collection of data holds significant value for clinical studies. The dataset is subjected to quantitative analysis to identify which clinical metadata, such as metadata and facial images, has the greatest impact on the prediction of NAFLD. Furthermore, a multimodal learning-based prediction method (DeepFLD) is proposed that incorporates several modalities and demonstrates superior performance compared to the methodology that relies only on metadata. Additionally, satisfactory performance is assessed through verification of the results using other unseen data. Inspiringly, the proposed DeepFLD prediction method can achieve competitive results by solely utilizing facial images as input rather than relying on metadata, paving the way for a more robust and simpler noninvasive NAFLD diagnosis.},
+  archive      = {J_MIR},
+  author       = {Chen, Yaran and Chen, Xueyu and Han, Yu and Li, Haoran and Zhao, Dongbin and Li, Jingzhong and Wang, Xu and Zhou, Yong},
+  doi          = {10.1007/s11633-024-1506-4},
+  journal      = {Machine Intelligence Research},
+  month        = {10},
+  number       = {5},
+  pages        = {871-887},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Multimodal learning-based prediction for nonalcoholic fatty liver disease},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enabling neuroprostheses via machine learning. <em>MIR</em>, <em>22</em>(5), 866-870. (<a href='https://doi.org/10.1007/s11633-025-1571-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neuroprostheses aim to repair and replace damaged sensory brain functions such as vision, hearing and touch, improve cognitive functions such as memory, and control arms through electrical stimulations in motor cortex or peripheral nerves. Through review of the progress and status of different neuroprostheses, we found an increasing role of machine learning in achieving complex prosthetic functions with groundbreaking results. This article provides a perspective on the role of machine learning in neuroprostheses designs and envisions future involvement of machine learning for more capable neuroprostheses in revolutionizing the treatment of neurological disorders and disabilities.},
+  archive      = {J_MIR},
+  author       = {Chen, Qi and Lin, Peng and Yu, Zhenhang and Pan, Gang},
+  doi          = {10.1007/s11633-025-1571-3},
+  journal      = {Machine Intelligence Research},
+  month        = {10},
+  number       = {5},
+  pages        = {866-870},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Enabling neuroprostheses via machine learning},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Anomaly detection based on isolation mechanisms: A survey. <em>MIR</em>, <em>22</em>(5), 849-865. (<a href='https://doi.org/10.1007/s11633-025-1554-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Anomaly detection is a longstanding and active research area that has many applications in domains such as finance, security and manufacturing. However, the efficiency and performance of anomaly detection algorithms are challenged by the large-scale, high-dimensional and heterogeneous data that are prevalent in the era of big data. Isolation-based unsupervised anomaly detection is a novel and effective approach for identifying anomalies in data. It relies on the idea that anomalies are few and different from normal instances, and thus can be easily isolated by random partitioning. Isolation-based methods have several advantages over existing methods, such as low computational complexity, low memory usage, high scalability, robustness to noise and irrelevant features, and no need for prior knowledge or heavy parameter tuning. In this survey, we review the state-of-the-art isolation-based anomaly detection methods, including their data partitioning strategies, anomaly score functions, and algorithmic details. We also discuss some extensions and applications of isolation-based methods in different scenarios, such as detecting anomalies in streaming data, time series, trajectory and image datasets. Finally, we identify some open challenges and future directions for isolation-based anomaly detection research.},
+  archive      = {J_MIR},
+  author       = {Cao, Yang and Xiang, Haolong and Zhang, Hang and Zhu, Ye and Ting, Kai Ming},
+  doi          = {10.1007/s11633-025-1554-4},
+  journal      = {Machine Intelligence Research},
+  month        = {10},
+  number       = {5},
+  pages        = {849-865},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Anomaly detection based on isolation mechanisms: A survey},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A survey on personalized content synthesis with diffusion models. <em>MIR</em>, <em>22</em>(5), 817-848. (<a href='https://doi.org/10.1007/s11633-025-1563-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in diffusion models have significantly impacted content creation, leading to the emergence of personalized content synthesis (PCS). By utilizing a small set of user-provided examples featuring the same subject, PCS aims to tailor this subject to specific user-defined prompts. Over the past two years, more than 150 methods have been introduced in this area. However, existing surveys primarily focus on text-to-image generation, with few providing up-to-date summaries on PCS. This paper provides a comprehensive survey of PCS, introducing the general frameworks of PCS research, which can be categorized into test-time fine-tuning (TTF) and pre-trained adaptation (PTA) approaches. We analyze the strengths, limitations and key techniques of these methodologies. Additionally, we explore specialized tasks within the field, such as object, face and style personalization, while highlighting their unique challenges and innovations. Despite the promising progress, we also discuss ongoing challenges, including overfitting and the trade-off between subject fidelity and text alignment. Through this detailed overview and analysis, we propose future directions to further the development of PCS.},
+  archive      = {J_MIR},
+  author       = {Zhang, Xulu and Wei, Xiaoyong and Hu, Wentao and Wu, Jinlin and Wu, Jiaxin and Zhang, Wengyu and Zhang, Zhaoxiang and Lei, Zhen and Li, Qing},
+  doi          = {10.1007/s11633-025-1563-3},
+  journal      = {Machine Intelligence Research},
+  month        = {10},
+  number       = {5},
+  pages        = {817-848},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {A survey on personalized content synthesis with diffusion models},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2025). Guided proximal policy optimization with structured action graph for complex decision-making. <em>MIR</em>, <em>22</em>(4), 797-816. (<a href='https://doi.org/10.1007/s11633-024-1503-7'>www</a>)

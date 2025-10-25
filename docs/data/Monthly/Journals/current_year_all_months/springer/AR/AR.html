@@ -25,7 +25,7 @@
 </head>
 <body>
 
-<h2 id="ar">AR - 27</h2>
+<h2 id="ar">AR - 33</h2>
 <ul>
 <li><details>
 <summary>
@@ -64,6 +64,132 @@
   pages        = {1-24},
   shortjournal = {Auton. Robot.},
   title        = {Adaptive ergodic search with energy-aware scheduling for persistent multi-robot missions},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DMPC-swarm: Distributed model predictive control on nano UAV swarms. <em>AR</em>, <em>49</em>(4), 1-19. (<a href='https://doi.org/10.1007/s10514-025-10211-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Swarms of unmanned aerial vehicles (UAVs) are increasingly becoming vital to our society, undertaking tasks such as search and rescue, surveillance and delivery. A special variant of Distributed Model Predictive Control (DMPC) has emerged as a promising approach for the safe management of these swarms by combining the scalability of distributed computation with dynamic swarm motion control. In this DMPC method, multiple agents solve local optimization problems with coupled anti-collision constraints, periodically exchanging their solutions. Despite its potential, existing methodologies using this DMPC variant have yet to be deployed on distributed hardware that fully utilize true distributed computation and wireless communication. This is primarily due to the lack of a communication system tailored to meet the unique requirements of mobile swarms and an architecture that supports distributed computation while adhering to the payload constraints of UAVs. We present DMPC-Swarm, a new swarm control methodology that integrates an efficient, stateless low-power wireless communication protocol with a novel DMPC algorithm that provably avoids UAV collisions even under message loss. By utilizing event-triggered and distributed off-board computing, DMPC-Swarm supports nano UAVs, allowing them to benefit from additional computational resources while retaining scalability and fault tolerance. In a detailed theoretical analysis, we prove that DMPC-Swarm guarantees collision avoidance under realistic conditions, including communication delays and message loss. Finally, we present DMPC-Swarm’s implementation on a swarm of up to 16 nano-quadcopters, demonstrating the first realization of these DMPC variants with computation distributed on multiple physical devices interconnected by a real wireless mesh networks. A video showcasing DMPC-Swarm is available at http://tiny.cc/DMPCSwarm .},
+  archive      = {J_AR},
+  author       = {Gräfe, Alexander and Eickhoff, Joram and Zimmerling, Marco and Trimpe, Sebastian},
+  doi          = {10.1007/s10514-025-10211-w},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {4},
+  pages        = {1-19},
+  shortjournal = {Auton. Robot.},
+  title        = {DMPC-swarm: Distributed model predictive control on nano UAV swarms},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DynaLOAM: Robust LiDAR odometry and mapping in dynamic environments. <em>AR</em>, <em>49</em>(4), 1-18. (<a href='https://doi.org/10.1007/s10514-025-10213-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Simultaneous localization and mapping (SLAM) based on LiDAR in dynamic environments remains a challenging problem due to unreliable data association and residual ghost tracks in the map. In recent years, some related works have attempted to utilize semantic information or geometric constraints between consecutive frames to reject dynamic objects as outliers. However, challenges persist, including poor real-time performance, heavy reliance on meticulously annotated datasets, and susceptibility to misclassifying static points as dynamic. This paper presents a novel dynamic LiDAR SLAM framework called DynaLOAM, in which a complementary dynamic interference suppression scheme is exploited. For accurate relative pose estimation, a lightweight detector is proposed to rapidly respond to pre-defined dynamic object classes in the LiDAR FOV and eliminate correspondences from dynamic landmarks. Then, an online submap cleaning method based on visibility and clustering is proposed for real-time dynamic object removal in submap, which is further utilized for pose optimization and global static map construction. By integrating the complementary characteristics of prior appearance detection and online visibility check, DynaLOAM can finally achieve accurate pose estimation and static map construction in dynamic environments. Extensive experiments are conducted on the KITTI dataset and three real scenarios. The results show that our approach achieves promising performance compared to state-of-the-art methods. The code will be available at https://github.com/HITSZ-NRSL/DynaLOAM.git .},
+  archive      = {J_AR},
+  author       = {Wang, Yu and Lyu, Ruichen and Ouyang, Junyuan and Wang, Zhihao and Xie, Xiaochen and Chen, Haoyao},
+  doi          = {10.1007/s10514-025-10213-8},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {4},
+  pages        = {1-18},
+  shortjournal = {Auton. Robot.},
+  title        = {DynaLOAM: Robust LiDAR odometry and mapping in dynamic environments},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Autonomous robotic manipulation for grasping a target object in cluttered environments. <em>AR</em>, <em>49</em>(4), 1-20. (<a href='https://doi.org/10.1007/s10514-025-10214-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work addresses the challenge of grasping a target object in cluttered environments, even when it is partially visible or fully occluded. The proposed approach enables the manipulator to learn a sequence of strategic pushing actions that rearrange the scene to make the target object graspable. Our pipeline integrates image morphological processing with deep reinforcement learning (DRL), using GR-ConvNet to predict grasp points for the target. When the object is considered ungraspable, a soft actor-critic (SAC) model guides optimal pushing actions. A novel clutter map is introduced, encoding environmental clutter into a quantitative score that informs the decision-making process. The system shows improved performance with a discount factor ( $$\gamma $$ ) of 0.9, demonstrated through comparative analysis with and without the clutter map. We also compare models trained in discrete versus continuous action spaces to evaluate the impact of action space on DRL effectiveness. The pipeline generalizes well to diverse objects and integrates directly with hardware, requiring no additional training for real-world deployment.},
+  archive      = {J_AR},
+  author       = {Lachhiramka, Sanraj and Pradeep J and Chandaragi, Archanaa A. and Achar, Arjun and Tripathi, Shikha},
+  doi          = {10.1007/s10514-025-10214-7},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {4},
+  pages        = {1-20},
+  shortjournal = {Auton. Robot.},
+  title        = {Autonomous robotic manipulation for grasping a target object in cluttered environments},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). System identification and adaptive input estimation on the jaiabot micro autonomous underwater vehicle. <em>AR</em>, <em>49</em>(4), 1-12. (<a href='https://doi.org/10.1007/s10514-025-10220-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper reports an attempt to model the system dynamics and estimate both the unknown internal control input and the state of a recently developed marine autonomous vehicle, the Jaiabot. Although the Jaiabot has shown promise in many applications, process and sensor noise necessitates state estimation and noise filtering. In this work, we present the first surge and heading linear dynamical model for Jaiabots derived from real data collected during field testing. An adaptive input estimation algorithm is implemented to accurately estimate the control input and hence the state. For validation, this approach is compared to the classical Kalman filter, highlighting its advantages in handling unknown control inputs.},
+  archive      = {J_AR},
+  author       = {Faros, Ioannis and Tanner, Herbert G.},
+  doi          = {10.1007/s10514-025-10220-9},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {4},
+  pages        = {1-12},
+  shortjournal = {Auton. Robot.},
+  title        = {System identification and adaptive input estimation on the jaiabot micro autonomous underwater vehicle},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Tactile-based object retrieval from granular media. <em>AR</em>, <em>49</em>(4), 1-16. (<a href='https://doi.org/10.1007/s10514-025-10212-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce GEOTACT, the first robotic system capable of grasping and retrieving objects of potentially unknown shapes buried in a granular environment. While important in many applications, ranging from mining and exploration to search and rescue, this type of interaction with granular media is difficult due to the uncertainty stemming from visual occlusion and noisy contact signals. To address these challenges, we use a learning method relying exclusively on touch feedback, trained end-to-end with simulated sensor noise. We show that our problem formulation leads to the natural emergence of learned pushing behaviors that the manipulator uses to reduce uncertainty and funnel the object to a stable grasp despite spurious and noisy tactile readings. We introduce a training curriculum that bootstraps learning in simulated granular environments, enabling zero-shot transfer to real hardware. Despite being trained only on seven objects with primitive shapes, our method is shown to successfully retrieve 35 different objects, including rigid, deformable, and articulated objects with complex shapes.},
+  archive      = {J_AR},
+  author       = {Xu, Jingxi and Jia, Yinsen and Yang, Dongxiao and Meng, Patrick and Zhu, Xinyue and Guo, Zihan and Song, Shuran and Ciocarlie, Matei},
+  doi          = {10.1007/s10514-025-10212-9},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {4},
+  pages        = {1-16},
+  shortjournal = {Auton. Robot.},
+  title        = {Tactile-based object retrieval from granular media},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The effects of robot learning on human teachers for learning from demonstration. <em>AR</em>, <em>49</em>(4), 1-23. (<a href='https://doi.org/10.1007/s10514-025-10216-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning from Demonstration (LfD) algorithms seek to enable end-users to teach robots new skills through human demonstration of a task. Previous studies have analyzed how robot failure affects human trust, but not in the context of the human teaching the robot. In this paper, we investigate how human teachers react to robot failure in an LfD setting. We conduct a study in which participants teach a robot how to complete three tasks, using one of three instruction methods, while the robot is pre-programmed to either succeed or fail at the task. We find that when the robot fails, people trust the robot less ( $$p<.001$$ ) and themselves less ( $$p=.003$$ ) and they believe that others will trust them less ( $$p<.001$$ ). Human teachers also have a lower impression of the robot and themselves ( $$p<.001$$ ) and found the task more difficult when the robot fails ( $$p<.001$$ ). Motion capture was found to be a less difficult instruction method than teleoperation ( $$p=.012$$ ), while kinesthetic teaching gave the teachers the lowest impression of themselves compared to teleoperation ( $$p=.035$$ ) and motion capture ( $$p=.001$$ ). Importantly, a mediation analysis showed that people’s trust in themselves is heavily mediated by what they think that others—including the robot—think of them ( $$p<.001$$ ). These results provide valuable insights to improving the human–robot relationship for LfD.},
+  archive      = {J_AR},
+  author       = {Hedlund-Botti, Erin and Schalkwyk, Julianna and Johnson, Michael and Gombolay, Matthew},
+  doi          = {10.1007/s10514-025-10216-5},
+  journal      = {Autonomous Robots},
+  month        = {12},
+  number       = {4},
+  pages        = {1-23},
+  shortjournal = {Auton. Robot.},
+  title        = {The effects of robot learning on human teachers for learning from demonstration},
   volume       = {49},
   year         = {2025},
 }
