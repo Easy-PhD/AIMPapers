@@ -25,8 +25,188 @@
 </head>
 <body>
 
-<h2 id="cmame">CMAME - 90</h2>
+<h2 id="cmame">CMAME - 101</h2>
 <ul>
+<li><details>
+<summary>
+(2026). Residual correction for POD-galerkin reduced order models via conditional VAEs: Application to the bias-aware solution of forward and inverse problems. <em>CMAME</em>, <em>449</em>, 118528. (<a href='https://doi.org/10.1016/j.cma.2025.118528'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {POD-Galerkin reduced order models (PGROMs) significantly accelerate the solution of parameterized partial differential equations (PDEs) but can suffer from accuracy limitations across the parameter space. We propose a hybrid framework that augments a PGROM with a data-driven residual corrector based on a conditional variational autoencoder (cVAE). In the offline stage, we (i) construct a standard PGROM from high-fidelity snapshots and (ii) train a cVAE on PGROM residuals defined as the differences between PGROM approximations and the corresponding high-fidelity solutions. The cVAE learns a mapping from time-parameter pairs to residual fields. In the online stage, for a new parameter instance, the PGROM provides a baseline approximation while the cVAE decoder predicts the residual; adding the two yields a corrected, high-accuracy solution. The effectiveness of the proposed hybrid approach is demonstrated on three parameterized PDE problems: a heat dissipation problem with varying thermal conductivity, a pollutant transport problem with varying convection velocity, and a plane-strain elastodynamics problem with a circular inclusion whose stiffness and density are parameterized.},
+  archive      = {J_CMAME},
+  author       = {Dawen Wu and Ludovic Chamoin},
+  doi          = {10.1016/j.cma.2025.118528},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {2},
+  pages        = {118528},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Residual correction for POD-galerkin reduced order models via conditional VAEs: Application to the bias-aware solution of forward and inverse problems},
+  volume       = {449},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). A machine learning-based stabilized finite element formulation for the mean stress computation in linear elasticity and coupled poroelasticity. <em>CMAME</em>, <em>449</em>, 118515. (<a href='https://doi.org/10.1016/j.cma.2025.118515'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work addresses numerical instabilities that can appear when computing the mean stress in linear elasticity and coupled poroelasticity problems discretized with low-order finite elements. The linear elasticity and coupled poroelasticity models are solved using both primal and mixed finite element formulations. Stabilization is obtained by enriching the finite element approximation with an approximation of the Laplacian of displacements. This Laplacian is then evaluated with the Physical Influence Scheme (PIS) by leveraging the underlying governing equation. A key step in the proposed stabilization is the calculation of a parameter h , often computed in the literature as a characteristic length of the element. In this work, we calculate h by solving an optimization problem at the element level. To avoid the high computational cost associated with this procedure, a machine learning model is proposed to predict the optimal h . The benefit of combining PIS with an appropriate computation of h is that the resulting stabilization scheme does not rely on any type of heuristic or user-specified tuning parameter, as often required in other stabilization methods. The results show that the proposed stabilization strategy can effectively remove both saddle-point and Gibbs mean stress oscillations in linear elasticity. We also report, for the first time, that mean stress oscillations can also appear when solving coupled poroelasticity problems, and, differently from pore pressure oscillations (which naturally vanish with time), mean stress instabilities are persistent throughout the whole simulation time, unless deliberately removed. The proposed stabilized mixed formulation is able to remove both pore pressure and mean stress oscillations in coupled poroelasticity problems. Finally, the calculation of h is shown to be critical for the quality of the stabilization, with the machine learning-based approach providing the best compromise between numerical diffusion and accuracy.},
+  archive      = {J_CMAME},
+  author       = {Hermínio T. Honório and Andrea Franceschini and Massimiliano Ferronato and Hadi Hajibeygi},
+  doi          = {10.1016/j.cma.2025.118515},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {2},
+  pages        = {118515},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {A machine learning-based stabilized finite element formulation for the mean stress computation in linear elasticity and coupled poroelasticity},
+  volume       = {449},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Fourth-order isogeometric phase-field modeling of dynamic brittle fracture: Numerical study and comparison with second-order models. <em>CMAME</em>, <em>449</em>, 118513. (<a href='https://doi.org/10.1016/j.cma.2025.118513'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We provide a thorough numerical investigation on phase-field simulations for dynamic brittle fracture; our analysis focuses on numerical performance, in terms of computational time and accuracy, measured by quantitative physical properties: energy conservation, crack speed, and critical stress. Simulations are performed by means of a semi-implicit staggered scheme, combining a Newmark method with the Projected Successive Over-Relaxation algorithm. This coupling ensures both an accurate solution of the elasto-dynamic equation and an effective solution of the linear complementarity problem, arising in the evolution of the phase-field parameter. In particular, with the Newmark method numerical dissipation is almost negligible; as a result, energy is conserved and simulations feature a remarkable representation of P and S waves, which irradiate from the boundary condition and from the tip, reflect on the boundary and interact with each other. While accuracy requires both small time increments and small mesh sizes, which easily lead to unaffordable computational time, we employ a fourth order AT1 functional that allows (as a rule of thumb) to halve the mesh size, and then halve the time increment. This multiplicative effect produces a remarkable saving of computational time (up to the order of 90 % ) without compromising the quality of the results. Moreover, AT1 functionals, compared with AT2, feature a sharp value of the critical stress and sharper damage profiles and showcase in all results a gain in accuracy. We employ an isogeometric framework that yields a straightforward discretization of the higher-order operators. First, we provide a calibration of the weight in front of the higher-order term, balancing the trade-off between accuracy and computational cost. Then, we compare the results obtained with second- and fourth-order AT1 and AT2 energies, using a few benchmark setups designed to focus the analysis on specific computational and physical aspects.},
+  archive      = {J_CMAME},
+  author       = {L. Greco and J. Kiendl and M. Negri and A. Patton and A. Reali},
+  doi          = {10.1016/j.cma.2025.118513},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {2},
+  pages        = {118513},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Fourth-order isogeometric phase-field modeling of dynamic brittle fracture: Numerical study and comparison with second-order models},
+  volume       = {449},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Schur-complement-enhanced iterative solvers for coupled problems and phase field fracture models. <em>CMAME</em>, <em>449</em>, 118509. (<a href='https://doi.org/10.1016/j.cma.2025.118509'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-field coupled problems are ubiquitous across many domains. We propose an efficient solution scheme based on the Schur complement for moderately and strongly coupled problems named Schur-complement-enhanced Newton iterative computing (SCENIC). For moderately coupled problems, SCENIC employs the Schur complement to update one field (the master field) while accounting for the influence of the other field (the slave field). After the master field is updated, the slave field is solved with any standard method (e.g., Newton’s method) while holding the master field fixed. This scheme is shown to be second-order convergent in this case. For a class of strongly coupled problems including biconvex optimization problems and the phase field approach to fracture, we introduce a modification to SCENIC to ensure its robustness. Compared with commonly used methods such as the staggered scheme and the monolithic scheme, SCENIC generally requires substantially fewer iterations and less CPU time.},
+  archive      = {J_CMAME},
+  author       = {Juhan Jiang and Yonghui Zhao and Bing Lyu and Yongxing Shen},
+  doi          = {10.1016/j.cma.2025.118509},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {2},
+  pages        = {118509},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Schur-complement-enhanced iterative solvers for coupled problems and phase field fracture models},
+  volume       = {449},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Enhancing DSMC simulations of rarefied gas mixtures using a fast-converging and asymptotic-preserving scheme. <em>CMAME</em>, <em>449</em>, 118508. (<a href='https://doi.org/10.1016/j.cma.2025.118508'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The numerical simulation of rarefied gas mixture dynamics with disparate masses using the direct simulation Monte Carlo (DSMC) method is slow, primarily because the time step is constrained by that of the lighter species, necessitating an enormous number of evolution steps to reach a steady state. Here, we address this issue by developing a general synthetic iterative scheme, in which the traditional DSMC simulation is intermittently enhanced using a macroscopic synthetic equation. Specifically, after running the DSMC for a certain number of time steps, the high-order constitutive relations for stress and heat flux, as well as the momentum and energy exchange terms from inter-species collisions, are extracted from the DSMC and incorporated into the macroscopic synthetic equations. These equations are solved to obtain the steady state, and the solution is then used to update the particle distribution in DSMC, thereby skipping unnecessary intermediate evolutions. This two-way coupling not only accelerates convergence to the steady state but also asymptotically preserves the Navier-Stokes limit in the continuum flow regime, allowing the spatial cell size to be much larger than the molecular mean free path. The accuracy of our method is validated for one-dimensional force-driven Poiseuille flow and two-dimensional hypersonic flow past cylinders, considering Maxwell and hard-sphere gases with mass ratios of 10 and 100. Moreover, the one-dimensional shock wave structure and thermal driven low-speed flow have been investigated using a more realistic intermolecular potential. Although our in-house DSMC method is approximately an order of magnitude slower than the open-source DSMC code SPARTA, intermittently augmenting it with the synthetic equation makes it roughly 30 times faster at a Knudsen number of 0.01, with even greater computational gains anticipated at smaller Knudsen numbers. This work represents a critical step toward developing fast-converging and asymptotic-preserving schemes for hypersonic chemical reactions.},
+  archive      = {J_CMAME},
+  author       = {Liyan Luo and Jianan Zeng and Yanbing Zhang and Wei Li and Qi Li and Lei Wu},
+  doi          = {10.1016/j.cma.2025.118508},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {2},
+  pages        = {118508},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Enhancing DSMC simulations of rarefied gas mixtures using a fast-converging and asymptotic-preserving scheme},
+  volume       = {449},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Reduced subgrid scale terms in three-dimensional turbulence. <em>CMAME</em>, <em>449</em>, 118506. (<a href='https://doi.org/10.1016/j.cma.2025.118506'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large eddy simulation (LES) has become a central technique for simulating turbulent flows in engineering and applied sciences, offering a compromise between accuracy and computational cost by resolving large-scale motions and modeling the effects of smaller, unresolved scales through a subgrid scale (SGS) model. The fidelity and robustness of LES depends critically on the SGS model, particularly in coarse simulations where much of the turbulence spectrum remains unresolved. In this work, we extend the tau-orthogonal (TO) method, a data-driven SGS modeling framework, to three-dimensional turbulent flows. The method reformulates the high-dimensional SGS closure problem as a low-dimensional prediction task focused on spatially-integrated, scale-aware quantities of interest (QoIs). We extend the model to incorporate QoI-state dependence and temporal correlations by combining regularized least-squares regression with a multivariate Gaussian residual model. This yields a simple yet effective stochastic time-series prediction model, with orders-of-magnitude fewer parameters than typical deep learning approaches which try to directly learn the high-dimensional SGS closure. We demonstrate the effectiveness of the new TO model in three-dimensional forced isotropic turbulence, turbulent channel flow and on a Taylor-Green vortex. The model achieves accurate long-term QoI distributions, robust performance across hyperparameter settings, and good reproduction of key flow features such as kinetic energy spectra and coherent structures, despite being trained solely on QoI trajectories. Comparisons against classical SGS models, including Smagorinsky and WALE formulations, highlight the new model’s balance of accuracy and computational efficiency.},
+  archive      = {J_CMAME},
+  author       = {Rik Hoekstra and Wouter Edeling},
+  doi          = {10.1016/j.cma.2025.118506},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {2},
+  pages        = {118506},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Reduced subgrid scale terms in three-dimensional turbulence},
+  volume       = {449},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Deep learning-aided inverse design of porous metamaterials. <em>CMAME</em>, <em>449</em>, 118499. (<a href='https://doi.org/10.1016/j.cma.2025.118499'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The ultimate aim of the study is to explore the inverse design of porous metamaterials using a deep learning-based generative framework. Specifically, we develop a property-variational autoencoder (pVAE), a variational autoencoder (VAE) augmented with a regressor, to generate structured metamaterials with tailored hydraulic properties, such as porosity and permeability. While this work uses the lattice Boltzmann method (LBM) to generate intrinsic permeability tensor data for limited porous microstructures, a convolutional neural network (CNN) is trained using a bottom-up approach to predict effective hydraulic properties. This significantly reduces the computational cost compared to direct LBM simulations. The pVAE framework is trained on two datasets: a synthetic dataset of artificial porous microstructures and CT-scan images of volume elements from real open-cell foams. The encoder-decoder architecture of the VAE captures key microstructural features, mapping them into a compact and interpretable latent space for efficient structure-property exploration. The study provides a detailed analysis and interpretation of the latent space, demonstrating its role in structure-property mapping, interpolation, and inverse design. This approach facilitates the generation of new metamaterials with desired properties. The datasets and codes used in this study are openly available at [ https://doi.org/10.25835/t799y2ji ] to support further research.},
+  archive      = {J_CMAME},
+  author       = {Phu Thien Nguyen and Yousef Heider and Dennis M. Kochmann and Fadi Aldakheel},
+  doi          = {10.1016/j.cma.2025.118499},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {2},
+  pages        = {118499},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Deep learning-aided inverse design of porous metamaterials},
+  volume       = {449},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Efficient bayesian inversion of hydraulic parameters for unsaturated soil slopes using a fine-tuned deep operator network. <em>CMAME</em>, <em>449</em>, 118490. (<a href='https://doi.org/10.1016/j.cma.2025.118490'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurately quantifying the spatial variability of hydraulic parameters is crucial for slope stability analysis. Although Bayesian inversion with monitoring data can provide estimates of hydraulic parameters, it entails computationally intensive and time-consuming numerical simulations. Surrogate models are commonly employed to enhance computational efficiency. However, traditional surrogate models struggle to accurately capture the high-dimensional mapping between the random field of hydraulic parameters and the spatiotemporal responses of soil slopes. Moreover, they are typically trained on fixed statistical distribution, limiting the generalization capability. To overcome these challenges, this study proposes a novel surrogate model for Bayesian inversion that integrates Bayesian Updating with Subset simulation (BUS) and a fine-tuned (FT) deep operator network (DeepONet). Specifically, the DeepONet model is designed to learn the high-dimensional operator relationship between the random field of hydraulic parameters and the spatiotemporal responses of soil slopes, improving computational efficiency. Subsequently, a fine-tuning strategy, leveraging intermediate subset samples of BUS, is employed to iteratively refine the DeepONet model's predictive accuracy during Bayesian inversion, enhancing its generalization capability. The performance of the proposed method is validated using field-measured pore water pressure data from a real slope in Hong Kong, China. Results show the proposed method effectively resolves challenges in high-dimensional operator mapping, and limitations of generalization capability. Moreover, the proposed method can achieve statistically equivalent accuracy to conventional Bayesian inversion approaches for posterior estimation, while simultaneously delivering a 92 % reduction in computational time.},
+  archive      = {J_CMAME},
+  author       = {Shui-Hua Jiang and Hong-Hu Jie and Peng Lan and Jinsong Huang},
+  doi          = {10.1016/j.cma.2025.118490},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {2},
+  pages        = {118490},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Efficient bayesian inversion of hydraulic parameters for unsaturated soil slopes using a fine-tuned deep operator network},
+  volume       = {449},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Multiphysics uncertainty decoupling methods for stochastic poroelastic analysis. <em>CMAME</em>, <em>449</em>, 118468. (<a href='https://doi.org/10.1016/j.cma.2025.118468'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article presents an efficient multiphysics framework for linear and nonlinear stochastic poroelastic analysis. Specifically, an uncertainty decoupling method is developed to decouple the overall multiphysics stochastic solution into stochastic solutions of each physical field. Stochastic solutions of each physical field are approximated by a unified representation and expressed as the summation of a series of products of triplets of spatial functions, temporal functions and random variables. Each triplet is then solved in a greedy way using a dedicated iteration, which transforms the original stochastic problems into deterministic problems and very low-dimensional stochastic problems that can be solved almost independently of stochastic dimensions. Compared with existing coupled stochastic solution approximations, the proposed uncertainty decoupling method has better convergence without loss of accuracy, thus saving computational efforts. Numerical examples of linear and nonlinear stochastic poroelasticity with high-dimensional random inputs demonstrate the promising performance of the proposed framework.},
+  archive      = {J_CMAME},
+  author       = {Zhibao Zheng and David Néron and Udo Nackenhorst},
+  doi          = {10.1016/j.cma.2025.118468},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {2},
+  pages        = {118468},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Multiphysics uncertainty decoupling methods for stochastic poroelastic analysis},
+  volume       = {449},
+  year         = {2026},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2026). A machine learning-based constitutive model incorporating history-dependent features for cyclic plasticity. <em>CMAME</em>, <em>448</em>, 118524. (<a href='https://doi.org/10.1016/j.cma.2025.118524'>www</a>)
@@ -909,6 +1089,26 @@
 </details></li>
 <li><details>
 <summary>
+(2026). On variational bayesian inference theory of hyperelasticity for inversely recovering nonlinear continuum deformation mappings. <em>CMAME</em>, <em>448</em>, 118448. (<a href='https://doi.org/10.1016/j.cma.2025.118448'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work, we develop a Bayesian variational’ inference theory for nonlinear hyperelastic materials, which is accomplished by using a mixed Galerkin variational Bayesian inference nonlinear finite element method (VBI-NFEM). In the proposed Bayesian statistical continuum mechanics theory, the nonlinear elastic potential energy is used as a prior in a Bayesian inference network, which can intelligently and inversely recover the detailed continuum deformation mappings with only the information on the shapes of the deformed and undeformed continuum body, without knowing the actual boundary conditions, including both traction and displacement boundary conditions, and the fine scale material constitutive relation. To solve the mixed variational problem, we developed an operator splitting or staggered algorithm that consists of a finite element (FE) step and a Bayesian learning (BL) step, analogous to the well-known Expectation-Maximization (EM) algorithm. By solving the probabilistic Galerkin variational finite element problem, we demonstrated in several examples that the proposed method can inversely predict continuum nonlinear deformation mappings without requiring knowledge of the external load conditions. This long-sought-after inverse problem solution has been a significant challenge in the forensic pattern analysis of structural failures over the past several decades, and the proposed method provides a robust machine-intelligent solution.},
+  archive      = {J_CMAME},
+  author       = {Chao Wang and Shaofan Li},
+  doi          = {10.1016/j.cma.2025.118448},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {1},
+  pages        = {118448},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {On variational bayesian inference theory of hyperelasticity for inversely recovering nonlinear continuum deformation mappings},
+  volume       = {448},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
 (2026). A virtual element method for the biot-brinkman equations using nitsche’s technique. <em>CMAME</em>, <em>448</em>, 118447. (<a href='https://doi.org/10.1016/j.cma.2025.118447'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
@@ -1222,6 +1422,26 @@
   pages        = {118430},
   shortjournal = {Comput. Meth. Appl. Mech. Eng.},
   title        = {Simulating fluid-fluid displacement in a soft capillary tube: How compliance delays interfacial instability and bubble pinch-off},
+  volume       = {448},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Thermo-mechanical simulation of L-PBF process at part-scale by coupling grain structure calculation and crystal viscoplasticity. <em>CMAME</em>, <em>448</em>, 118429. (<a href='https://doi.org/10.1016/j.cma.2025.118429'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An integrated numerical framework is proposed to perform a thermomechanical analysis of Laser Powder Bed Fusion (L-PBF) at the part scale, covering the entire construction process. The novelty lies in the fact that the thermomechanical analysis is driven by the evolving grain structure, also predicted at the part scale. The grain structure is first generated using a hybrid - Cellular Automaton (CA) method, which enables the generation of the grain structure on a CA grid at part-scale while incorporating the detailed scanning trajectories. For the thermo-mechanical simulation, a layer-by-layer thermal analysis includes the non-exposed powder, whereas the mechanical analysis only considers the substrate and the part under construction. A crystal plasticity model is employed for the nickel-based superalloy Inconel 718 (IN718), utilizing the CA grain structure referenced by Euler angles. A reduced grain approach is proposed, wherein Euler angles from the CA grid are projected onto the mechanical mesh. The mechanical mesh size is chosen appropriately to balance computational efficiency and accuracy. The calibration of the parameters of the crystal plasticity laws is conducted from room temperature up to 1100 ∘ C using tests performed on homogenized IN718 material. Tensile tests on the representative volume elements (RVEs) of grain structures with different laser scanning trajectories are performed to study the mechanical response for each specified texture. Finally, thermo-mechanical simulations are applied to the L-PBF construction of a propeller with single-crystal and polycrystalline grain structures. At each time increment, the temperature field is transferred to the mechanical mesh, and grains are activated according to the part under construction. The influence of local grain texture on anisotropic stress distribution and distortion is analyzed and discussed.},
+  archive      = {J_CMAME},
+  author       = {Trung-Chien Vo and Zixuan Li and Michel Bellet and Charles-André Gandin and Yancheng Zhang},
+  doi          = {10.1016/j.cma.2025.118429},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {1},
+  pages        = {118429},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Thermo-mechanical simulation of L-PBF process at part-scale by coupling grain structure calculation and crystal viscoplasticity},
   volume       = {448},
   year         = {2026},
 }

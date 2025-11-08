@@ -25,8 +25,440 @@
 </head>
 <body>
 
-<h2 id="tmlr">TMLR - 1187</h2>
+<h2 id="tmlr">TMLR - 1215</h2>
 <ul>
+<li><details>
+<summary>
+(2025). Thera: Aliasing-free arbitrary-scale super-resolution with neural heat fields. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=GU8YOfmqyg'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent approaches to arbitrary-scale single image super-resolution (ASR) use neural fields to represent continuous signals that can be sampled at arbitrary resolutions. However, point-wise queries of neural fields do not naturally match the point spread function (PSF) of pixels, which may cause aliasing in the super-resolved image. Existing methods attempt to mitigate this by approximating an integral version of the field at each scaling factor, compromising both fidelity and generalization. In this work, we introduce neural heat fields, a novel neural field formulation that inherently models a physically exact PSF. Our formulation enables analytically correct anti-aliasing at any desired output resolution, and -- unlike supersampling -- at no additional cost. Building on this foundation, we propose Thera, an end-to-end ASR method that substantially outperforms existing approaches, while being more parameter-efficient and offering strong theoretical guarantees. The project page is at https://therasr.github.io.},
+  archive      = {J_TMLR},
+  author       = {Alexander Becker and Rodrigo Caye Daudt and Dominik Narnhofer and Torben Peters and Nando Metzger and Jan Dirk Wegner and Konrad Schindler},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Thera: Aliasing-free arbitrary-scale super-resolution with neural heat fields},
+  url          = {https://openreview.net/forum?id=GU8YOfmqyg},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). In-context learning for mixture of linear regression: Existence, generalization and training dynamics. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=buZXVuTsHY'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We investigate the in-context learning capabilities of transformers for the $d$-dimensional mixture of linear regression model, providing theoretical insights into their existence, generalization bounds, and training dynamics. Specifically, we prove that there exists a transformer capable of achieving a prediction error of order $\mathcal{O}(\sqrt{d/n})$ with high probability, where $n$ represents the training prompt size in the high signal-to-noise ratio (SNR) regime. Moreover, we derive in-context excess risk bounds of order $\mathcal{O}(L/\sqrt{B})$ for the case of two mixtures, where $B$ denotes the number of training prompts, and $L$ represents the number of attention layers. The dependence of $L$ on the SNR is explicitly characterized, differing between low and high SNR settings. We further analyze the training dynamics of transformers with single linear self-attention layers, demonstrating that, with appropriately initialized parameters, gradient flow optimization over the population mean square loss converges to a global optimum. Extensive simulations suggest that transformers perform well on this task, potentially outperforming other baselines, such as the Expectation-Maximization algorithm.},
+  archive      = {J_TMLR},
+  author       = {Yanhao Jin and Krishna Balasubramanian and Lifeng Lai},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {In-context learning for mixture of linear regression: Existence, generalization and training dynamics},
+  url          = {https://openreview.net/forum?id=buZXVuTsHY},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Identification of average outcome under interventions in confounded additive noise models. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=y5YnHzLf1d'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Additive noise models (ANMs) are an important setting studied in causal inference. Most existing works on ANMs assume causal sufficiency, i.e., there are no unobserved confounders. This paper focuses on confounded ANMs, where a set of treatment variables and a target variable are affected by an unobserved confounder that follows a multivariate Gaussian distribution. We introduce a novel approach for estimating the average outcome under interventions (AOIs) for interventions on any subset of treatment variables and demonstrate that a small set of interventional distributions is sufficient to estimate all of them. In addition, we propose a randomized algorithm that further reduces the number of required interventions to poly-logarithmic in the number of nodes. Finally, we demonstrate that these interventions are also sufficient to recover the causal structure between the observed variables. This establishes that a poly-logarithmic number of interventions is sufficient to infer the causal effects of any subset of treatments on the outcome in confounded ANMs with high probability, even when the causal structure between treatments is unknown. The simulation results indicate that our method can accurately estimate all AOIs in the finite-sample regime. We also demonstrate the practical significance of our algorithm by evaluating it on semi-synthetic data.},
+  archive      = {J_TMLR},
+  author       = {Muhammad Qasim Elahi and Mahsa Ghasemi and Murat Kocaoglu},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Identification of average outcome under interventions in confounded additive noise models},
+  url          = {https://openreview.net/forum?id=y5YnHzLf1d},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving adversarial training for two-player competitive games via episodic reward engineering. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=z4XtJWJC9K'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, training adversarial agents has become an effective and practical approach for attacking neural network policies. However, we observe that existing methods can be further enhanced by distinguishing between states leading to win or lose and encouraging the policy training by reward engineering to prioritize winning states. In this paper, we introduce a novel adversarial training method with reward engineering for two-player competitive games. Our method extracts the historical evaluations for states from historical experiences with an episodic memory, and then incorporating these evaluations into the rewards with our proposed reward revision method to improve the adversarial policy optimization. We evaluate our approach using two-player competitive games in MuJoCo simulation environments, demonstrating that our method establishes the most promising attack performance and defense difficulty against the victims among the existing adversarial policy training techniques.},
+  archive      = {J_TMLR},
+  author       = {Siyuan Chen and Fuyuan Zhang and Zhuo Li and Xiongfei Wu and Jianlang Chen and Pengzhan Zhao and Lei Ma and Jianjun Zhao},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Improving adversarial training for two-player competitive games via episodic reward engineering},
+  url          = {https://openreview.net/forum?id=z4XtJWJC9K},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Thompson sampling for bandits with cool-down periods. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=1fv0ZS2mXm'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates a variation of dynamic bandits, characterized by arms that follow a periodic availability pattern. Upon a "successful" selection, each arm transitions to an inactive state and requires a possibly unknown cool-down period before becoming active again. We devise Thompson Sampling algorithms specifically designed for this problem, guaranteeing logarithmic regrets. Notably, this work is the first to address scenarios in which the agent lacks knowledge of each arm's active state. Furthermore, the theoretical findings extend to the sleeping bandit framework, offering a notably superior regret bound compared to existing literature.},
+  archive      = {J_TMLR},
+  author       = {Jingxuan Zhu and Bin Liu},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Thompson sampling for bandits with cool-down periods},
+  url          = {https://openreview.net/forum?id=1fv0ZS2mXm},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Quasipseudometric value functions with dense rewards. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=4LqOl6pDUe'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a generalization of reinforcement learning (RL) to parametrizable goals, goal conditioned RL (GCRL) has a broad range of applications, particularly in challenging tasks in robotics. Recent work has established that the optimal value function of GCRL $Q^\ast(s, a, g)$ has a quasipseudometric structure, leading to targetted neural architectures that respect such structure. However, the relevant analyses assume a sparse reward setting—a known aggravating factor to sample complexity. We show that the key property underpinning a quasipseudometric, viz., the triangle inequality, is preserved under a dense reward setting as well, specifically identifying the key condition necessary for triangle inequality. Contrary to earlier findings where dense rewards were shown to be detrimental to GCRL, we conjecture that dense reward functions that satisfy this condition can only improve, never worsen, sample complexity. We evaluate this proposal in 12 standard benchmark environments in GCRL featuring challenging continuous control tasks. Our empirical results confirm that training a quasipseudometric value function in our dense reward setting indeed either improves upon, or preserves, the sample complexity of training with sparse rewards. This opens up opportunities to train efficient neural architectures with dense rewards, compounding their benefits to sample complexity.},
+  archive      = {J_TMLR},
+  author       = {Khadichabonu Valieva and Bikramjit Banerjee},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Quasipseudometric value functions with dense rewards},
+  url          = {https://openreview.net/forum?id=4LqOl6pDUe},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The curse of CoT: On the limitations of chain-of-thought in in-context learning. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=7SIrvcYNYj'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Chain-of-Thought (CoT) prompting has been widely recognized for its ability to enhance reasoning capabilities in large language models (LLMs). However, our study reveals a surprising contradiction to this prevailing perspective within the fundamental domain of pattern-based in-context learning (ICL). Through extensive experiments involving 16 state-of-the-art LLMs and nine diverse pattern-based ICL datasets, we demonstrate that CoT and its reasoning variants consistently underperform direct answering across varying model scales and benchmark complexities. To systematically investigate this unexpected phenomenon, we designed extensive experiments to validate several hypothetical explanations. Our analysis uncovers a fundamental hybrid mechanism of explicit-implicit reasoning driving CoT’s performance in pattern-based ICL: while explicit reasoning falters due to LLMs’ struggles to infer underlying patterns from demonstrations, implicit reasoning—disrupted by the increased contextual distance of CoT rationales—often compensates, delivering correct answers despite flawed rationales. This hybrid mechanism explains CoT’s relative underperformance, as noise from weak explicit inference undermines the process, even as implicit mechanisms partially salvage outcomes. Notably, even long-CoT reasoning models, which excel in abstract and symbolic reasoning, fail to fully overcome these limitations despite higher computational costs. Our findings challenge existing assumptions regarding the universal efficacy of CoT, yielding novel insights into its limitations and guiding future research toward more nuanced and effective reasoning methodologies for LLMs.},
+  archive      = {J_TMLR},
+  author       = {Tianshi Zheng and Yixiang Chen and Chengxi Li and Chunyang Li and Qing Zong and Haochen Shi and Baixuan Xu and Yangqiu Song and Ginny Wong and Simon See},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {The curse of CoT: On the limitations of chain-of-thought in in-context learning},
+  url          = {https://openreview.net/forum?id=7SIrvcYNYj},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Constrained reinforcement learning with smoothed log barrier function. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=Amh95oURaE'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deploying reinforcement learning (RL) in real-world systems often requires satisfying strict safety constraints during both training and deployment, which simple reward shaping typically fails to enforce. Existing constrained RL algorithms frequently face several major challenges, including instabilities during training and overly conservative policies. To overcome these limitations, we propose CSAC-LB (Constrained Soft Actor-Critic with Log Barrier), a model-free, sample-efficient, off-policy algorithm that requires no pre-training. CSAC-LB integrates a linear smoothed log barrier function into the actor’s objective, providing a numerically stable, non-vanishing gradient that enables the agent to quickly recover from unsafe states while avoiding the instability of traditional interior-point methods. To further enhance safety and mitigate the underestimation of constraint violations, we employ a pessimistic double-critic architecture for the cost function, taking the maximum of two cost Q-networks to conservatively guide the policy. Through extensive experiments on challenging constrained control tasks, we demonstrate that CSAC-LB significantly outperforms baselines by consistently achieving high returns while strictly adhering to safety constraints. Our results establish CSAC-LB as a robust and stable solution for applying RL to safety-critical domains.},
+  archive      = {J_TMLR},
+  author       = {Baohe Zhang and Yuan Zhang and Hao Zhu and Shengchao Yan and Thomas Brox and Joschka Boedecker},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Constrained reinforcement learning with smoothed log barrier function},
+  url          = {https://openreview.net/forum?id=Amh95oURaE},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Encoder-only next token prediction. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=CGHi289y8e'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Next-token prediction is conventionally done using decoder-only Transformers with causal attention, as this approach allows for efficient reuse of keys and values. What if we were not compute-limited, should we still use decoder-only Transformers? In this work, we introduce Encoder-only Next Token Prediction (ENTP). We explore the differences between ENTP and decoder-only Transformers in expressive power and complexity, highlighting potential advantages of ENTP in settings with unbounded compute. We introduce the $\operatorname{Count3}$ task and show, both theoretically and experimentally, that while ENTP can perform this task easily, a decoder-only Transformer cannot. Finally, we empirically demonstrate the superior performance of ENTP across representative tasks where next-token prediction based Transformers can be evaluated, including addition, in-context learning, and language modeling.},
+  archive      = {J_TMLR},
+  author       = {Ethan Ewer and Daewon Chae and Thomas Zeng and Jinkyu Kim and Kangwook Lee},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Encoder-only next token prediction},
+  url          = {https://openreview.net/forum?id=CGHi289y8e},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Testing with non-identically distributed samples. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=FUzvztzBlW'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We examine the extent to which sublinear-sample property testing and estimation applies to settings where samples are independently but not identically distributed. Specifically, we consider the following distributional property testing framework: Suppose there is a set of distributions over a discrete support of size $k$, $p_1, p_2,\ldots,p_T$, and we obtain $c$ independent draws from each distribution. Suppose the goal is to learn or test a property of the average distribution, $p_{\mathrm{avg}}$. This setup models a number of important practical settings where the individual distributions correspond to heterogeneous entities --- either individuals, chronologically distinct time periods, spatially separated data sources, etc. From a learning standpoint, even with $c=1$ samples from each distribution, $\Theta(k/\varepsilon^2)$ samples are necessary and sufficient to learn $p_{\mathrm{avg}}$ to within error $\varepsilon$ in $\ell_1$ distance. To test uniformity or identity --- distinguishing the case that $p_{\mathrm{avg}}$ is equal to some reference distribution, versus has $\ell_1$ distance at least $\varepsilon$ from the reference distribution, we show that a linear number of samples in $k$ is necessary given $c=1$ samples from each distribution. In contrast, for $c \ge 2$, we recover the usual sublinear sample testing guarantees of the i.i.d. setting: we show that $O(\sqrt{k}/\varepsilon^2 + 1/\varepsilon^4)$ total samples are sufficient, matching the optimal sample complexity in the i.i.d. case in the regime where $\varepsilon \ge k^{-1/4}$. Additionally, we show that in the $c=2$ case, there is a constant $\rho > 0$ such that even in the linear regime with $\rho k$ samples, no tester that considers the multiset of samples (ignoring which samples were drawn from the same $p_i$) can perform uniformity testing. We further extend our techniques to the problem of testing ''closeness'' of two distributions: given $c=3$ independent draws from each of $p_1, p_2,\ldots,p_T$ and $q_1, q_2,\ldots,q_T$, one can distinguish the case that $p_{\mathrm{avg}}=q_{\mathrm{avg}}$ versus having $\ell_1$ distance at least $\varepsilon$ using $O(k^{2/3}/\varepsilon^{8/3})$ total samples, where $k$ is an upper bound on the support size, matching the optimal sample complexity of the i.i.d. setting up to the $\varepsilon$-dependence.},
+  archive      = {J_TMLR},
+  author       = {Shivam Garg and Chirag Pabbaraju and Kirankumar Shiragur and Gregory Valiant},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Testing with non-identically distributed samples},
+  url          = {https://openreview.net/forum?id=FUzvztzBlW},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Overcoming non-stationary dynamics with evidential proximal policy optimization. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=KTfTwxsVNE'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Continuous control of non-stationary environments is a major challenge for deep reinforcement learning algorithms. The time-dependency of the state transition dynamics aggravates the notorious stability problems of model-free deep actor-critic architectures. We posit that two properties will play a key role in overcoming non-stationarity in transition dynamics: (i)~preserving the plasticity of the critic network and (ii) directed exploration for rapid adaptation to changing dynamics. We show that performing on-policy reinforcement learning with an evidential critic provides both. The evidential design ensures a fast and accurate approximation of the uncertainty around the state value, which maintains the plasticity of the critic network by detecting the distributional shifts caused by changes in dynamics. The probabilistic critic also makes the actor training objective a random variable, enabling the use of directed exploration approaches as a by-product. We name the resulting algorithm \emph{Evidential Proximal Policy Optimization (EPPO)} due to the integral role of evidential uncertainty quantification in both policy evaluation and policy improvement stages. Through experiments on non-stationary continuous control tasks, where the environment dynamics change at regular intervals, we demonstrate that our algorithm outperforms state-of-the-art on-policy reinforcement learning variants in both task-specific and overall return.},
+  archive      = {J_TMLR},
+  author       = {Abdullah Akgül and Gulcin Baykal and Manuel Haussmann and Melih Kandemir},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Overcoming non-stationary dynamics with evidential proximal policy optimization},
+  url          = {https://openreview.net/forum?id=KTfTwxsVNE},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TextRegion: Text-aligned region tokens from frozen image-text models. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=KZLmkL62M4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Image-text models excel at image-level tasks but struggle with detailed visual understanding. While these models provide strong visual-language alignment, segmentation models like SAM2 offer precise spatial boundaries for objects. To this end, we propose TextRegion, a simple, effective, and training-free framework that combines the strengths of image-text models and SAM2 to generate powerful text-aligned region tokens. These tokens enable detailed visual understanding while preserving open-vocabulary capabilities. They can be directly applied to various downstream tasks, including open-world semantic segmentation, referring expression comprehension, and grounding. We conduct extensive evaluations and consistently achieve superior or competitive performance compared to state-of-the-art training-free methods. Additionally, our framework is compatible with many image-text models, making it highly practical and easily extensible as stronger models emerge. Code is available at: https://github.com/avaxiao/TextRegion.},
+  archive      = {J_TMLR},
+  author       = {Yao Xiao and Qiqian Fu and Heyi Tao and Yuqun Wu and Zhen Zhu and Derek Hoiem},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {TextRegion: Text-aligned region tokens from frozen image-text models},
+  url          = {https://openreview.net/forum?id=KZLmkL62M4},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Neural spatiotemporal point processes: Trends and challenges. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=N69lSYWkMw'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Spatiotemporal point processes (STPPs) are probabilistic models for events occurring in continuous space and time. Real-world event data often exhibits intricate dependencies and heterogeneous dynamics. By incorporating modern deep learning techniques, STPPs can model these complexities more effectively than traditional approaches. Consequently, the fusion of neural methods with STPPs has become an active and rapidly evolving research area. In this review, we categorize existing approaches, unify key design choices, and explain the challenges of working with this data modality. We further highlight emerging trends and diverse application domains. Finally, we identify open challenges and gaps in the literature.},
+  archive      = {J_TMLR},
+  author       = {Sumantrak Mukherjee and Mouad Elhamdi and George Mohler and David Antony Selby and Yao Xie and Sebastian Josef Vollmer and Gerrit Großmann},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Neural spatiotemporal point processes: Trends and challenges},
+  url          = {https://openreview.net/forum?id=N69lSYWkMw},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RANa: Retrieval-augmented navigation. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=OWCJ5JfsRB'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Methods for navigation based on large-scale learning typically treat each episode as a new problem, where the agent is spawned with a clean memory in an unknown environment. While these generalization capabilities to an unknown environment are extremely important, we claim that, in a realistic setting, an agent should have the capacity of exploiting information collected during earlier robot operations. We address this by introducing a new retrieval-augmented agent, trained with RL, capable of querying a database collected from previous episodes in the same environment and learning how to integrate this additional context information. We introduce a unique agent architecture for the general navigation task, evaluated on ImageNav, Instance-ImageNav and ObjectNav. Our retrieval and context encoding methods are data-driven and employ vision foundation models (FM) for both semantic and geometric understanding. We propose new benchmarks for these settings and we show that retrieval allows zero-shot transfer across tasks and environments while significantly improving performance.},
+  archive      = {J_TMLR},
+  author       = {Gianluca Monaci and Rafael S. Rezende and Romain Deffayet and Gabriela Csurka and Guillaume Bono and Hervé Déjean and Stéphane Clinchant and Christian Wolf},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {RANa: Retrieval-augmented navigation},
+  url          = {https://openreview.net/forum?id=OWCJ5JfsRB},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CLIP meets diffusion: A synergistic approach to anomaly detection. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=WpFzZNuQmg'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Anomaly detection is a complex problem due to the ambiguity in defining anomalies, the diversity of anomaly types (e.g., local and global defect), and the scarcity of training data. As such, it necessitates a comprehensive model capable of capturing both low-level and high-level features, even with limited data. To address this, we propose CLIPFUSION, a method that leverages both discriminative and generative foundation models. Given the CLIP-based discriminative model's limited capacity to capture fine-grained local details, we incorporate a diffusion-based generative model to complement its features. This integration yields a synergistic solution for anomaly detection. To this end, we propose using diffusion models as feature extractors for anomaly detection, and introduce carefully designed strategies to extract informative cross-attention and feature maps. Experimental results on benchmark datasets (MVTec-AD, VisA) demonstrate that CLIPFUSION consistently outperforms baseline methods in both anomaly segmentation and classification under both zero-shot and few-shot settings. We believe that our method underscores the effectiveness of multi-modal and multi-model fusion in tackling the multifaceted challenges of anomaly detection, providing a scalable solution for real-world applications.},
+  archive      = {J_TMLR},
+  author       = {Byeongchan Lee and John Won and Seunghyun Lee and Jinwoo Shin},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {CLIP meets diffusion: A synergistic approach to anomaly detection},
+  url          = {https://openreview.net/forum?id=WpFzZNuQmg},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Choose your model size: Any compression of large language models without re-computation. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=Y6hdYf8tsg'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The adoption of Foundation Models in resource-constrained environments remains challenging due to their large size and inference costs. A promising way to overcome these limitations is post-training compression, which aims to balance reduced model size against performance degradation. This work presents Any Compression via Iterative Pruning (ACIP), a novel algorithmic approach to determine a compression-performance trade-off from a single stochastic gradient descent run. To achieve parameter efficiency, we use an SVD-reparametrization of linear layers and iteratively prune their singular values with a sparsity-inducing penalty. Importantly, the pruning order of the parameters is used to derive a global score map that allows compressing a model to any target size without re-computation. We evaluate ACIP on a large selection of open-weight LLMs and downstream tasks, demonstrating state-of-the-art results compared to existing factorization-based compression methods. We also show that ACIP seamlessly complements common quantization-based compression techniques.},
+  archive      = {J_TMLR},
+  author       = {Martin Genzel and Patrick Putzky and Pengfei Zhao and Sebastian Schulze and Mattes Mollenhauer and Robert Seidel and Stefan Dietzel and Thomas Wollmann},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Choose your model size: Any compression of large language models without re-computation},
+  url          = {https://openreview.net/forum?id=Y6hdYf8tsg},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A note on the stability of the focal loss. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=eCYActnGbu'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Focal Loss is a widely deployed loss function that is used to train various types of deep learning models. It is a modification of the cross-entropy loss designed to mitigate the effect of class imbalance in dense object detection tasks. By downweighting the losses for easy, correctly classified samples, the method places more emphasis on harder, misclassified ones. As a result, gradient updates are not dominated by samples that the model already handles correctly. The downweighting of the loss is achieved by scaling the cross-entropy loss with a term that depends on a focusing parameter $\gamma$. In this paper, we highlight an unaddressed numerical instability of the Focal Loss that arises when this focusing parameter is set to a value between 0 and 1. We present the theoretical basis of this numerical instability, show that it can be detected in the computation of Focal Loss gradients, and demonstrate its effects across several classification and segmentation tasks. Additionally, we propose a straightforward modification to the original Focal Loss to ensure stability whenever these unstable focusing parameter values are used.},
+  archive      = {J_TMLR},
+  author       = {Martijn P. van Leeuwen and Koen V. Haak and Gorkem Saygili and Eric O. Postma and L.L. Sharon Ong},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {A note on the stability of the focal loss},
+  url          = {https://openreview.net/forum?id=eCYActnGbu},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DRAGON: Distributional rewards optimize diffusion generative models. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=gobhDku03J'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present Distributional RewArds for Generative OptimizatioN (DRAGON), a versatile framework for fine-tuning media generation models towards a desired outcome. Compared with traditional reinforcement learning with human feedback (RLHF) or pairwise preference approaches such as direct preference optimization (DPO), DRAGON is more flexible. It can optimize reward functions that evaluate either individual examples or distributions of them, making it compatible with a broad spectrum of instance-wise, instance-to-distribution, and distribution-to-distribution rewards. Leveraging this versatility, we construct novel reward functions by selecting an encoder and a set of reference examples to create an exemplar distribution. When cross-modal encoders such as CLAP are used, the reference may be of a different modality (e.g., text versus audio). Then, DRAGON gathers online and on-policy generations, scores them with the reward function to construct a positive demonstration set and a negative set, and leverages the contrast between the two finite sets to approximate distributional reward optimization. For evaluation, we fine-tune an audio-domain text-to-music diffusion model with 20 reward functions, including a custom music aesthetics model, CLAP score, Vendi diversity, and Fréchet audio distance (FAD). We further compare instance-wise (per-song) and full-dataset FAD settings while ablating multiple FAD encoders and reference sets. Over all 20 target rewards, DRAGON achieves an 81.45% average win rate. Moreover, reward functions based on exemplar sets indeed enhance generations and are comparable to model-based rewards. With an appropriate exemplar set, DRAGON achieves a 60.95% human-voted music quality win rate without training on human preference annotations. As such, DRAGON exhibits a new approach to designing and optimizing reward functions for improving human-perceived quality. Example generations can be found at https://ml-dragon.github.io/web/.},
+  archive      = {J_TMLR},
+  author       = {Yatong Bai and Jonah Casebeer and Somayeh Sojoudi and Nicholas J. Bryan},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {DRAGON: Distributional rewards optimize diffusion generative models},
+  url          = {https://openreview.net/forum?id=gobhDku03J},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Before forgetting, there's learning: Representation learning challenges in online unsupervised continual learning. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=hZwInyuYDw'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper addresses the Online Continual Unsupervised Learning (O-UCL) problem, where a learner must adapt to a stream of data arriving sequentially from a shifting distribution without storing past data or relying on labels. This challenge mirrors many real-world machine learning applications, where efficient training and updating of large or on device models is critical. We first explore the unique challenges of O-UCL and identify a secondary failure mode in addition to catastrophic forgetting. We demonstrate that the presence of transient, small-scale biases in an online data stream can significantly impair learning. Unlike traditional notions of distribution shift that manifest over long timescales, we highlight how biases occurring at the level of individual batches or short segments—while imperceptible in aggregate—can severely hinder a model’s ability to learn, a phenomenon we call ``catastrophic non-learning''. We further showcase how an auxiliary memory can be used to solve both catastrophic forgetting and catastrophic non-learning, but that the criteria for the ideal memory for each are in conflict. In response to these findings, we introduce a dual-memory framework which incorporates specifically designed modules to mitigate both catastrophic non-learning and forgetting. We validate our findings on challenging, realistic data streams derived from ImageNet and Places365, comparing against multiple baselines to highlight the distinct nature of this problem and the need for new approaches in O-UCL.},
+  archive      = {J_TMLR},
+  author       = {Cameron Ethan Taylor and Shreyas Malakarjun Patil and Constantine Dovrolis},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Before forgetting, there's learning: Representation learning challenges in online unsupervised continual learning},
+  url          = {https://openreview.net/forum?id=hZwInyuYDw},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A practical investigation of spatially-controlled image generation with transformers. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=loT6xhgLYK'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Enabling image generation models to be spatially controlled is an important area of research, empowering users to better generate images according to their own fine-grained specifications via e.g. edge maps, poses. Although this task has seen impressive improvements in recent times, a focus on rapidly producing stronger models has come at the cost of detailed and fair scientific comparison. Differing training data, model architectures and generation paradigms make it difficult to disentangle the factors contributing to performance. Meanwhile, the motivations and nuances of certain approaches become lost in the literature. In this work, we aim to provide clear takeaways across generation paradigms for practitioners wishing to develop transformer-based systems for spatially-controlled generation, clarifying the literature and addressing knowledge gaps. We perform controlled experiments on ImageNet across diffusion-based/flow-based and autoregressive (AR) models. First, we establish control token prefilling as a simple, general and performant baseline approach for transformers. We then investigate previously underexplored sampling time enhancements, showing that extending classifier-free guidance to control, as well as softmax truncation, have a strong impact on control-generation consistency. Finally, we re-clarify the motivation of adapter-based approaches, demonstrating that they mitigate “forgetting” and maintain generation quality when trained on limited downstream data, but underperform full training in terms of generation-control consistency. Code: https://github.com/guoxoug/transformer-imagenet-ctrl.},
+  archive      = {J_TMLR},
+  author       = {Guoxuan Xia and Harleen Hanspal and Petru-Daniel Tudosiu and Shifeng Zhang and Sarah Parisot},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {A practical investigation of spatially-controlled image generation with transformers},
+  url          = {https://openreview.net/forum?id=loT6xhgLYK},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DNOD: Deformable neural operators for object detection in SAR images. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=tjBqPJdQ72'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce a deep neural operator framework aimed at object detection in remotely sensed Synthetic Aperture Radar (SAR) images. Recent research highlights the impressive performance of the End-to-End Object Detection Transformer (DETR). Nonetheless, in domains like SAR imaging, managing challenges such as speckle noise and the detection of small objects continues to be problematic. To address SAR object detection issues, we present the Deformable Neural Operator-Based Object Detection (DNOD) framework, tailored for SAR tasks. We develop two neural operators: Multi-Scale Fourier Mixing (MSFM) for the encoder and Multi-scale, multi-input Adaptive Deformable Fourier Neural Operator (MADFNO) for the decoder. Detailed evaluations and ablation studies show that DNOD exceeds existing methods, delivering significantly better results with an improvement of +2.23 mAP on the SARDet-100k dataset, the largest SAR object detection compilation. The code is available at https://github.com/quest-lab-iisc/DNOD.},
+  archive      = {J_TMLR},
+  author       = {GVS Mothish and J Rishi and Shobhit Kumar Shukla and Deepak Subramani},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {DNOD: Deformable neural operators for object detection in SAR images},
+  url          = {https://openreview.net/forum?id=tjBqPJdQ72},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PCF learned sort: A learning augmented sort algorithm with $\mathcal{O}(n \log\log n)$ expected complexity. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=wVkb8WHbvR'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sorting is one of the most fundamental algorithms in computer science. Recently, Learned Sorts, which use machine learning to improve sorting speed, have attracted attention. While existing studies show that Learned Sort is empirically faster than classical sorting algorithms, they do not provide theoretical guarantees about its computational complexity. We propose Piecewise Constant Function (PCF) Learned Sort, a theoretically guaranteed Learned Sort algorithm. We prove that the expected complexity of PCF Learned Sort is $\mathcal{O}(n \log \log n)$ under mild assumptions on the data distribution. We also confirm empirically that PCF Learned Sort has a computational complexity of $\mathcal{O}(n \log \log n)$ on both synthetic and real datasets. This is the first study to theoretically support the empirical success of Learned Sort, and provides evidence for why Learned Sort is fast.},
+  archive      = {J_TMLR},
+  author       = {Atsuki Sato and Yusuke Matsui},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {PCF learned sort: A learning augmented sort algorithm with $\mathcal{O}(n \log\log n)$ expected complexity},
+  url          = {https://openreview.net/forum?id=wVkb8WHbvR},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SCNode: Spatial and contextual coordinates for graph representation learning. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=wdcdKeFbfQ'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Effective node representation lies at the heart of Graph Neural Networks (GNNs), as it directly impacts their ability to perform downstream tasks such as node classification and link prediction. Most existing GNNs, particularly message passing graph neural networks, rely on neighborhood aggregation to iteratively compute node embeddings. While powerful, this paradigm suffers from well-known limitations of oversquashing, oversmoothing, and underreaching that degrade representation quality. More critically, MPGNNs often assume homophily, where connected nodes share similar features or labels, leading to poor generalization in heterophilic graphs where this assumption breaks down. To address these challenges, we propose *SCNode*, a *Spatial-Contextual Node Embedding* framework designed to perform consistently well in both homophilic and heterophilic settings. SCNode integrates spatial and contextual information, yielding node embeddings that are not only more discriminative but also structurally aware. Our approach introduces new homophily matrices for understanding class interactions and tendencies. Extensive experiments on benchmark datasets show that SCNode achieves superior performance over conventional GNN models, demonstrating its robustness and adaptability in diverse graph structures.},
+  archive      = {J_TMLR},
+  author       = {Md Joshem Uddin and Astrit Tola and Varin Singh Sikand and Cuneyt Gurcan Akcora and Baris Coskunuzer},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {SCNode: Spatial and contextual coordinates for graph representation learning},
+  url          = {https://openreview.net/forum?id=wdcdKeFbfQ},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scalable generative modeling of weighted graphs. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=yWKkBOcD18'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Weighted graphs are ubiquitous throughout biology, chemistry, and the social sciences, motivating the development of generative models for abstract weighted graph data using deep neural networks. However, most current deep generative models are designed for unweighted graphs and cannot be easily extended to weighted topologies. Among those that do incorporate edge weights, few consider a joint distribution with the topology of the graph. Furthermore, learning a distribution over weighted graphs must account for complex nonlocal dependencies between both the edges of the graph and corresponding weights of each edge. We develop an autoregressive model BiGG-E, a nontrivial extension of the BiGG model, that learns a joint distribution over weighted graphs while exploiting sparsity to generate a weighted graph with $n$ nodes and $m$ edges in $O((n + m)\log n)$ time. Simulation studies and experiments on a variety of benchmark datasets demonstrate that BiGG-E best captures distributions over weighted graphs while remaining scalable and computationally efficient.},
+  archive      = {J_TMLR},
+  author       = {Richard Williams and Eric Nalisnick and Andrew Holbrook},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {11},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Scalable generative modeling of weighted graphs},
+  url          = {https://openreview.net/forum?id=yWKkBOcD18},
+  year         = {2025},
+}
+</textarea>
+</details></li>
 <li><details>
 <summary>
 (2025). Contextual combinatorial bandits with changing action sets via gaussian processes. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=2RgfAY3jnI'>www</a>)
@@ -2381,6 +2813,78 @@
   shortjournal = {Trans. Mach. Learn. Res.},
   title        = {PartSDF: Part-based implicit neural representation for composite 3D shape parametrization and optimization},
   url          = {https://openreview.net/forum?id=zl43C1yBKv},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Weakly supervised object segmentation by background conditional divergence. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=2JJZhfGvMW'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a computer vision task, automatic object segmentation remains challenging in specialized image domains without massive labeled data, such as synthetic aperture sonar images, remote sensing, biomedical imaging, etc. In any domain, obtaining pixel-wise segmentation masks is expensive. In this work, we propose a method for training a masking network to perform binary object segmentation using weak supervision in the form of image-wise presence or absence of an object of interest, which provides less information but may be obtained more quickly from manual or automatic labeling. A key step in our method is that the segmented objects can be placed into background-only images to create realistic, images of the objects with counterfactual backgrounds. To create a contrast between the original and counterfactual background images, we propose to first cluster the background-only images, and then during learning create counterfactual images that blend objects segmented from their original source backgrounds to backgrounds chosen from a targeted cluster. One term in the training loss is the divergence between these counterfactual images and the real object images with backgrounds of the target cluster. The other term is a supervised loss for background-only images. While an adversarial critic could provide the divergence, we use sample-based divergences. We conduct experiments on side-scan and synthetic aperture sonar in which our approach succeeds compared to previous unsupervised segmentation baselines that were only tested on natural images. Furthermore, to show generality we extend our experiments to natural images, obtaining reasonable performance with our method that avoids pretrained networks, generative networks, and adversarial critics.},
+  archive      = {J_TMLR},
+  author       = {Hassan Baker and Matthew Emigh and Austin J. Brockmeier},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Weakly supervised object segmentation by background conditional divergence},
+  url          = {https://openreview.net/forum?id=2JJZhfGvMW},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient and unbiased sampling from boltzmann distributions via variance-tuned diffusion models. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=Jq2dcMCS5R'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Score-based diffusion models (SBDMs) are powerful amortized samplers for Boltzmann distributions; however, imperfect score estimates bias downstream Monte Carlo estimates. Classical importance sampling (IS) can correct this bias, but computing exact likelihoods requires solving the probability-flow ordinary differential equation (PF–ODE), a procedure that is prohibitively costly and scales poorly with dimensionality. We introduce Variance-Tuned Diffusion Importance Sampling (VT-DIS), a lightweight post-training method that adapts the per-step noise covariance of a pretrained SBDM by minimizing the $\alpha$-divergence $(\alpha=2)$ between its forward diffusion and reverse denoising trajectories. VT-DIS assigns a single trajectory-wise importance weight to the joint forward–reverse process, yielding unbiased expectation estimates at test time with negligible inference-time overhead compared to standard sampling. On the DW-4, LJ-13, and alanine-dipeptide benchmarks, VT-DIS achieves effective sample sizes of approximately 80%, 35%, and 3.5%, respectively, while using only a fraction of the computational budget required by vanilla diffusion + IS or PF-ODE–based IS.},
+  archive      = {J_TMLR},
+  author       = {Fengzhe Zhang and Laurence Illing Midgley and José Miguel Hernández-Lobato},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Efficient and unbiased sampling from boltzmann distributions via variance-tuned diffusion models},
+  url          = {https://openreview.net/forum?id=Jq2dcMCS5R},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Neural ODE and SDE models for adaptation and planning in model-based reinforcement learning. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=T6OrPlyPV4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We investigate neural ordinary and stochastic differential equations (neural ODEs and SDEs) to model stochastic dynamics in fully and partially observed environments within a model-based reinforcement learning (RL) framework. Through a sequence of simulations, we show that neural SDEs more effectively capture transition dynamics’ inherent stochasticity, enabling high-performing policies with improved sample efficiency in challenging scenarios. We leverage neural ODEs and SDEs for efficient policy adaptation to changes in environment dynamics via inverse models, requiring only limited interactions with the new environment. To address partial observability, we introduce a latent SDE model that combines an ODE and a GAN-trained stochastic component in latent space. Policies derived from this model offer a strong baseline, outperforming or matching general model-based and model-free approaches across stochastic continuous-control benchmarks. This work illustrates the applicability of action-conditional latent SDEs for RL planning in environments with stochastic transitions. Our code is available at: https://github.com/ChaoHan-UoS/NeuralRL.},
+  archive      = {J_TMLR},
+  author       = {Chao Han and Stefanos Ioannou and Luca Manneschi and T.J. Hayward and Michael Mangan and Aditya Gilra and Eleni Vasilaki},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {Neural ODE and SDE models for adaptation and planning in model-based reinforcement learning},
+  url          = {https://openreview.net/forum?id=T6OrPlyPV4},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TESGNN: Temporal equivariant scene graph neural networks for efficient and robust multi-view 3D scene understanding. <em>TMLR</em>. (<a href='https://openreview.net/forum?id=boM0kkYPzE'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Scene graphs have proven to be highly effective for various scene understanding tasks due to their compact and explicit representation of relational information. However, current methods often overlook the critical importance of preserving symmetry when generating scene graphs from 3D point clouds, which can lead to reduced accuracy and robustness, particularly when dealing with noisy, multi-view data. Furthermore, a major limitation of prior approaches is the lack of temporal modeling to capture time-dependent relationships among dynamically evolving entities in a scene. To address these challenges, we propose Temporal Equivariant Scene Graph Neural Network (TESGNN), consisting of two key components: (1) an Equivariant Scene Graph Neural Network (ESGNN), which extracts information from 3D point clouds to generate scene graph while preserving crucial symmetry properties, and (2) a Temporal Graph Matching Network, which fuses scene graphs generated by ESGNN across multiple time sequences into a unified global representation using an approximate graph-matching algorithm. Our combined architecture TESGNN shown to be effective compared to existing methods in scene graph generation, achieving higher accuracy and faster training convergence. Moreover, we show that leveraging the symmetry-preserving property produces a more stable and accurate global scene representation compared to existing approaches. Finally, it is computationally efficient and easily implementable using existing frameworks, making it well-suited for real-time applications in robotics and computer vision. This approach paves the way for more robust and scalable solutions to complex multi-view scene understanding challenges.},
+  archive      = {J_TMLR},
+  author       = {Pham Phuoc Minh Quang and Nguyen Tiet Nguyen Khoi and Ngo Chi Lan and Do Tho Truong and Dezhen Song and Truong-Son Hy},
+  journal      = {Transactions on Machine Learning Research},
+  month        = {10},
+  shortjournal = {Trans. Mach. Learn. Res.},
+  title        = {TESGNN: Temporal equivariant scene graph neural networks for efficient and robust multi-view 3D scene understanding},
+  url          = {https://openreview.net/forum?id=boM0kkYPzE},
   year         = {2025},
 }
 </textarea>

@@ -25,11 +25,74 @@
 </head>
 <body>
 
-<h2 id="tpds">TPDS - 190</h2>
+<h2 id="tpds">TPDS - 193</h2>
 <ul>
 <li><details>
 <summary>
-(2025). GAP-DCCS: A generic acceleration paradigm for data-intensive applications with efficient data compression and caching strategy over CPU-GPU clusters. <em>TPDS</em>, <em>36</em>(12), 2747-2762. (<a href='https://doi.org/10.1109/TPDS.2025.3615283'>www</a>)
+(2025). MCG-sched: Multi-cluster GPU scheduling for resource fragmentation reduction and load balancing. <em>TPDS</em>, <em>36</em>(12), 2789--2800. (<a href='https://doi.org/10.1109/TPDS.2025.3626153'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Since the rapid development of deep learning (DL) technology, large-scale GPU clusters receive a large number of DL workloads daily. To speed up the completion time, the workloads usually occupy several GPUs on a server. However, workload scheduling inevitably generates resource fragmentation, which results in many scattered GPU resources being unavailable. Existing works address improving resource utilization by reducing GPU resource fragmentation, while they focus on resource scheduling for a single cluster and ignore multiple clusters. Multi-cluster scenarios, such as virtual clusters and geo-distributed clusters, require load balancing to avoid some clusters exhausting resources while some clusters are idle while improving resource utilization, which is not well addressed by existing works. In this paper, we propose MCG-Sched, a scheduling strategy to reduce resource fragmentation in multiple GPU clusters while maintaining load balancing among clusters. MCG-Sched measures the fragmented resources with the distribution of workload demands and uses a scheme that minimizes fragmentation in workload scheduling. Meanwhile, MCG-Sched achieves balanced load scheduling across clusters through the load balancing index. MCG-Sched senses the workload requests in the waiting queue, and prioritizes the workloads by combining fragmentation measurement and load balancing index to maximize resource utilization and load balancing during load peak. Our experiments show that MCG-Sched reduces unallocated GPUs up to 1.45× and workload waiting time by more than 40% compared to existing fragmentation-aware methods and achieves effective load balancing.},
+  archive      = {J_TPDS},
+  author       = {Haijie Wu and Xinhua Wang and Xiaoxuan Luo and Wangbo Shen and Weiwei Lin},
+  doi          = {10.1109/TPDS.2025.3626153},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {12},
+  number       = {12},
+  pages        = {2789--2800},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {MCG-sched: Multi-cluster GPU scheduling for resource fragmentation reduction and load balancing},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Kairos: Deterministic scheduling enhanced by user collaboration for deep learning workloads. <em>TPDS</em>, <em>36</em>(12), 2777--2788. (<a href='https://doi.org/10.1109/TPDS.2025.3624245'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As deep learning (DL) workloads scale in complexity and volume, ensuring predictable job queuing times has become a critical challenge for data centers. Existing scheduling solutions primarily focus on minimizing tardiness or job completion times (JCT), often neglecting the need for deterministic queuing, particularly in dynamic and preemptive environments. This article introduces Kairos, a preemption-based scheduling framework enhanced by user collaboration to address these gaps. Kairos combines a divide-and-conquer strategy—segmenting jobs into sequential units with adaptive priorities—and a user-collaborative mechanism for better duration estimation. By leveraging real-time feedback from resource contention and queuing delays, Kairos minimizes a novel metric, the Queue inStability Index (QSI), achieving significant improvements in queuing predictability while maintaining competitive JCT. Experimental results demonstrate that Kairos reduces QSI by over 99.8% compared to state-of-the-art deadline-aware baselines, offering robust performance for diverse DL workloads.},
+  archive      = {J_TPDS},
+  author       = {Xinhua Wang and Weiwei Lin and Ruichao Mo and Guozhi Liu and Haijie Wu and Shengjun Tang},
+  doi          = {10.1109/TPDS.2025.3624245},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {12},
+  number       = {12},
+  pages        = {2777--2788},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Kairos: Deterministic scheduling enhanced by user collaboration for deep learning workloads},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GPUDirectIO: Streamline the CFD I/O path from NVMe to GPU for high-performance simulations. <em>TPDS</em>, <em>36</em>(12), 2763--2776. (<a href='https://doi.org/10.1109/TPDS.2025.3624576'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in computational fluid dynamics (CFD) driven by the heterogeneous computing techniques and high-fidelity numerical methods have significantly increased the demand for efficient input/output (I/O) operations. In GPU-accelerated CFD, redundant data copies and excessive CPU overhead have become prominent challenges for efficient IO due to increasing complexities in data transfers between memory and storage. In this work, we propose a GPU native I/O framework (named as GPUDirectIO) for high-performance CFD by redesigning the Data Mapping Layer (DML) and data structures of the CFD General Notation System (CGNS), which is a widely used file format for complex CFD applications. This GPU-centric system enables direct data transfers between NVMe storage and GPU memory via GPU Direct Storage (GDS), effectively streamlining heterogeneous CFD I/O workflows. To further improve I/O throughput, we develop a CGNS-based distributed data management strategy that leverages an NVMe storage array to fully utilize the GPU bandwidth. We compare the performance of the proposed GPUDirectIO with existing CPU-mediated I/O approaches with different number of threads using CFD datasets where the maximum number of computational grid points reaches 1.6 billion. The results demonstrate the superiority of GPUDirectIO. Single-threaded GPUDirectIO achieves read and write rates 2.95× and 3.49× those of CPU-mediated I/O, respectively, and reduces transmission latency by approximately 59% . When applied to distributed storage systems, multi-threaded GPUDirectIO shows read and write rates 3.23× and 4.68× those of CPU-mediated parallel I/O, respectively, with transfer latency reduced by about 39% . GPUDirectIO has also demonstrated excellent parallel efficiency and speedup ratios in both strong and weak scalability tests.},
+  archive      = {J_TPDS},
+  author       = {Zhixiang Ling and Xinghua Chang and Yunde Su and Laiping Zhang and Yuntao Wang and Xiaogang Deng},
+  doi          = {10.1109/TPDS.2025.3624576},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {12},
+  number       = {12},
+  pages        = {2763--2776},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {GPUDirectIO: Streamline the CFD I/O path from NVMe to GPU for high-performance simulations},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GAP-DCCS: A generic acceleration paradigm for data-intensive applications with efficient data compression and caching strategy over CPU-GPU clusters. <em>TPDS</em>, <em>36</em>(12), 2747--2762. (<a href='https://doi.org/10.1109/TPDS.2025.3615283'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -40,7 +103,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2747-2762},
+  pages        = {2747--2762},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {GAP-DCCS: A generic acceleration paradigm for data-intensive applications with efficient data compression and caching strategy over CPU-GPU clusters},
   volume       = {36},
@@ -50,7 +113,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Popularity-aware data placement in erasure coding-based edge storage systems. <em>TPDS</em>, <em>36</em>(12), 2733-2746. (<a href='https://doi.org/10.1109/TPDS.2025.3619273'>www</a>)
+(2025). Popularity-aware data placement in erasure coding-based edge storage systems. <em>TPDS</em>, <em>36</em>(12), 2733--2746. (<a href='https://doi.org/10.1109/TPDS.2025.3619273'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -61,7 +124,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2733-2746},
+  pages        = {2733--2746},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Popularity-aware data placement in erasure coding-based edge storage systems},
   volume       = {36},
@@ -71,7 +134,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Large-scale neural network quantum states calculation for quantum chemistry on a new sunway supercomputer. <em>TPDS</em>, <em>36</em>(12), 2724-2732. (<a href='https://doi.org/10.1109/TPDS.2025.3620251'>www</a>)
+(2025). Large-scale neural network quantum states calculation for quantum chemistry on a new sunway supercomputer. <em>TPDS</em>, <em>36</em>(12), 2724--2732. (<a href='https://doi.org/10.1109/TPDS.2025.3620251'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -82,7 +145,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2724-2732},
+  pages        = {2724--2732},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Large-scale neural network quantum states calculation for quantum chemistry on a new sunway supercomputer},
   volume       = {36},
@@ -92,7 +155,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Chorus: Robust multitasking local client-server collaborative inference with wi-fi 6 for AIoT against stochastic congestion delay. <em>TPDS</em>, <em>36</em>(12), 2706-2723. (<a href='https://doi.org/10.1109/TPDS.2025.3619775'>www</a>)
+(2025). Chorus: Robust multitasking local client-server collaborative inference with wi-fi 6 for AIoT against stochastic congestion delay. <em>TPDS</em>, <em>36</em>(12), 2706--2723. (<a href='https://doi.org/10.1109/TPDS.2025.3619775'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -103,7 +166,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2706-2723},
+  pages        = {2706--2723},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Chorus: Robust multitasking local client-server collaborative inference with wi-fi 6 for AIoT against stochastic congestion delay},
   volume       = {36},
@@ -113,7 +176,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). FedSR: A semi-decentralized federated learning framework for non-IID data based on incremental subgradient optimization. <em>TPDS</em>, <em>36</em>(12), 2693-2705. (<a href='https://doi.org/10.1109/TPDS.2025.3611304'>www</a>)
+(2025). FedSR: A semi-decentralized federated learning framework for non-IID data based on incremental subgradient optimization. <em>TPDS</em>, <em>36</em>(12), 2693--2705. (<a href='https://doi.org/10.1109/TPDS.2025.3611304'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -124,7 +187,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2693-2705},
+  pages        = {2693--2705},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {FedSR: A semi-decentralized federated learning framework for non-IID data based on incremental subgradient optimization},
   volume       = {36},
@@ -134,7 +197,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). ToT: Triangle counting on tensor cores. <em>TPDS</em>, <em>36</em>(12), 2679-2692. (<a href='https://doi.org/10.1109/TPDS.2025.3606878'>www</a>)
+(2025). ToT: Triangle counting on tensor cores. <em>TPDS</em>, <em>36</em>(12), 2679--2692. (<a href='https://doi.org/10.1109/TPDS.2025.3606878'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -145,7 +208,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2679-2692},
+  pages        = {2679--2692},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {ToT: Triangle counting on tensor cores},
   volume       = {36},
@@ -155,7 +218,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). FedBiF: Communication-efficient federated learning via bits freezing. <em>TPDS</em>, <em>36</em>(12), 2668-2678. (<a href='https://doi.org/10.1109/TPDS.2025.3610224'>www</a>)
+(2025). FedBiF: Communication-efficient federated learning via bits freezing. <em>TPDS</em>, <em>36</em>(12), 2668--2678. (<a href='https://doi.org/10.1109/TPDS.2025.3610224'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -166,7 +229,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2668-2678},
+  pages        = {2668--2678},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {FedBiF: Communication-efficient federated learning via bits freezing},
   volume       = {36},
@@ -176,7 +239,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). SSpMM: Efficiently scalable SpMM kernels across multiple generations of tensor cores. <em>TPDS</em>, <em>36</em>(12), 2652-2667. (<a href='https://doi.org/10.1109/TPDS.2025.3616981'>www</a>)
+(2025). SSpMM: Efficiently scalable SpMM kernels across multiple generations of tensor cores. <em>TPDS</em>, <em>36</em>(12), 2652--2667. (<a href='https://doi.org/10.1109/TPDS.2025.3616981'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -187,7 +250,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2652-2667},
+  pages        = {2652--2667},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {SSpMM: Efficiently scalable SpMM kernels across multiple generations of tensor cores},
   volume       = {36},
@@ -197,7 +260,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Atomic smart contract interoperability with high efficiency via cross-chain integrated execution. <em>TPDS</em>, <em>36</em>(12), 2635-2651. (<a href='https://doi.org/10.1109/TPDS.2025.3614374'>www</a>)
+(2025). Atomic smart contract interoperability with high efficiency via cross-chain integrated execution. <em>TPDS</em>, <em>36</em>(12), 2635--2651. (<a href='https://doi.org/10.1109/TPDS.2025.3614374'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -208,7 +271,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2635-2651},
+  pages        = {2635--2651},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Atomic smart contract interoperability with high efficiency via cross-chain integrated execution},
   volume       = {36},
@@ -218,7 +281,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). New scheduling algorithm and analysis for partitioned periodic DAG tasks on multiprocessors. <em>TPDS</em>, <em>36</em>(12), 2621-2634. (<a href='https://doi.org/10.1109/TPDS.2025.3611446'>www</a>)
+(2025). New scheduling algorithm and analysis for partitioned periodic DAG tasks on multiprocessors. <em>TPDS</em>, <em>36</em>(12), 2621--2634. (<a href='https://doi.org/10.1109/TPDS.2025.3611446'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -229,7 +292,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2621-2634},
+  pages        = {2621--2634},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {New scheduling algorithm and analysis for partitioned periodic DAG tasks on multiprocessors},
   volume       = {36},
@@ -239,7 +302,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Scheduling with lightweight predictions in power-constrained HPC platforms. <em>TPDS</em>, <em>36</em>(12), 2609-2620. (<a href='https://doi.org/10.1109/TPDS.2025.3586723'>www</a>)
+(2025). Scheduling with lightweight predictions in power-constrained HPC platforms. <em>TPDS</em>, <em>36</em>(12), 2609--2620. (<a href='https://doi.org/10.1109/TPDS.2025.3586723'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -250,7 +313,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2609-2620},
+  pages        = {2609--2620},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Scheduling with lightweight predictions in power-constrained HPC platforms},
   volume       = {36},
@@ -260,7 +323,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Approximation algorithms for scheduling With/Without deadline constraints where rejection costs are proportional to processing times. <em>TPDS</em>, <em>36</em>(12), 2596-2608. (<a href='https://doi.org/10.1109/TPDS.2025.3605674'>www</a>)
+(2025). Approximation algorithms for scheduling With/Without deadline constraints where rejection costs are proportional to processing times. <em>TPDS</em>, <em>36</em>(12), 2596--2608. (<a href='https://doi.org/10.1109/TPDS.2025.3605674'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -271,7 +334,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2596-2608},
+  pages        = {2596--2608},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Approximation algorithms for scheduling With/Without deadline constraints where rejection costs are proportional to processing times},
   volume       = {36},
@@ -281,7 +344,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Elastic relaxation of concurrent data structures. <em>TPDS</em>, <em>36</em>(12), 2578-2595. (<a href='https://doi.org/10.1109/TPDS.2025.3587888'>www</a>)
+(2025). Elastic relaxation of concurrent data structures. <em>TPDS</em>, <em>36</em>(12), 2578--2595. (<a href='https://doi.org/10.1109/TPDS.2025.3587888'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -292,7 +355,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2578-2595},
+  pages        = {2578--2595},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Elastic relaxation of concurrent data structures},
   volume       = {36},
@@ -302,7 +365,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). LQ-GNN: A graph neural network model for response time prediction of microservice-based applications in the computing continuum. <em>TPDS</em>, <em>36</em>(12), 2566-2577. (<a href='https://doi.org/10.1109/TPDS.2025.3564214'>www</a>)
+(2025). LQ-GNN: A graph neural network model for response time prediction of microservice-based applications in the computing continuum. <em>TPDS</em>, <em>36</em>(12), 2566--2577. (<a href='https://doi.org/10.1109/TPDS.2025.3564214'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -313,7 +376,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2566-2577},
+  pages        = {2566--2577},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {LQ-GNN: A graph neural network model for response time prediction of microservice-based applications in the computing continuum},
   volume       = {36},
@@ -323,7 +386,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A privacy-preserving IoT data access control scheme for cloud-edge computing. <em>TPDS</em>, <em>36</em>(12), 2549-2565. (<a href='https://doi.org/10.1109/TPDS.2025.3580407'>www</a>)
+(2025). A privacy-preserving IoT data access control scheme for cloud-edge computing. <em>TPDS</em>, <em>36</em>(12), 2549--2565. (<a href='https://doi.org/10.1109/TPDS.2025.3580407'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -334,7 +397,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2549-2565},
+  pages        = {2549--2565},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A privacy-preserving IoT data access control scheme for cloud-edge computing},
   volume       = {36},
@@ -344,7 +407,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Co-optimization of partial offloading and resource allocation for multi-user tasks in vehicular edge networks. <em>TPDS</em>, <em>36</em>(12), 2537-2548. (<a href='https://doi.org/10.1109/TPDS.2025.3571470'>www</a>)
+(2025). Co-optimization of partial offloading and resource allocation for multi-user tasks in vehicular edge networks. <em>TPDS</em>, <em>36</em>(12), 2537--2548. (<a href='https://doi.org/10.1109/TPDS.2025.3571470'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -355,7 +418,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2537-2548},
+  pages        = {2537--2548},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Co-optimization of partial offloading and resource allocation for multi-user tasks in vehicular edge networks},
   volume       = {36},
@@ -365,7 +428,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Online container caching for IoT data processing in serverless edge computing. <em>TPDS</em>, <em>36</em>(12), 2524-2536. (<a href='https://doi.org/10.1109/TPDS.2025.3595965'>www</a>)
+(2025). Online container caching for IoT data processing in serverless edge computing. <em>TPDS</em>, <em>36</em>(12), 2524--2536. (<a href='https://doi.org/10.1109/TPDS.2025.3595965'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -376,7 +439,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2524-2536},
+  pages        = {2524--2536},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Online container caching for IoT data processing in serverless edge computing},
   volume       = {36},
@@ -386,7 +449,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). SEMSO: A secure and efficient multi-data source blockchain oracle. <em>TPDS</em>, <em>36</em>(12), 2512-2523. (<a href='https://doi.org/10.1109/TPDS.2025.3586450'>www</a>)
+(2025). SEMSO: A secure and efficient multi-data source blockchain oracle. <em>TPDS</em>, <em>36</em>(12), 2512--2523. (<a href='https://doi.org/10.1109/TPDS.2025.3586450'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -397,7 +460,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2512-2523},
+  pages        = {2512--2523},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {SEMSO: A secure and efficient multi-data source blockchain oracle},
   volume       = {36},
@@ -407,7 +470,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Ocelot: An interactive, efficient distributed compression-as-a-service platform with optimized data compression techniques. <em>TPDS</em>, <em>36</em>(12), 2497-2511. (<a href='https://doi.org/10.1109/TPDS.2025.3568221'>www</a>)
+(2025). Ocelot: An interactive, efficient distributed compression-as-a-service platform with optimized data compression techniques. <em>TPDS</em>, <em>36</em>(12), 2497--2511. (<a href='https://doi.org/10.1109/TPDS.2025.3568221'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -418,7 +481,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2497-2511},
+  pages        = {2497--2511},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Ocelot: An interactive, efficient distributed compression-as-a-service platform with optimized data compression techniques},
   volume       = {36},
@@ -428,7 +491,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). FedEFsz: Fair cross-silo federated learning system with error-bounded lossy compression. <em>TPDS</em>, <em>36</em>(12), 2482-2496. (<a href='https://doi.org/10.1109/TPDS.2025.3593896'>www</a>)
+(2025). FedEFsz: Fair cross-silo federated learning system with error-bounded lossy compression. <em>TPDS</em>, <em>36</em>(12), 2482--2496. (<a href='https://doi.org/10.1109/TPDS.2025.3593896'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -439,7 +502,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2482-2496},
+  pages        = {2482--2496},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {FedEFsz: Fair cross-silo federated learning system with error-bounded lossy compression},
   volume       = {36},
@@ -449,7 +512,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A performance-balanced scheduling algorithm for diverse real-world TSN scenarios. <em>TPDS</em>, <em>36</em>(12), 2469-2481. (<a href='https://doi.org/10.1109/TPDS.2025.3580402'>www</a>)
+(2025). A performance-balanced scheduling algorithm for diverse real-world TSN scenarios. <em>TPDS</em>, <em>36</em>(12), 2469--2481. (<a href='https://doi.org/10.1109/TPDS.2025.3580402'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -460,7 +523,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2469-2481},
+  pages        = {2469--2481},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A performance-balanced scheduling algorithm for diverse real-world TSN scenarios},
   volume       = {36},
@@ -470,7 +533,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). $\mathsf{streamline}$: Accelerating deployment and assessment of real-time big data systems. <em>TPDS</em>, <em>36</em>(12), 2455-2468. (<a href='https://doi.org/10.1109/TPDS.2025.3587641'>www</a>)
+(2025). $\mathsf{streamline}$: Accelerating deployment and assessment of real-time big data systems. <em>TPDS</em>, <em>36</em>(12), 2455--2468. (<a href='https://doi.org/10.1109/TPDS.2025.3587641'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -481,7 +544,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2455-2468},
+  pages        = {2455--2468},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {$\mathsf{streamline}$: Accelerating deployment and assessment of real-time big data systems},
   volume       = {36},
@@ -491,7 +554,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Guest editorial: New tools and techniques for the distributed computing continuum. <em>TPDS</em>, <em>36</em>(12), 2451-2454. (<a href='https://doi.org/10.1109/TPDS.2025.3612151'>www</a>)
+(2025). Guest editorial: New tools and techniques for the distributed computing continuum. <em>TPDS</em>, <em>36</em>(12), 2451--2454. (<a href='https://doi.org/10.1109/TPDS.2025.3612151'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -501,7 +564,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {12},
   number       = {12},
-  pages        = {2451-2454},
+  pages        = {2451--2454},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Guest editorial: New tools and techniques for the distributed computing continuum},
   volume       = {36},
@@ -511,7 +574,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). HARMONIC: Uncertainty-aware multi-objective optimization for energy-efficient HPC resource management. <em>TPDS</em>, <em>36</em>(11), 2438-2450. (<a href='https://doi.org/10.1109/TPDS.2025.3610354'>www</a>)
+(2025). HARMONIC: Uncertainty-aware multi-objective optimization for energy-efficient HPC resource management. <em>TPDS</em>, <em>36</em>(11), 2438--2450. (<a href='https://doi.org/10.1109/TPDS.2025.3610354'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -522,7 +585,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2438-2450},
+  pages        = {2438--2450},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {HARMONIC: Uncertainty-aware multi-objective optimization for energy-efficient HPC resource management},
   volume       = {36},
@@ -532,7 +595,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). The art of the fugue: Minimizing interleaving in collaborative text editing. <em>TPDS</em>, <em>36</em>(11), 2425-2437. (<a href='https://doi.org/10.1109/TPDS.2025.3611880'>www</a>)
+(2025). The art of the fugue: Minimizing interleaving in collaborative text editing. <em>TPDS</em>, <em>36</em>(11), 2425--2437. (<a href='https://doi.org/10.1109/TPDS.2025.3611880'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -543,7 +606,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2425-2437},
+  pages        = {2425--2437},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {The art of the fugue: Minimizing interleaving in collaborative text editing},
   volume       = {36},
@@ -553,7 +616,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). EdgeAIBus: AI-driven joint container management and model selection framework for heterogeneous edge computing. <em>TPDS</em>, <em>36</em>(11), 2412-2424. (<a href='https://doi.org/10.1109/TPDS.2025.3602521'>www</a>)
+(2025). EdgeAIBus: AI-driven joint container management and model selection framework for heterogeneous edge computing. <em>TPDS</em>, <em>36</em>(11), 2412--2424. (<a href='https://doi.org/10.1109/TPDS.2025.3602521'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -564,7 +627,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2412-2424},
+  pages        = {2412--2424},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {EdgeAIBus: AI-driven joint container management and model selection framework for heterogeneous edge computing},
   volume       = {36},
@@ -574,7 +637,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). The megapixel approach for efficient execution of irregular wavefront algorithms on GPUs. <em>TPDS</em>, <em>36</em>(11), 2399-2411. (<a href='https://doi.org/10.1109/TPDS.2025.3612696'>www</a>)
+(2025). The megapixel approach for efficient execution of irregular wavefront algorithms on GPUs. <em>TPDS</em>, <em>36</em>(11), 2399--2411. (<a href='https://doi.org/10.1109/TPDS.2025.3612696'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -585,7 +648,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2399-2411},
+  pages        = {2399--2411},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {The megapixel approach for efficient execution of irregular wavefront algorithms on GPUs},
   volume       = {36},
@@ -595,7 +658,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Optimizing data locality by integrating intermediate data partitioning and reduce task scheduling in spark framework. <em>TPDS</em>, <em>36</em>(11), 2383-2398. (<a href='https://doi.org/10.1109/TPDS.2025.3611388'>www</a>)
+(2025). Optimizing data locality by integrating intermediate data partitioning and reduce task scheduling in spark framework. <em>TPDS</em>, <em>36</em>(11), 2383--2398. (<a href='https://doi.org/10.1109/TPDS.2025.3611388'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -606,7 +669,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2383-2398},
+  pages        = {2383--2398},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Optimizing data locality by integrating intermediate data partitioning and reduce task scheduling in spark framework},
   volume       = {36},
@@ -616,7 +679,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). DynPipe: Toward dynamic end-to-end pipeline parallelism for interference-aware DNN training. <em>TPDS</em>, <em>36</em>(11), 2366-2382. (<a href='https://doi.org/10.1109/TPDS.2025.3605491'>www</a>)
+(2025). DynPipe: Toward dynamic end-to-end pipeline parallelism for interference-aware DNN training. <em>TPDS</em>, <em>36</em>(11), 2366--2382. (<a href='https://doi.org/10.1109/TPDS.2025.3605491'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -627,7 +690,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2366-2382},
+  pages        = {2366--2382},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {DynPipe: Toward dynamic end-to-end pipeline parallelism for interference-aware DNN training},
   volume       = {36},
@@ -637,7 +700,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). XDGNN: Efficient distributed GNN training via explanation-guided subgraph expansion. <em>TPDS</em>, <em>36</em>(11), 2354-2365. (<a href='https://doi.org/10.1109/TPDS.2025.3609152'>www</a>)
+(2025). XDGNN: Efficient distributed GNN training via explanation-guided subgraph expansion. <em>TPDS</em>, <em>36</em>(11), 2354--2365. (<a href='https://doi.org/10.1109/TPDS.2025.3609152'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -648,7 +711,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2354-2365},
+  pages        = {2354--2365},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {XDGNN: Efficient distributed GNN training via explanation-guided subgraph expansion},
   volume       = {36},
@@ -658,7 +721,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). MIST: Towards MPI instant startup and termination on tianhe HPC systems. <em>TPDS</em>, <em>36</em>(11), 2341-2353. (<a href='https://doi.org/10.1109/TPDS.2025.3608434'>www</a>)
+(2025). MIST: Towards MPI instant startup and termination on tianhe HPC systems. <em>TPDS</em>, <em>36</em>(11), 2341--2353. (<a href='https://doi.org/10.1109/TPDS.2025.3608434'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -669,7 +732,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2341-2353},
+  pages        = {2341--2353},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {MIST: Towards MPI instant startup and termination on tianhe HPC systems},
   volume       = {36},
@@ -679,7 +742,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Mapping large-scale spiking neural network on arbitrary meshed neuromorphic hardware. <em>TPDS</em>, <em>36</em>(11), 2325-2340. (<a href='https://doi.org/10.1109/TPDS.2025.3601993'>www</a>)
+(2025). Mapping large-scale spiking neural network on arbitrary meshed neuromorphic hardware. <em>TPDS</em>, <em>36</em>(11), 2325--2340. (<a href='https://doi.org/10.1109/TPDS.2025.3601993'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -690,7 +753,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2325-2340},
+  pages        = {2325--2340},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Mapping large-scale spiking neural network on arbitrary meshed neuromorphic hardware},
   volume       = {36},
@@ -700,7 +763,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Rethinking virtual machines live migration for memory disaggregation. <em>TPDS</em>, <em>36</em>(11), 2310-2324. (<a href='https://doi.org/10.1109/TPDS.2025.3597149'>www</a>)
+(2025). Rethinking virtual machines live migration for memory disaggregation. <em>TPDS</em>, <em>36</em>(11), 2310--2324. (<a href='https://doi.org/10.1109/TPDS.2025.3597149'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -711,7 +774,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2310-2324},
+  pages        = {2310--2324},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Rethinking virtual machines live migration for memory disaggregation},
   volume       = {36},
@@ -721,7 +784,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Scheduling fork-joins with communication delays and equal processing times on heterogeneous processors. <em>TPDS</em>, <em>36</em>(11), 2297-2309. (<a href='https://doi.org/10.1109/TPDS.2025.3605272'>www</a>)
+(2025). Scheduling fork-joins with communication delays and equal processing times on heterogeneous processors. <em>TPDS</em>, <em>36</em>(11), 2297--2309. (<a href='https://doi.org/10.1109/TPDS.2025.3605272'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -732,7 +795,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2297-2309},
+  pages        = {2297--2309},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Scheduling fork-joins with communication delays and equal processing times on heterogeneous processors},
   volume       = {36},
@@ -742,7 +805,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Multi-agent collaboration for workflow task offloading in end-edge-cloud environments using deep reinforcement learning. <em>TPDS</em>, <em>36</em>(11), 2281-2296. (<a href='https://doi.org/10.1109/TPDS.2025.3606001'>www</a>)
+(2025). Multi-agent collaboration for workflow task offloading in end-edge-cloud environments using deep reinforcement learning. <em>TPDS</em>, <em>36</em>(11), 2281--2296. (<a href='https://doi.org/10.1109/TPDS.2025.3606001'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -753,7 +816,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2281-2296},
+  pages        = {2281--2296},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Multi-agent collaboration for workflow task offloading in end-edge-cloud environments using deep reinforcement learning},
   volume       = {36},
@@ -763,7 +826,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Chameleon: An efficient FHE scheme switching acceleration on GPUs. <em>TPDS</em>, <em>36</em>(11), 2264-2280. (<a href='https://doi.org/10.1109/TPDS.2025.3604866'>www</a>)
+(2025). Chameleon: An efficient FHE scheme switching acceleration on GPUs. <em>TPDS</em>, <em>36</em>(11), 2264--2280. (<a href='https://doi.org/10.1109/TPDS.2025.3604866'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -774,7 +837,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2264-2280},
+  pages        = {2264--2280},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Chameleon: An efficient FHE scheme switching acceleration on GPUs},
   volume       = {36},
@@ -784,7 +847,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Doing more with less: Balancing probing costs and task offloading efficiency at the network edge. <em>TPDS</em>, <em>36</em>(11), 2247-2263. (<a href='https://doi.org/10.1109/TPDS.2025.3590368'>www</a>)
+(2025). Doing more with less: Balancing probing costs and task offloading efficiency at the network edge. <em>TPDS</em>, <em>36</em>(11), 2247--2263. (<a href='https://doi.org/10.1109/TPDS.2025.3590368'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -795,7 +858,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2247-2263},
+  pages        = {2247--2263},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Doing more with less: Balancing probing costs and task offloading efficiency at the network edge},
   volume       = {36},
@@ -805,7 +868,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Parallel wormhole filters: High-performance approximate membership query data structures for persistent memory. <em>TPDS</em>, <em>36</em>(11), 2229-2246. (<a href='https://doi.org/10.1109/TPDS.2025.3605780'>www</a>)
+(2025). Parallel wormhole filters: High-performance approximate membership query data structures for persistent memory. <em>TPDS</em>, <em>36</em>(11), 2229--2246. (<a href='https://doi.org/10.1109/TPDS.2025.3605780'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -816,7 +879,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2229-2246},
+  pages        = {2229--2246},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Parallel wormhole filters: High-performance approximate membership query data structures for persistent memory},
   volume       = {36},
@@ -826,7 +889,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). PreTrans: Enabling efficient CGRA multi-task context switch through config pre-mapping and data transceiving. <em>TPDS</em>, <em>36</em>(11), 2214-2228. (<a href='https://doi.org/10.1109/TPDS.2025.3604815'>www</a>)
+(2025). PreTrans: Enabling efficient CGRA multi-task context switch through config pre-mapping and data transceiving. <em>TPDS</em>, <em>36</em>(11), 2214--2228. (<a href='https://doi.org/10.1109/TPDS.2025.3604815'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -837,7 +900,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2214-2228},
+  pages        = {2214--2228},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {PreTrans: Enabling efficient CGRA multi-task context switch through config pre-mapping and data transceiving},
   volume       = {36},
@@ -847,7 +910,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A sparse function prediction approach for cold start optimization and user satisfaction guarantee in serverless. <em>TPDS</em>, <em>36</em>(11), 2198-2213. (<a href='https://doi.org/10.1109/TPDS.2025.3602440'>www</a>)
+(2025). A sparse function prediction approach for cold start optimization and user satisfaction guarantee in serverless. <em>TPDS</em>, <em>36</em>(11), 2198--2213. (<a href='https://doi.org/10.1109/TPDS.2025.3602440'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -858,7 +921,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2198-2213},
+  pages        = {2198--2213},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A sparse function prediction approach for cold start optimization and user satisfaction guarantee in serverless},
   volume       = {36},
@@ -868,7 +931,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). MemTunnel: A CXL-based rack-scale host memory pooling architecture for cloud service. <em>TPDS</em>, <em>36</em>(11), 2182-2197. (<a href='https://doi.org/10.1109/TPDS.2025.3598190'>www</a>)
+(2025). MemTunnel: A CXL-based rack-scale host memory pooling architecture for cloud service. <em>TPDS</em>, <em>36</em>(11), 2182--2197. (<a href='https://doi.org/10.1109/TPDS.2025.3598190'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -879,7 +942,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2182-2197},
+  pages        = {2182--2197},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {MemTunnel: A CXL-based rack-scale host memory pooling architecture for cloud service},
   volume       = {36},
@@ -889,7 +952,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Exploiting fine-grained task-level parallelism for variant calling acceleration. <em>TPDS</em>, <em>36</em>(11), 2169-2181. (<a href='https://doi.org/10.1109/TPDS.2025.3600285'>www</a>)
+(2025). Exploiting fine-grained task-level parallelism for variant calling acceleration. <em>TPDS</em>, <em>36</em>(11), 2169--2181. (<a href='https://doi.org/10.1109/TPDS.2025.3600285'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -900,7 +963,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {11},
   number       = {11},
-  pages        = {2169-2181},
+  pages        = {2169--2181},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Exploiting fine-grained task-level parallelism for variant calling acceleration},
   volume       = {36},
@@ -910,7 +973,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). ELICA: Efficient and load balanced I/O cache architecture for hyperconverged infrastructures. <em>TPDS</em>, <em>36</em>(10), 2152-2168. (<a href='https://doi.org/10.1109/TPDS.2025.3592275'>www</a>)
+(2025). ELICA: Efficient and load balanced I/O cache architecture for hyperconverged infrastructures. <em>TPDS</em>, <em>36</em>(10), 2152--2168. (<a href='https://doi.org/10.1109/TPDS.2025.3592275'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -921,7 +984,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {10},
   number       = {10},
-  pages        = {2152-2168},
+  pages        = {2152--2168},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {ELICA: Efficient and load balanced I/O cache architecture for hyperconverged infrastructures},
   volume       = {36},
@@ -931,7 +994,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Mariana: Exploring native SkipList index design for disaggregated memory. <em>TPDS</em>, <em>36</em>(10), 2137-2151. (<a href='https://doi.org/10.1109/TPDS.2025.3596988'>www</a>)
+(2025). Mariana: Exploring native SkipList index design for disaggregated memory. <em>TPDS</em>, <em>36</em>(10), 2137--2151. (<a href='https://doi.org/10.1109/TPDS.2025.3596988'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -942,7 +1005,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {10},
   number       = {10},
-  pages        = {2137-2151},
+  pages        = {2137--2151},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Mariana: Exploring native SkipList index design for disaggregated memory},
   volume       = {36},
@@ -952,7 +1015,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Decentralized QoS-aware model inference using federated split learning for cloud-edge medical detection. <em>TPDS</em>, <em>36</em>(10), 2119-2136. (<a href='https://doi.org/10.1109/TPDS.2025.3594694'>www</a>)
+(2025). Decentralized QoS-aware model inference using federated split learning for cloud-edge medical detection. <em>TPDS</em>, <em>36</em>(10), 2119--2136. (<a href='https://doi.org/10.1109/TPDS.2025.3594694'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -963,7 +1026,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {10},
   number       = {10},
-  pages        = {2119-2136},
+  pages        = {2119--2136},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Decentralized QoS-aware model inference using federated split learning for cloud-edge medical detection},
   volume       = {36},
@@ -973,7 +1036,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). RL-based hybrid CPU scaling for soft deadline constrained tasks in container clouds. <em>TPDS</em>, <em>36</em>(10), 2104-2118. (<a href='https://doi.org/10.1109/TPDS.2025.3597195'>www</a>)
+(2025). RL-based hybrid CPU scaling for soft deadline constrained tasks in container clouds. <em>TPDS</em>, <em>36</em>(10), 2104--2118. (<a href='https://doi.org/10.1109/TPDS.2025.3597195'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -984,7 +1047,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {10},
   number       = {10},
-  pages        = {2104-2118},
+  pages        = {2104--2118},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {RL-based hybrid CPU scaling for soft deadline constrained tasks in container clouds},
   volume       = {36},
@@ -994,7 +1057,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Dynamic multiresource fair allocation with time discount utility. <em>TPDS</em>, <em>36</em>(10), 2089-2103. (<a href='https://doi.org/10.1109/TPDS.2025.3594741'>www</a>)
+(2025). Dynamic multiresource fair allocation with time discount utility. <em>TPDS</em>, <em>36</em>(10), 2089--2103. (<a href='https://doi.org/10.1109/TPDS.2025.3594741'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1005,7 +1068,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {10},
   number       = {10},
-  pages        = {2089-2103},
+  pages        = {2089--2103},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Dynamic multiresource fair allocation with time discount utility},
   volume       = {36},
@@ -1015,7 +1078,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Task scheduling in geo-distributed computing: A survey. <em>TPDS</em>, <em>36</em>(10), 2073-2088. (<a href='https://doi.org/10.1109/TPDS.2025.3591010'>www</a>)
+(2025). Task scheduling in geo-distributed computing: A survey. <em>TPDS</em>, <em>36</em>(10), 2073--2088. (<a href='https://doi.org/10.1109/TPDS.2025.3591010'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1026,7 +1089,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {10},
   number       = {10},
-  pages        = {2073-2088},
+  pages        = {2073--2088},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Task scheduling in geo-distributed computing: A survey},
   volume       = {36},
@@ -1036,7 +1099,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). MUCVR: Edge computing-enabled high-quality multi-user collaboration for interactive MVR. <em>TPDS</em>, <em>36</em>(10), 2058-2072. (<a href='https://doi.org/10.1109/TPDS.2025.3595801'>www</a>)
+(2025). MUCVR: Edge computing-enabled high-quality multi-user collaboration for interactive MVR. <em>TPDS</em>, <em>36</em>(10), 2058--2072. (<a href='https://doi.org/10.1109/TPDS.2025.3595801'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1047,7 +1110,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {10},
   number       = {10},
-  pages        = {2058-2072},
+  pages        = {2058--2072},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {MUCVR: Edge computing-enabled high-quality multi-user collaboration for interactive MVR},
   volume       = {36},
@@ -1057,7 +1120,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Performance portability assessment in gaia. <em>TPDS</em>, <em>36</em>(10), 2045-2057. (<a href='https://doi.org/10.1109/TPDS.2025.3591452'>www</a>)
+(2025). Performance portability assessment in gaia. <em>TPDS</em>, <em>36</em>(10), 2045--2057. (<a href='https://doi.org/10.1109/TPDS.2025.3591452'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1068,7 +1131,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {10},
   number       = {10},
-  pages        = {2045-2057},
+  pages        = {2045--2057},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Performance portability assessment in gaia},
   volume       = {36},
@@ -1078,7 +1141,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Parallelization of network dynamics computations in heterogeneous distributed environment. <em>TPDS</em>, <em>36</em>(10), 2030-2044. (<a href='https://doi.org/10.1109/TPDS.2025.3593154'>www</a>)
+(2025). Parallelization of network dynamics computations in heterogeneous distributed environment. <em>TPDS</em>, <em>36</em>(10), 2030--2044. (<a href='https://doi.org/10.1109/TPDS.2025.3593154'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1089,7 +1152,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {10},
   number       = {10},
-  pages        = {2030-2044},
+  pages        = {2030--2044},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Parallelization of network dynamics computations in heterogeneous distributed environment},
   volume       = {36},
@@ -1099,7 +1162,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). M$^{2}$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:msup><mml:mrow/><mml:mn>2</mml:mn></mml:msup></mml:math>LLM: A multi-dimensional optimization framework for LLM inference on mobile devices. <em>TPDS</em>, <em>36</em>(10), 2014-2029. (<a href='https://doi.org/10.1109/TPDS.2025.3587445'>www</a>)
+(2025). M$^{2}$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:msup><mml:mrow/><mml:mn>2</mml:mn></mml:msup></mml:math>LLM: A multi-dimensional optimization framework for LLM inference on mobile devices. <em>TPDS</em>, <em>36</em>(10), 2014--2029. (<a href='https://doi.org/10.1109/TPDS.2025.3587445'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1110,7 +1173,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {10},
   number       = {10},
-  pages        = {2014-2029},
+  pages        = {2014--2029},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {M$^{2}$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:msup><mml:mrow/><mml:mn>2</mml:mn></mml:msup></mml:math>LLM: A multi-dimensional optimization framework for LLM inference on mobile devices},
   volume       = {36},
@@ -1120,7 +1183,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Accelerating half-precision seismic simulation on neural processing unit. <em>TPDS</em>, <em>36</em>(10), 1998-2013. (<a href='https://doi.org/10.1109/TPDS.2025.3584773'>www</a>)
+(2025). Accelerating half-precision seismic simulation on neural processing unit. <em>TPDS</em>, <em>36</em>(10), 1998--2013. (<a href='https://doi.org/10.1109/TPDS.2025.3584773'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1131,7 +1194,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {10},
   number       = {10},
-  pages        = {1998-2013},
+  pages        = {1998--2013},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Accelerating half-precision seismic simulation on neural processing unit},
   volume       = {36},
@@ -1141,7 +1204,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). High performance OpenCL-based GEMM kernel auto-tuned by bayesian optimization. <em>TPDS</em>, <em>36</em>(9), 1985-1997. (<a href='https://doi.org/10.1109/TPDS.2025.3587673'>www</a>)
+(2025). High performance OpenCL-based GEMM kernel auto-tuned by bayesian optimization. <em>TPDS</em>, <em>36</em>(9), 1985--1997. (<a href='https://doi.org/10.1109/TPDS.2025.3587673'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1152,7 +1215,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {9},
   number       = {9},
-  pages        = {1985-1997},
+  pages        = {1985--1997},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {High performance OpenCL-based GEMM kernel auto-tuned by bayesian optimization},
   volume       = {36},
@@ -1162,7 +1225,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Cannikin: No lagger of SLO in concurrent multiple LoRA LLM serving. <em>TPDS</em>, <em>36</em>(9), 1972-1984. (<a href='https://doi.org/10.1109/TPDS.2025.3590014'>www</a>)
+(2025). Cannikin: No lagger of SLO in concurrent multiple LoRA LLM serving. <em>TPDS</em>, <em>36</em>(9), 1972--1984. (<a href='https://doi.org/10.1109/TPDS.2025.3590014'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1173,7 +1236,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {9},
   number       = {9},
-  pages        = {1972-1984},
+  pages        = {1972--1984},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Cannikin: No lagger of SLO in concurrent multiple LoRA LLM serving},
   volume       = {36},
@@ -1183,7 +1246,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). NDP: Network division positioning for irregular multi-hop networks. <em>TPDS</em>, <em>36</em>(9), 1955-1971. (<a href='https://doi.org/10.1109/TPDS.2025.3583502'>www</a>)
+(2025). NDP: Network division positioning for irregular multi-hop networks. <em>TPDS</em>, <em>36</em>(9), 1955--1971. (<a href='https://doi.org/10.1109/TPDS.2025.3583502'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1194,7 +1257,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {9},
   number       = {9},
-  pages        = {1955-1971},
+  pages        = {1955--1971},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {NDP: Network division positioning for irregular multi-hop networks},
   volume       = {36},
@@ -1204,7 +1267,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Compositional coordinated resource provisioning in workflows with stochastic durations. <em>TPDS</em>, <em>36</em>(9), 1937-1954. (<a href='https://doi.org/10.1109/TPDS.2025.3585821'>www</a>)
+(2025). Compositional coordinated resource provisioning in workflows with stochastic durations. <em>TPDS</em>, <em>36</em>(9), 1937--1954. (<a href='https://doi.org/10.1109/TPDS.2025.3585821'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1215,7 +1278,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {9},
   number       = {9},
-  pages        = {1937-1954},
+  pages        = {1937--1954},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Compositional coordinated resource provisioning in workflows with stochastic durations},
   volume       = {36},
@@ -1225,7 +1288,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). GPComp: Using GPU and SSD-GPU peer to peer DMA to accelerate LSM-tree compaction for key-value store. <em>TPDS</em>, <em>36</em>(9), 1920-1936. (<a href='https://doi.org/10.1109/TPDS.2025.3586616'>www</a>)
+(2025). GPComp: Using GPU and SSD-GPU peer to peer DMA to accelerate LSM-tree compaction for key-value store. <em>TPDS</em>, <em>36</em>(9), 1920--1936. (<a href='https://doi.org/10.1109/TPDS.2025.3586616'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1236,7 +1299,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {9},
   number       = {9},
-  pages        = {1920-1936},
+  pages        = {1920--1936},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {GPComp: Using GPU and SSD-GPU peer to peer DMA to accelerate LSM-tree compaction for key-value store},
   volume       = {36},
@@ -1246,7 +1309,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A learned performance model with transfer learning across GPUs on tensorized instructions. <em>TPDS</em>, <em>36</em>(9), 1904-1919. (<a href='https://doi.org/10.1109/TPDS.2025.3578630'>www</a>)
+(2025). A learned performance model with transfer learning across GPUs on tensorized instructions. <em>TPDS</em>, <em>36</em>(9), 1904--1919. (<a href='https://doi.org/10.1109/TPDS.2025.3578630'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1257,7 +1320,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {9},
   number       = {9},
-  pages        = {1904-1919},
+  pages        = {1904--1919},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A learned performance model with transfer learning across GPUs on tensorized instructions},
   volume       = {36},
@@ -1267,7 +1330,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). $\text {GPUSCAN}^{++}$: Efficient structural graph clustering on GPUs. <em>TPDS</em>, <em>36</em>(9), 1890-1903. (<a href='https://doi.org/10.1109/TPDS.2025.3582996'>www</a>)
+(2025). $\text {GPUSCAN}^{++}$: Efficient structural graph clustering on GPUs. <em>TPDS</em>, <em>36</em>(9), 1890--1903. (<a href='https://doi.org/10.1109/TPDS.2025.3582996'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1278,7 +1341,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {9},
   number       = {9},
-  pages        = {1890-1903},
+  pages        = {1890--1903},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {$\text {GPUSCAN}^{++}$: Efficient structural graph clustering on GPUs},
   volume       = {36},
@@ -1288,7 +1351,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). PipeMesh: Achieving memory-efficient computation-communication overlap for training large language models. <em>TPDS</em>, <em>36</em>(9), 1872-1889. (<a href='https://doi.org/10.1109/TPDS.2025.3583983'>www</a>)
+(2025). PipeMesh: Achieving memory-efficient computation-communication overlap for training large language models. <em>TPDS</em>, <em>36</em>(9), 1872--1889. (<a href='https://doi.org/10.1109/TPDS.2025.3583983'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1299,7 +1362,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {9},
   number       = {9},
-  pages        = {1872-1889},
+  pages        = {1872--1889},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {PipeMesh: Achieving memory-efficient computation-communication overlap for training large language models},
   volume       = {36},
@@ -1309,7 +1372,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Improved methods of task assignment and resource allocation with preemption in edge computing systems. <em>TPDS</em>, <em>36</em>(9), 1857-1871. (<a href='https://doi.org/10.1109/TPDS.2025.3583966'>www</a>)
+(2025). Improved methods of task assignment and resource allocation with preemption in edge computing systems. <em>TPDS</em>, <em>36</em>(9), 1857--1871. (<a href='https://doi.org/10.1109/TPDS.2025.3583966'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1320,7 +1383,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {9},
   number       = {9},
-  pages        = {1857-1871},
+  pages        = {1857--1871},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Improved methods of task assignment and resource allocation with preemption in edge computing systems},
   volume       = {36},
@@ -1330,7 +1393,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Everything distributed and asynchronous: A practical system for key management service. <em>TPDS</em>, <em>36</em>(9), 1841-1856. (<a href='https://doi.org/10.1109/TPDS.2025.3577038'>www</a>)
+(2025). Everything distributed and asynchronous: A practical system for key management service. <em>TPDS</em>, <em>36</em>(9), 1841--1856. (<a href='https://doi.org/10.1109/TPDS.2025.3577038'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1341,7 +1404,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {9},
   number       = {9},
-  pages        = {1841-1856},
+  pages        = {1841--1856},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Everything distributed and asynchronous: A practical system for key management service},
   volume       = {36},
@@ -1351,7 +1414,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Oases: Efficient large-scale model training on commodity servers via overlapped and automated tensor model parallelism. <em>TPDS</em>, <em>36</em>(9), 1828-1840. (<a href='https://doi.org/10.1109/TPDS.2025.3583165'>www</a>)
+(2025). Oases: Efficient large-scale model training on commodity servers via overlapped and automated tensor model parallelism. <em>TPDS</em>, <em>36</em>(9), 1828--1840. (<a href='https://doi.org/10.1109/TPDS.2025.3583165'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1362,7 +1425,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {9},
   number       = {9},
-  pages        = {1828-1840},
+  pages        = {1828--1840},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Oases: Efficient large-scale model training on commodity servers via overlapped and automated tensor model parallelism},
   volume       = {36},
@@ -1372,7 +1435,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). SSS-DIMM: Removing redundant data movement in trusted DIMM-based near-memory-processing kernel offloading via secure space sharing. <em>TPDS</em>, <em>36</em>(8), 1810-1827. (<a href='https://doi.org/10.1109/TPDS.2025.3576438'>www</a>)
+(2025). SSS-DIMM: Removing redundant data movement in trusted DIMM-based near-memory-processing kernel offloading via secure space sharing. <em>TPDS</em>, <em>36</em>(8), 1810--1827. (<a href='https://doi.org/10.1109/TPDS.2025.3576438'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1383,7 +1446,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1810-1827},
+  pages        = {1810--1827},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {SSS-DIMM: Removing redundant data movement in trusted DIMM-based near-memory-processing kernel offloading via secure space sharing},
   volume       = {36},
@@ -1393,7 +1456,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Parallel acceleration of genome variation detection on multi-zone heterogeneous system. <em>TPDS</em>, <em>36</em>(8), 1797-1809. (<a href='https://doi.org/10.1109/TPDS.2025.3581972'>www</a>)
+(2025). Parallel acceleration of genome variation detection on multi-zone heterogeneous system. <em>TPDS</em>, <em>36</em>(8), 1797--1809. (<a href='https://doi.org/10.1109/TPDS.2025.3581972'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1404,7 +1467,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1797-1809},
+  pages        = {1797--1809},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Parallel acceleration of genome variation detection on multi-zone heterogeneous system},
   volume       = {36},
@@ -1414,7 +1477,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Building accurate and interpretable online classifiers on edge devices. <em>TPDS</em>, <em>36</em>(8), 1779-1796. (<a href='https://doi.org/10.1109/TPDS.2025.3579121'>www</a>)
+(2025). Building accurate and interpretable online classifiers on edge devices. <em>TPDS</em>, <em>36</em>(8), 1779--1796. (<a href='https://doi.org/10.1109/TPDS.2025.3579121'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1425,7 +1488,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1779-1796},
+  pages        = {1779--1796},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Building accurate and interpretable online classifiers on edge devices},
   volume       = {36},
@@ -1435,7 +1498,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Towards efficiency and decentralization: A blockchain assisted distributed fuzzy-rough feature selection. <em>TPDS</em>, <em>36</em>(8), 1762-1778. (<a href='https://doi.org/10.1109/TPDS.2025.3578032'>www</a>)
+(2025). Towards efficiency and decentralization: A blockchain assisted distributed fuzzy-rough feature selection. <em>TPDS</em>, <em>36</em>(8), 1762--1778. (<a href='https://doi.org/10.1109/TPDS.2025.3578032'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1446,7 +1509,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1762-1778},
+  pages        = {1762--1778},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Towards efficiency and decentralization: A blockchain assisted distributed fuzzy-rough feature selection},
   volume       = {36},
@@ -1456,7 +1519,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Safe multi-agent deep reinforcement learning for the management of autonomous connected vehicles at future intersections. <em>TPDS</em>, <em>36</em>(8), 1744-1761. (<a href='https://doi.org/10.1109/TPDS.2025.3580092'>www</a>)
+(2025). Safe multi-agent deep reinforcement learning for the management of autonomous connected vehicles at future intersections. <em>TPDS</em>, <em>36</em>(8), 1744--1761. (<a href='https://doi.org/10.1109/TPDS.2025.3580092'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1467,7 +1530,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1744-1761},
+  pages        = {1744--1761},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Safe multi-agent deep reinforcement learning for the management of autonomous connected vehicles at future intersections},
   volume       = {36},
@@ -1477,7 +1540,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). An efficient speculative federated tree learning system with a lightweight NN-based predictor. <em>TPDS</em>, <em>36</em>(8), 1728-1743. (<a href='https://doi.org/10.1109/TPDS.2025.3581295'>www</a>)
+(2025). An efficient speculative federated tree learning system with a lightweight NN-based predictor. <em>TPDS</em>, <em>36</em>(8), 1728--1743. (<a href='https://doi.org/10.1109/TPDS.2025.3581295'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1488,7 +1551,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1728-1743},
+  pages        = {1728--1743},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {An efficient speculative federated tree learning system with a lightweight NN-based predictor},
   volume       = {36},
@@ -1498,7 +1561,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). VAHRM: Variation-aware resource management in heterogeneous supercomputing systems. <em>TPDS</em>, <em>36</em>(8), 1713-1727. (<a href='https://doi.org/10.1109/TPDS.2025.3577252'>www</a>)
+(2025). VAHRM: Variation-aware resource management in heterogeneous supercomputing systems. <em>TPDS</em>, <em>36</em>(8), 1713--1727. (<a href='https://doi.org/10.1109/TPDS.2025.3577252'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1509,7 +1572,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1713-1727},
+  pages        = {1713--1727},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {VAHRM: Variation-aware resource management in heterogeneous supercomputing systems},
   volume       = {36},
@@ -1519,7 +1582,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A generic, high-performance, compression-aware framework for data parallel DNN training. <em>TPDS</em>, <em>36</em>(8), 1695-1712. (<a href='https://doi.org/10.1109/TPDS.2023.3266246'>www</a>)
+(2025). A generic, high-performance, compression-aware framework for data parallel DNN training. <em>TPDS</em>, <em>36</em>(8), 1695--1712. (<a href='https://doi.org/10.1109/TPDS.2023.3266246'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1530,7 +1593,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1695-1712},
+  pages        = {1695--1712},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A generic, high-performance, compression-aware framework for data parallel DNN training},
   volume       = {36},
@@ -1540,7 +1603,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Cross-search with improved multi-dimensional dichotomy-based joint optimization for distributed parallel training of DNN. <em>TPDS</em>, <em>36</em>(8), 1680-1694. (<a href='https://doi.org/10.1109/TPDS.2025.3580098'>www</a>)
+(2025). Cross-search with improved multi-dimensional dichotomy-based joint optimization for distributed parallel training of DNN. <em>TPDS</em>, <em>36</em>(8), 1680--1694. (<a href='https://doi.org/10.1109/TPDS.2025.3580098'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1551,7 +1614,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1680-1694},
+  pages        = {1680--1694},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Cross-search with improved multi-dimensional dichotomy-based joint optimization for distributed parallel training of DNN},
   volume       = {36},
@@ -1561,7 +1624,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Boosting resource-constrained federated learning systems with guessed updates. <em>TPDS</em>, <em>36</em>(8), 1666-1679. (<a href='https://doi.org/10.1109/TPDS.2025.3578522'>www</a>)
+(2025). Boosting resource-constrained federated learning systems with guessed updates. <em>TPDS</em>, <em>36</em>(8), 1666--1679. (<a href='https://doi.org/10.1109/TPDS.2025.3578522'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1572,7 +1635,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1666-1679},
+  pages        = {1666--1679},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Boosting resource-constrained federated learning systems with guessed updates},
   volume       = {36},
@@ -1582,7 +1645,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Featherlight stateful WebAssembly for serverless inference workflows. <em>TPDS</em>, <em>36</em>(8), 1651-1665. (<a href='https://doi.org/10.1109/TPDS.2025.3575753'>www</a>)
+(2025). Featherlight stateful WebAssembly for serverless inference workflows. <em>TPDS</em>, <em>36</em>(8), 1651--1665. (<a href='https://doi.org/10.1109/TPDS.2025.3575753'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1593,7 +1656,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1651-1665},
+  pages        = {1651--1665},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Featherlight stateful WebAssembly for serverless inference workflows},
   volume       = {36},
@@ -1603,7 +1666,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). ABSE: Adaptive baseline score-based election for leader-based BFT systems. <em>TPDS</em>, <em>36</em>(8), 1634-1650. (<a href='https://doi.org/10.1109/TPDS.2025.3572553'>www</a>)
+(2025). ABSE: Adaptive baseline score-based election for leader-based BFT systems. <em>TPDS</em>, <em>36</em>(8), 1634--1650. (<a href='https://doi.org/10.1109/TPDS.2025.3572553'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1614,7 +1677,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1634-1650},
+  pages        = {1634--1650},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {ABSE: Adaptive baseline score-based election for leader-based BFT systems},
   volume       = {36},
@@ -1624,7 +1687,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A highly-parallel and scalable hardware accelerator for the NTest othello game engine. <em>TPDS</em>, <em>36</em>(8), 1620-1633. (<a href='https://doi.org/10.1109/TPDS.2025.3570596'>www</a>)
+(2025). A highly-parallel and scalable hardware accelerator for the NTest othello game engine. <em>TPDS</em>, <em>36</em>(8), 1620--1633. (<a href='https://doi.org/10.1109/TPDS.2025.3570596'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1635,7 +1698,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1620-1633},
+  pages        = {1620--1633},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A highly-parallel and scalable hardware accelerator for the NTest othello game engine},
   volume       = {36},
@@ -1645,7 +1708,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). DisPLOY: Target-constrained distributed deployment for network measurement tasks on data plane. <em>TPDS</em>, <em>36</em>(8), 1608-1619. (<a href='https://doi.org/10.1109/TPDS.2025.3572246'>www</a>)
+(2025). DisPLOY: Target-constrained distributed deployment for network measurement tasks on data plane. <em>TPDS</em>, <em>36</em>(8), 1608--1619. (<a href='https://doi.org/10.1109/TPDS.2025.3572246'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1656,7 +1719,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1608-1619},
+  pages        = {1608--1619},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {DisPLOY: Target-constrained distributed deployment for network measurement tasks on data plane},
   volume       = {36},
@@ -1666,7 +1729,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). ISACPP: Interference-aware scheduling approach for deep learning training workloads based on co-location performance prediction. <em>TPDS</em>, <em>36</em>(8), 1591-1607. (<a href='https://doi.org/10.1109/TPDS.2025.3577796'>www</a>)
+(2025). ISACPP: Interference-aware scheduling approach for deep learning training workloads based on co-location performance prediction. <em>TPDS</em>, <em>36</em>(8), 1591--1607. (<a href='https://doi.org/10.1109/TPDS.2025.3577796'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1677,7 +1740,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1591-1607},
+  pages        = {1591--1607},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {ISACPP: Interference-aware scheduling approach for deep learning training workloads based on co-location performance prediction},
   volume       = {36},
@@ -1687,7 +1750,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). OpenSN: An open source library for emulating LEO satellite networks. <em>TPDS</em>, <em>36</em>(8), 1574-1590. (<a href='https://doi.org/10.1109/TPDS.2025.3575920'>www</a>)
+(2025). OpenSN: An open source library for emulating LEO satellite networks. <em>TPDS</em>, <em>36</em>(8), 1574--1590. (<a href='https://doi.org/10.1109/TPDS.2025.3575920'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1698,7 +1761,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1574-1590},
+  pages        = {1574--1590},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {OpenSN: An open source library for emulating LEO satellite networks},
   volume       = {36},
@@ -1708,7 +1771,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). RHINO: An efficient serverless container system for small-scale HPC applications. <em>TPDS</em>, <em>36</em>(8), 1560-1573. (<a href='https://doi.org/10.1109/TPDS.2025.3576584'>www</a>)
+(2025). RHINO: An efficient serverless container system for small-scale HPC applications. <em>TPDS</em>, <em>36</em>(8), 1560--1573. (<a href='https://doi.org/10.1109/TPDS.2025.3576584'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1719,7 +1782,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1560-1573},
+  pages        = {1560--1573},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {RHINO: An efficient serverless container system for small-scale HPC applications},
   volume       = {36},
@@ -1729,7 +1792,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). GraFetch: Accelerating graph applications through domain specific hierarchical hybrid prefetching. <em>TPDS</em>, <em>36</em>(8), 1542-1559. (<a href='https://doi.org/10.1109/TPDS.2025.3575106'>www</a>)
+(2025). GraFetch: Accelerating graph applications through domain specific hierarchical hybrid prefetching. <em>TPDS</em>, <em>36</em>(8), 1542--1559. (<a href='https://doi.org/10.1109/TPDS.2025.3575106'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1740,7 +1803,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1542-1559},
+  pages        = {1542--1559},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {GraFetch: Accelerating graph applications through domain specific hierarchical hybrid prefetching},
   volume       = {36},
@@ -1750,7 +1813,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). GIF-FHE: A comprehensive implementation and evaluation of GPU-accelerated FHE with integer and floating-point computing power. <em>TPDS</em>, <em>36</em>(8), 1524-1541. (<a href='https://doi.org/10.1109/TPDS.2025.3574481'>www</a>)
+(2025). GIF-FHE: A comprehensive implementation and evaluation of GPU-accelerated FHE with integer and floating-point computing power. <em>TPDS</em>, <em>36</em>(8), 1524--1541. (<a href='https://doi.org/10.1109/TPDS.2025.3574481'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1761,7 +1824,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1524-1541},
+  pages        = {1524--1541},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {GIF-FHE: A comprehensive implementation and evaluation of GPU-accelerated FHE with integer and floating-point computing power},
   volume       = {36},
@@ -1771,7 +1834,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Coordinating computational capacity for adaptive federated learning in heterogeneous edge computing systems. <em>TPDS</em>, <em>36</em>(8), 1509-1523. (<a href='https://doi.org/10.1109/TPDS.2025.3574718'>www</a>)
+(2025). Coordinating computational capacity for adaptive federated learning in heterogeneous edge computing systems. <em>TPDS</em>, <em>36</em>(8), 1509--1523. (<a href='https://doi.org/10.1109/TPDS.2025.3574718'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1782,7 +1845,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {8},
   number       = {8},
-  pages        = {1509-1523},
+  pages        = {1509--1523},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Coordinating computational capacity for adaptive federated learning in heterogeneous edge computing systems},
   volume       = {36},
@@ -1792,7 +1855,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). PWDFT-SW: Extending the limit of plane-wave DFT calculations to 16K atoms on the new sunway supercomputer. <em>TPDS</em>, <em>36</em>(7), 1495-1508. (<a href='https://doi.org/10.1109/TPDS.2025.3557621'>www</a>)
+(2025). PWDFT-SW: Extending the limit of plane-wave DFT calculations to 16K atoms on the new sunway supercomputer. <em>TPDS</em>, <em>36</em>(7), 1495--1508. (<a href='https://doi.org/10.1109/TPDS.2025.3557621'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1803,7 +1866,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {7},
   number       = {7},
-  pages        = {1495-1508},
+  pages        = {1495--1508},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {PWDFT-SW: Extending the limit of plane-wave DFT calculations to 16K atoms on the new sunway supercomputer},
   volume       = {36},
@@ -1813,7 +1876,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). ZeroTracer: In-band eBPF-based trace generator with zero instrumentation for microservice systems. <em>TPDS</em>, <em>36</em>(7), 1478-1494. (<a href='https://doi.org/10.1109/TPDS.2025.3571934'>www</a>)
+(2025). ZeroTracer: In-band eBPF-based trace generator with zero instrumentation for microservice systems. <em>TPDS</em>, <em>36</em>(7), 1478--1494. (<a href='https://doi.org/10.1109/TPDS.2025.3571934'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1824,7 +1887,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {7},
   number       = {7},
-  pages        = {1478-1494},
+  pages        = {1478--1494},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {ZeroTracer: In-band eBPF-based trace generator with zero instrumentation for microservice systems},
   volume       = {36},
@@ -1834,7 +1897,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A lightweight and fine-grained ciphertext search scheme for big data assisted by proxy servers. <em>TPDS</em>, <em>36</em>(7), 1460-1477. (<a href='https://doi.org/10.1109/TPDS.2025.3560694'>www</a>)
+(2025). A lightweight and fine-grained ciphertext search scheme for big data assisted by proxy servers. <em>TPDS</em>, <em>36</em>(7), 1460--1477. (<a href='https://doi.org/10.1109/TPDS.2025.3560694'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1845,7 +1908,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {7},
   number       = {7},
-  pages        = {1460-1477},
+  pages        = {1460--1477},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A lightweight and fine-grained ciphertext search scheme for big data assisted by proxy servers},
   volume       = {36},
@@ -1855,7 +1918,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). AlignMalloc: Warp-aware memory rearrangement aligned with UVM prefetching for large-scale GPU dynamic allocations. <em>TPDS</em>, <em>36</em>(7), 1444-1459. (<a href='https://doi.org/10.1109/TPDS.2025.3568688'>www</a>)
+(2025). AlignMalloc: Warp-aware memory rearrangement aligned with UVM prefetching for large-scale GPU dynamic allocations. <em>TPDS</em>, <em>36</em>(7), 1444--1459. (<a href='https://doi.org/10.1109/TPDS.2025.3568688'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1866,7 +1929,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {7},
   number       = {7},
-  pages        = {1444-1459},
+  pages        = {1444--1459},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {AlignMalloc: Warp-aware memory rearrangement aligned with UVM prefetching for large-scale GPU dynamic allocations},
   volume       = {36},
@@ -1876,7 +1939,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Fast and scalable neural network quantum states method for molecular potential energy surfaces. <em>TPDS</em>, <em>36</em>(7), 1431-1443. (<a href='https://doi.org/10.1109/TPDS.2025.3568360'>www</a>)
+(2025). Fast and scalable neural network quantum states method for molecular potential energy surfaces. <em>TPDS</em>, <em>36</em>(7), 1431--1443. (<a href='https://doi.org/10.1109/TPDS.2025.3568360'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1887,7 +1950,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {7},
   number       = {7},
-  pages        = {1431-1443},
+  pages        = {1431--1443},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Fast and scalable neural network quantum states method for molecular potential energy surfaces},
   volume       = {36},
@@ -1897,7 +1960,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Publicly verifiable distributed computation for MEC setting. <em>TPDS</em>, <em>36</em>(7), 1416-1430. (<a href='https://doi.org/10.1109/TPDS.2025.3566080'>www</a>)
+(2025). Publicly verifiable distributed computation for MEC setting. <em>TPDS</em>, <em>36</em>(7), 1416--1430. (<a href='https://doi.org/10.1109/TPDS.2025.3566080'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1908,7 +1971,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {7},
   number       = {7},
-  pages        = {1416-1430},
+  pages        = {1416--1430},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Publicly verifiable distributed computation for MEC setting},
   volume       = {36},
@@ -1918,7 +1981,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). An acceleration framework for deep reinforcement learning using heterogeneous systems. <em>TPDS</em>, <em>36</em>(7), 1401-1415. (<a href='https://doi.org/10.1109/TPDS.2025.3566766'>www</a>)
+(2025). An acceleration framework for deep reinforcement learning using heterogeneous systems. <em>TPDS</em>, <em>36</em>(7), 1401--1415. (<a href='https://doi.org/10.1109/TPDS.2025.3566766'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1929,7 +1992,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {7},
   number       = {7},
-  pages        = {1401-1415},
+  pages        = {1401--1415},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {An acceleration framework for deep reinforcement learning using heterogeneous systems},
   volume       = {36},
@@ -1939,7 +2002,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Identifying performance inefficiencies of parallel program with spatial and temporal trace analysis. <em>TPDS</em>, <em>36</em>(7), 1387-1400. (<a href='https://doi.org/10.1109/TPDS.2025.3566735'>www</a>)
+(2025). Identifying performance inefficiencies of parallel program with spatial and temporal trace analysis. <em>TPDS</em>, <em>36</em>(7), 1387--1400. (<a href='https://doi.org/10.1109/TPDS.2025.3566735'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1950,7 +2013,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {7},
   number       = {7},
-  pages        = {1387-1400},
+  pages        = {1387--1400},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Identifying performance inefficiencies of parallel program with spatial and temporal trace analysis},
   volume       = {36},
@@ -1960,7 +2023,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). FedCSpc: A cross-silo federated learning system with error-bounded lossy parameter compression. <em>TPDS</em>, <em>36</em>(7), 1372-1386. (<a href='https://doi.org/10.1109/TPDS.2025.3564736'>www</a>)
+(2025). FedCSpc: A cross-silo federated learning system with error-bounded lossy parameter compression. <em>TPDS</em>, <em>36</em>(7), 1372--1386. (<a href='https://doi.org/10.1109/TPDS.2025.3564736'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1971,7 +2034,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {7},
   number       = {7},
-  pages        = {1372-1386},
+  pages        = {1372--1386},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {FedCSpc: A cross-silo federated learning system with error-bounded lossy parameter compression},
   volume       = {36},
@@ -1981,7 +2044,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). CausalConf: Datasize-aware configuration auto-tuning for recurring big data processing jobs via adaptive causal structure learning. <em>TPDS</em>, <em>36</em>(7), 1354-1371. (<a href='https://doi.org/10.1109/TPDS.2025.3560304'>www</a>)
+(2025). CausalConf: Datasize-aware configuration auto-tuning for recurring big data processing jobs via adaptive causal structure learning. <em>TPDS</em>, <em>36</em>(7), 1354--1371. (<a href='https://doi.org/10.1109/TPDS.2025.3560304'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -1992,7 +2055,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {7},
   number       = {7},
-  pages        = {1354-1371},
+  pages        = {1354--1371},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {CausalConf: Datasize-aware configuration auto-tuning for recurring big data processing jobs via adaptive causal structure learning},
   volume       = {36},
@@ -2002,7 +2065,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A generic specification framework for weakly consistent replicated data types. <em>TPDS</em>, <em>36</em>(6), 1338-1353. (<a href='https://doi.org/10.1109/TPDS.2025.3533546'>www</a>)
+(2025). A generic specification framework for weakly consistent replicated data types. <em>TPDS</em>, <em>36</em>(6), 1338--1353. (<a href='https://doi.org/10.1109/TPDS.2025.3533546'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2013,7 +2076,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1338-1353},
+  pages        = {1338--1353},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A generic specification framework for weakly consistent replicated data types},
   volume       = {36},
@@ -2023,7 +2086,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Beehive: Decentralised high-frequency small tasks scheduling in large clusters. <em>TPDS</em>, <em>36</em>(6), 1326-1337. (<a href='https://doi.org/10.1109/TPDS.2025.3563457'>www</a>)
+(2025). Beehive: Decentralised high-frequency small tasks scheduling in large clusters. <em>TPDS</em>, <em>36</em>(6), 1326--1337. (<a href='https://doi.org/10.1109/TPDS.2025.3563457'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2034,7 +2097,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1326-1337},
+  pages        = {1326--1337},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Beehive: Decentralised high-frequency small tasks scheduling in large clusters},
   volume       = {36},
@@ -2044,7 +2107,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Parallel greedy algorithms for steiner forest. <em>TPDS</em>, <em>36</em>(6), 1311-1325. (<a href='https://doi.org/10.1109/TPDS.2025.3563849'>www</a>)
+(2025). Parallel greedy algorithms for steiner forest. <em>TPDS</em>, <em>36</em>(6), 1311--1325. (<a href='https://doi.org/10.1109/TPDS.2025.3563849'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2055,7 +2118,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1311-1325},
+  pages        = {1311--1325},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Parallel greedy algorithms for steiner forest},
   volume       = {36},
@@ -2065,7 +2128,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Raccoon: Lightweight support for comprehensive control flows in reconfigurable spatial architectures. <em>TPDS</em>, <em>36</em>(6), 1294-1310. (<a href='https://doi.org/10.1109/TPDS.2025.3561145'>www</a>)
+(2025). Raccoon: Lightweight support for comprehensive control flows in reconfigurable spatial architectures. <em>TPDS</em>, <em>36</em>(6), 1294--1310. (<a href='https://doi.org/10.1109/TPDS.2025.3561145'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2076,7 +2139,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1294-1310},
+  pages        = {1294--1310},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Raccoon: Lightweight support for comprehensive control flows in reconfigurable spatial architectures},
   volume       = {36},
@@ -2086,7 +2149,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Symmetric properties and two variants of shuffle-cubes. <em>TPDS</em>, <em>36</em>(6), 1282-1293. (<a href='https://doi.org/10.1109/TPDS.2025.3558885'>www</a>)
+(2025). Symmetric properties and two variants of shuffle-cubes. <em>TPDS</em>, <em>36</em>(6), 1282--1293. (<a href='https://doi.org/10.1109/TPDS.2025.3558885'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2097,7 +2160,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1282-1293},
+  pages        = {1282--1293},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Symmetric properties and two variants of shuffle-cubes},
   volume       = {36},
@@ -2107,7 +2170,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). $AWB^+$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>A</mml:mi><mml:mi>W</mml:mi><mml:msup><mml:mi>B</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:mrow></mml:math>-$Tree$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>T</mml:mi><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>e</mml:mi></mml:mrow></mml:math>: A novel width-based index structure supporting hybrid matching for large-scale content-based Pub/Sub systems. <em>TPDS</em>, <em>36</em>(6), 1268-1281. (<a href='https://doi.org/10.1109/TPDS.2025.3561714'>www</a>)
+(2025). $AWB^+$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>A</mml:mi><mml:mi>W</mml:mi><mml:msup><mml:mi>B</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:mrow></mml:math>-$Tree$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>T</mml:mi><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>e</mml:mi></mml:mrow></mml:math>: A novel width-based index structure supporting hybrid matching for large-scale content-based Pub/Sub systems. <em>TPDS</em>, <em>36</em>(6), 1268--1281. (<a href='https://doi.org/10.1109/TPDS.2025.3561714'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2118,7 +2181,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1268-1281},
+  pages        = {1268--1281},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {$AWB^+$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>A</mml:mi><mml:mi>W</mml:mi><mml:msup><mml:mi>B</mml:mi><mml:mo>+</mml:mo></mml:msup></mml:mrow></mml:math>-$Tree$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mrow><mml:mi>T</mml:mi><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>e</mml:mi></mml:mrow></mml:math>: A novel width-based index structure supporting hybrid matching for large-scale content-based Pub/Sub systems},
   volume       = {36},
@@ -2128,7 +2191,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). OmniLearn: A framework for distributed deep learning over heterogeneous clusters. <em>TPDS</em>, <em>36</em>(6), 1253-1267. (<a href='https://doi.org/10.1109/TPDS.2025.3553066'>www</a>)
+(2025). OmniLearn: A framework for distributed deep learning over heterogeneous clusters. <em>TPDS</em>, <em>36</em>(6), 1253--1267. (<a href='https://doi.org/10.1109/TPDS.2025.3553066'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2139,7 +2202,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1253-1267},
+  pages        = {1253--1267},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {OmniLearn: A framework for distributed deep learning over heterogeneous clusters},
   volume       = {36},
@@ -2149,7 +2212,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). ChunkFunc: Dynamic SLO-aware configuration of serverless functions. <em>TPDS</em>, <em>36</em>(6), 1237-1252. (<a href='https://doi.org/10.1109/TPDS.2025.3559021'>www</a>)
+(2025). ChunkFunc: Dynamic SLO-aware configuration of serverless functions. <em>TPDS</em>, <em>36</em>(6), 1237--1252. (<a href='https://doi.org/10.1109/TPDS.2025.3559021'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2160,7 +2223,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1237-1252},
+  pages        = {1237--1252},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {ChunkFunc: Dynamic SLO-aware configuration of serverless functions},
   volume       = {36},
@@ -2170,7 +2233,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). IRHunter: Universal detection of instruction reordering vulnerabilities for enhanced concurrency in distributed and parallel systems. <em>TPDS</em>, <em>36</em>(6), 1220-1236. (<a href='https://doi.org/10.1109/TPDS.2025.3556861'>www</a>)
+(2025). IRHunter: Universal detection of instruction reordering vulnerabilities for enhanced concurrency in distributed and parallel systems. <em>TPDS</em>, <em>36</em>(6), 1220--1236. (<a href='https://doi.org/10.1109/TPDS.2025.3556861'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2181,7 +2244,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1220-1236},
+  pages        = {1220--1236},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {IRHunter: Universal detection of instruction reordering vulnerabilities for enhanced concurrency in distributed and parallel systems},
   volume       = {36},
@@ -2191,7 +2254,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Efficient parallel sparse tensor contraction. <em>TPDS</em>, <em>36</em>(6), 1206-1219. (<a href='https://doi.org/10.1109/TPDS.2025.3557750'>www</a>)
+(2025). Efficient parallel sparse tensor contraction. <em>TPDS</em>, <em>36</em>(6), 1206--1219. (<a href='https://doi.org/10.1109/TPDS.2025.3557750'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2202,7 +2265,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1206-1219},
+  pages        = {1206--1219},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Efficient parallel sparse tensor contraction},
   volume       = {36},
@@ -2212,7 +2275,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Taming offload overheads in a massively parallel open-source RISC-V MPSoC: Analysis and optimization. <em>TPDS</em>, <em>36</em>(6), 1193-1205. (<a href='https://doi.org/10.1109/TPDS.2025.3555718'>www</a>)
+(2025). Taming offload overheads in a massively parallel open-source RISC-V MPSoC: Analysis and optimization. <em>TPDS</em>, <em>36</em>(6), 1193--1205. (<a href='https://doi.org/10.1109/TPDS.2025.3555718'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2223,7 +2286,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1193-1205},
+  pages        = {1193--1205},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Taming offload overheads in a massively parallel open-source RISC-V MPSoC: Analysis and optimization},
   volume       = {36},
@@ -2233,7 +2296,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). OneOS: Distributed operating system for the edge-to-cloud continuum. <em>TPDS</em>, <em>36</em>(6), 1175-1192. (<a href='https://doi.org/10.1109/TPDS.2025.3557747'>www</a>)
+(2025). OneOS: Distributed operating system for the edge-to-cloud continuum. <em>TPDS</em>, <em>36</em>(6), 1175--1192. (<a href='https://doi.org/10.1109/TPDS.2025.3557747'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2244,7 +2307,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1175-1192},
+  pages        = {1175--1192},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {OneOS: Distributed operating system for the edge-to-cloud continuum},
   volume       = {36},
@@ -2254,7 +2317,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Distributed and adaptive partitioning for large graphs in geo-distributed data centers. <em>TPDS</em>, <em>36</em>(6), 1161-1174. (<a href='https://doi.org/10.1109/TPDS.2025.3557610'>www</a>)
+(2025). Distributed and adaptive partitioning for large graphs in geo-distributed data centers. <em>TPDS</em>, <em>36</em>(6), 1161--1174. (<a href='https://doi.org/10.1109/TPDS.2025.3557610'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2265,7 +2328,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1161-1174},
+  pages        = {1161--1174},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Distributed and adaptive partitioning for large graphs in geo-distributed data centers},
   volume       = {36},
@@ -2275,7 +2338,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). WCET estimation for CNN inference on FPGA SoC with multi-DPU engines. <em>TPDS</em>, <em>36</em>(6), 1146-1160. (<a href='https://doi.org/10.1109/TPDS.2025.3555968'>www</a>)
+(2025). WCET estimation for CNN inference on FPGA SoC with multi-DPU engines. <em>TPDS</em>, <em>36</em>(6), 1146--1160. (<a href='https://doi.org/10.1109/TPDS.2025.3555968'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2286,7 +2349,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1146-1160},
+  pages        = {1146--1160},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {WCET estimation for CNN inference on FPGA SoC with multi-DPU engines},
   volume       = {36},
@@ -2296,7 +2359,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). CiMBA: Accelerating genome sequencing through on-device basecalling via compute-in-memory. <em>TPDS</em>, <em>36</em>(6), 1130-1145. (<a href='https://doi.org/10.1109/TPDS.2025.3550811'>www</a>)
+(2025). CiMBA: Accelerating genome sequencing through on-device basecalling via compute-in-memory. <em>TPDS</em>, <em>36</em>(6), 1130--1145. (<a href='https://doi.org/10.1109/TPDS.2025.3550811'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2307,7 +2370,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1130-1145},
+  pages        = {1130--1145},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {CiMBA: Accelerating genome sequencing through on-device basecalling via compute-in-memory},
   volume       = {36},
@@ -2317,7 +2380,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Cube-fx: Mapping taylor expansion onto matrix multiplier-accumulators of huawei ascend AI processors. <em>TPDS</em>, <em>36</em>(6), 1115-1129. (<a href='https://doi.org/10.1109/TPDS.2025.3557444'>www</a>)
+(2025). Cube-fx: Mapping taylor expansion onto matrix multiplier-accumulators of huawei ascend AI processors. <em>TPDS</em>, <em>36</em>(6), 1115--1129. (<a href='https://doi.org/10.1109/TPDS.2025.3557444'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2328,7 +2391,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1115-1129},
+  pages        = {1115--1129},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Cube-fx: Mapping taylor expansion onto matrix multiplier-accumulators of huawei ascend AI processors},
   volume       = {36},
@@ -2338,7 +2401,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). DFU-E: A dataflow architecture for edge DSP and AI applications. <em>TPDS</em>, <em>36</em>(6), 1100-1114. (<a href='https://doi.org/10.1109/TPDS.2025.3555329'>www</a>)
+(2025). DFU-E: A dataflow architecture for edge DSP and AI applications. <em>TPDS</em>, <em>36</em>(6), 1100--1114. (<a href='https://doi.org/10.1109/TPDS.2025.3555329'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2349,7 +2412,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1100-1114},
+  pages        = {1100--1114},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {DFU-E: A dataflow architecture for edge DSP and AI applications},
   volume       = {36},
@@ -2359,7 +2422,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Energy efficient and multi-resource optimization for virtual machine placement by improving MOEA/D. <em>TPDS</em>, <em>36</em>(6), 1087-1099. (<a href='https://doi.org/10.1109/TPDS.2025.3538525'>www</a>)
+(2025). Energy efficient and multi-resource optimization for virtual machine placement by improving MOEA/D. <em>TPDS</em>, <em>36</em>(6), 1087--1099. (<a href='https://doi.org/10.1109/TPDS.2025.3538525'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2370,7 +2433,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1087-1099},
+  pages        = {1087--1099},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Energy efficient and multi-resource optimization for virtual machine placement by improving MOEA/D},
   volume       = {36},
@@ -2380,7 +2443,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). IceFrog: A layer-elastic scheduling system for deep learning training in GPU clusters. <em>TPDS</em>, <em>36</em>(6), 1071-1086. (<a href='https://doi.org/10.1109/TPDS.2025.3553137'>www</a>)
+(2025). IceFrog: A layer-elastic scheduling system for deep learning training in GPU clusters. <em>TPDS</em>, <em>36</em>(6), 1071--1086. (<a href='https://doi.org/10.1109/TPDS.2025.3553137'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2391,7 +2454,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1071-1086},
+  pages        = {1071--1086},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {IceFrog: A layer-elastic scheduling system for deep learning training in GPU clusters},
   volume       = {36},
@@ -2401,7 +2464,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Workload-aware performance model based soft preemptive real-time scheduling for neural processing units. <em>TPDS</em>, <em>36</em>(6), 1058-1070. (<a href='https://doi.org/10.1109/TPDS.2025.3553922'>www</a>)
+(2025). Workload-aware performance model based soft preemptive real-time scheduling for neural processing units. <em>TPDS</em>, <em>36</em>(6), 1058--1070. (<a href='https://doi.org/10.1109/TPDS.2025.3553922'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2412,7 +2475,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {6},
   number       = {6},
-  pages        = {1058-1070},
+  pages        = {1058--1070},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Workload-aware performance model based soft preemptive real-time scheduling for neural processing units},
   volume       = {36},
@@ -2422,7 +2485,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). PimBeam: Efficient regular path queries over graph database using processing-in-memory. <em>TPDS</em>, <em>36</em>(5), 1042-1057. (<a href='https://doi.org/10.1109/TPDS.2025.3547365'>www</a>)
+(2025). PimBeam: Efficient regular path queries over graph database using processing-in-memory. <em>TPDS</em>, <em>36</em>(5), 1042--1057. (<a href='https://doi.org/10.1109/TPDS.2025.3547365'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2433,7 +2496,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {1042-1057},
+  pages        = {1042--1057},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {PimBeam: Efficient regular path queries over graph database using processing-in-memory},
   volume       = {36},
@@ -2443,7 +2506,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Accelerating sparse tensor decomposition using adaptive linearized representation. <em>TPDS</em>, <em>36</em>(5), 1025-1041. (<a href='https://doi.org/10.1109/TPDS.2025.3553092'>www</a>)
+(2025). Accelerating sparse tensor decomposition using adaptive linearized representation. <em>TPDS</em>, <em>36</em>(5), 1025--1041. (<a href='https://doi.org/10.1109/TPDS.2025.3553092'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2454,7 +2517,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {1025-1041},
+  pages        = {1025--1041},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Accelerating sparse tensor decomposition using adaptive linearized representation},
   volume       = {36},
@@ -2464,7 +2527,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). GEREM: Fast and precise error resilience assessment for GPU microarchitectures. <em>TPDS</em>, <em>36</em>(5), 1011-1024. (<a href='https://doi.org/10.1109/TPDS.2025.3552679'>www</a>)
+(2025). GEREM: Fast and precise error resilience assessment for GPU microarchitectures. <em>TPDS</em>, <em>36</em>(5), 1011--1024. (<a href='https://doi.org/10.1109/TPDS.2025.3552679'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2475,7 +2538,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {1011-1024},
+  pages        = {1011--1024},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {GEREM: Fast and precise error resilience assessment for GPU microarchitectures},
   volume       = {36},
@@ -2485,7 +2548,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). FedLoRE: Communication-efficient and personalized edge intelligence framework via federated low-rank estimation. <em>TPDS</em>, <em>36</em>(5), 994-1010. (<a href='https://doi.org/10.1109/TPDS.2025.3548444'>www</a>)
+(2025). FedLoRE: Communication-efficient and personalized edge intelligence framework via federated low-rank estimation. <em>TPDS</em>, <em>36</em>(5), 994--1010. (<a href='https://doi.org/10.1109/TPDS.2025.3548444'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2496,7 +2559,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {994-1010},
+  pages        = {994--1010},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {FedLoRE: Communication-efficient and personalized edge intelligence framework via federated low-rank estimation},
   volume       = {36},
@@ -2506,7 +2569,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Reinforcement learning-driven adaptive prefetch aggressiveness control for enhanced performance in parallel system architectures. <em>TPDS</em>, <em>36</em>(5), 977-993. (<a href='https://doi.org/10.1109/TPDS.2025.3550531'>www</a>)
+(2025). Reinforcement learning-driven adaptive prefetch aggressiveness control for enhanced performance in parallel system architectures. <em>TPDS</em>, <em>36</em>(5), 977--993. (<a href='https://doi.org/10.1109/TPDS.2025.3550531'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2517,7 +2580,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {977-993},
+  pages        = {977--993},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Reinforcement learning-driven adaptive prefetch aggressiveness control for enhanced performance in parallel system architectures},
   volume       = {36},
@@ -2527,7 +2590,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Towards communication-efficient out-of-core graph processing on the GPU. <em>TPDS</em>, <em>36</em>(5), 961-976. (<a href='https://doi.org/10.1109/TPDS.2025.3547356'>www</a>)
+(2025). Towards communication-efficient out-of-core graph processing on the GPU. <em>TPDS</em>, <em>36</em>(5), 961--976. (<a href='https://doi.org/10.1109/TPDS.2025.3547356'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2538,7 +2601,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {961-976},
+  pages        = {961--976},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Towards communication-efficient out-of-core graph processing on the GPU},
   volume       = {36},
@@ -2548,7 +2611,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). The design of a high-performance fine-grained deduplication framework for backup storage. <em>TPDS</em>, <em>36</em>(5), 945-960. (<a href='https://doi.org/10.1109/TPDS.2025.3551306'>www</a>)
+(2025). The design of a high-performance fine-grained deduplication framework for backup storage. <em>TPDS</em>, <em>36</em>(5), 945--960. (<a href='https://doi.org/10.1109/TPDS.2025.3551306'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2559,7 +2622,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {945-960},
+  pages        = {945--960},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {The design of a high-performance fine-grained deduplication framework for backup storage},
   volume       = {36},
@@ -2569,7 +2632,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Parallel multi objective shortest path update algorithm in large dynamic networks. <em>TPDS</em>, <em>36</em>(5), 932-944. (<a href='https://doi.org/10.1109/TPDS.2025.3536357'>www</a>)
+(2025). Parallel multi objective shortest path update algorithm in large dynamic networks. <em>TPDS</em>, <em>36</em>(5), 932--944. (<a href='https://doi.org/10.1109/TPDS.2025.3536357'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2580,7 +2643,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {932-944},
+  pages        = {932--944},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Parallel multi objective shortest path update algorithm in large dynamic networks},
   volume       = {36},
@@ -2590,7 +2653,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Graphite: Hardware-aware GNN reshaping for acceleration with GPU tensor cores. <em>TPDS</em>, <em>36</em>(5), 918-931. (<a href='https://doi.org/10.1109/TPDS.2025.3549180'>www</a>)
+(2025). Graphite: Hardware-aware GNN reshaping for acceleration with GPU tensor cores. <em>TPDS</em>, <em>36</em>(5), 918--931. (<a href='https://doi.org/10.1109/TPDS.2025.3549180'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2601,7 +2664,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {918-931},
+  pages        = {918--931},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Graphite: Hardware-aware GNN reshaping for acceleration with GPU tensor cores},
   volume       = {36},
@@ -2611,7 +2674,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). SMore: Enhancing GPU utilization in deep learning clusters by serverless-based co-location scheduling. <em>TPDS</em>, <em>36</em>(5), 903-917. (<a href='https://doi.org/10.1109/TPDS.2025.3548320'>www</a>)
+(2025). SMore: Enhancing GPU utilization in deep learning clusters by serverless-based co-location scheduling. <em>TPDS</em>, <em>36</em>(5), 903--917. (<a href='https://doi.org/10.1109/TPDS.2025.3548320'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2622,7 +2685,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {903-917},
+  pages        = {903--917},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {SMore: Enhancing GPU utilization in deep learning clusters by serverless-based co-location scheduling},
   volume       = {36},
@@ -2632,7 +2695,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Toward load-balanced redundancy transitioning for erasure-coded storage. <em>TPDS</em>, <em>36</em>(5), 889-902. (<a href='https://doi.org/10.1109/TPDS.2025.3547872'>www</a>)
+(2025). Toward load-balanced redundancy transitioning for erasure-coded storage. <em>TPDS</em>, <em>36</em>(5), 889--902. (<a href='https://doi.org/10.1109/TPDS.2025.3547872'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2643,7 +2706,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {889-902},
+  pages        = {889--902},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Toward load-balanced redundancy transitioning for erasure-coded storage},
   volume       = {36},
@@ -2653,7 +2716,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Libfork: Portable continuation-stealing with stackless coroutines. <em>TPDS</em>, <em>36</em>(5), 877-888. (<a href='https://doi.org/10.1109/TPDS.2025.3543442'>www</a>)
+(2025). Libfork: Portable continuation-stealing with stackless coroutines. <em>TPDS</em>, <em>36</em>(5), 877--888. (<a href='https://doi.org/10.1109/TPDS.2025.3543442'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2664,7 +2727,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {877-888},
+  pages        = {877--888},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Libfork: Portable continuation-stealing with stackless coroutines},
   volume       = {36},
@@ -2674,7 +2737,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Courier: A unified communication agent to support concurrent flow scheduling in cluster computing. <em>TPDS</em>, <em>36</em>(5), 861-876. (<a href='https://doi.org/10.1109/TPDS.2025.3543882'>www</a>)
+(2025). Courier: A unified communication agent to support concurrent flow scheduling in cluster computing. <em>TPDS</em>, <em>36</em>(5), 861--876. (<a href='https://doi.org/10.1109/TPDS.2025.3543882'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2685,7 +2748,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {861-876},
+  pages        = {861--876},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Courier: A unified communication agent to support concurrent flow scheduling in cluster computing},
   volume       = {36},
@@ -2695,7 +2758,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). IoT-dedup: Device relationship-based IoT data deduplication scheme. <em>TPDS</em>, <em>36</em>(5), 847-860. (<a href='https://doi.org/10.1109/TPDS.2025.3544315'>www</a>)
+(2025). IoT-dedup: Device relationship-based IoT data deduplication scheme. <em>TPDS</em>, <em>36</em>(5), 847--860. (<a href='https://doi.org/10.1109/TPDS.2025.3544315'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2706,7 +2769,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {847-860},
+  pages        = {847--860},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {IoT-dedup: Device relationship-based IoT data deduplication scheme},
   volume       = {36},
@@ -2716,7 +2779,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Reproducibility of the DaCe framework on NPBench benchmarks. <em>TPDS</em>, <em>36</em>(5), 841-846. (<a href='https://doi.org/10.1109/TPDS.2024.3427130'>www</a>)
+(2025). Reproducibility of the DaCe framework on NPBench benchmarks. <em>TPDS</em>, <em>36</em>(5), 841--846. (<a href='https://doi.org/10.1109/TPDS.2024.3427130'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2727,7 +2790,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {841-846},
+  pages        = {841--846},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Reproducibility of the DaCe framework on NPBench benchmarks},
   volume       = {36},
@@ -2737,7 +2800,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Analysis and reproducibility of “Productivity, portability, performance: Data-centric python”. <em>TPDS</em>, <em>36</em>(5), 835-840. (<a href='https://doi.org/10.1109/TPDS.2024.3366571'>www</a>)
+(2025). Analysis and reproducibility of “Productivity, portability, performance: Data-centric python”. <em>TPDS</em>, <em>36</em>(5), 835--840. (<a href='https://doi.org/10.1109/TPDS.2024.3366571'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2748,7 +2811,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {835-840},
+  pages        = {835--840},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Analysis and reproducibility of “Productivity, portability, performance: Data-centric python”},
   volume       = {36},
@@ -2758,7 +2821,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Critique of “Productivity, portability, performance data-centric python” by SCC team from sun yat-sen university. <em>TPDS</em>, <em>36</em>(5), 830-834. (<a href='https://doi.org/10.1109/TPDS.2024.3372291'>www</a>)
+(2025). Critique of “Productivity, portability, performance data-centric python” by SCC team from sun yat-sen university. <em>TPDS</em>, <em>36</em>(5), 830--834. (<a href='https://doi.org/10.1109/TPDS.2024.3372291'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2769,7 +2832,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {830-834},
+  pages        = {830--834},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Critique of “Productivity, portability, performance data-centric python” by SCC team from sun yat-sen university},
   volume       = {36},
@@ -2779,7 +2842,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Critique of “Productivity, portability, performance: Data-centric python” by SCC team from zhejiang university. <em>TPDS</em>, <em>36</em>(5), 826-829. (<a href='https://doi.org/10.1109/TPDS.2023.3333805'>www</a>)
+(2025). Critique of “Productivity, portability, performance: Data-centric python” by SCC team from zhejiang university. <em>TPDS</em>, <em>36</em>(5), 826--829. (<a href='https://doi.org/10.1109/TPDS.2023.3333805'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2790,7 +2853,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {826-829},
+  pages        = {826--829},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Critique of “Productivity, portability, performance: Data-centric python” by SCC team from zhejiang university},
   volume       = {36},
@@ -2800,7 +2863,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Reproducing performance of data-centric python by SCC team from national tsing hua university. <em>TPDS</em>, <em>36</em>(5), 821-825. (<a href='https://doi.org/10.1109/TPDS.2024.3355441'>www</a>)
+(2025). Reproducing performance of data-centric python by SCC team from national tsing hua university. <em>TPDS</em>, <em>36</em>(5), 821--825. (<a href='https://doi.org/10.1109/TPDS.2024.3355441'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2811,7 +2874,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {821-825},
+  pages        = {821--825},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Reproducing performance of data-centric python by SCC team from national tsing hua university},
   volume       = {36},
@@ -2821,7 +2884,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Productivity, portability, performance, and reproducibility: Data-centric python. <em>TPDS</em>, <em>36</em>(5), 804-820. (<a href='https://doi.org/10.1109/TPDS.2025.3549310'>www</a>)
+(2025). Productivity, portability, performance, and reproducibility: Data-centric python. <em>TPDS</em>, <em>36</em>(5), 804--820. (<a href='https://doi.org/10.1109/TPDS.2025.3549310'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2832,7 +2895,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {5},
   number       = {5},
-  pages        = {804-820},
+  pages        = {804--820},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Productivity, portability, performance, and reproducibility: Data-centric python},
   volume       = {36},
@@ -2862,7 +2925,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). FedTune-SGM: A stackelberg-driven personalized federated learning strategy for edge networks. <em>TPDS</em>, <em>36</em>(4), 791-802. (<a href='https://doi.org/10.1109/TPDS.2025.3543368'>www</a>)
+(2025). FedTune-SGM: A stackelberg-driven personalized federated learning strategy for edge networks. <em>TPDS</em>, <em>36</em>(4), 791--802. (<a href='https://doi.org/10.1109/TPDS.2025.3543368'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2873,7 +2936,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {791-802},
+  pages        = {791--802},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {FedTune-SGM: A stackelberg-driven personalized federated learning strategy for edge networks},
   volume       = {36},
@@ -2883,7 +2946,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Loci: Federated continual learning of heterogeneous tasks at edge. <em>TPDS</em>, <em>36</em>(4), 775-790. (<a href='https://doi.org/10.1109/TPDS.2025.3531123'>www</a>)
+(2025). Loci: Federated continual learning of heterogeneous tasks at edge. <em>TPDS</em>, <em>36</em>(4), 775--790. (<a href='https://doi.org/10.1109/TPDS.2025.3531123'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2894,7 +2957,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {775-790},
+  pages        = {775--790},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Loci: Federated continual learning of heterogeneous tasks at edge},
   volume       = {36},
@@ -2904,7 +2967,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A tail latency SLO guaranteed task scheduling scheme for user-facing services. <em>TPDS</em>, <em>36</em>(4), 759-774. (<a href='https://doi.org/10.1109/TPDS.2025.3542638'>www</a>)
+(2025). A tail latency SLO guaranteed task scheduling scheme for user-facing services. <em>TPDS</em>, <em>36</em>(4), 759--774. (<a href='https://doi.org/10.1109/TPDS.2025.3542638'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2915,7 +2978,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {759-774},
+  pages        = {759--774},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A tail latency SLO guaranteed task scheduling scheme for user-facing services},
   volume       = {36},
@@ -2925,7 +2988,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Flips: A flexible partitioning strategy near memory processing architecture for recommendation system. <em>TPDS</em>, <em>36</em>(4), 745-758. (<a href='https://doi.org/10.1109/TPDS.2025.3539534'>www</a>)
+(2025). Flips: A flexible partitioning strategy near memory processing architecture for recommendation system. <em>TPDS</em>, <em>36</em>(4), 745--758. (<a href='https://doi.org/10.1109/TPDS.2025.3539534'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2936,7 +2999,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {745-758},
+  pages        = {745--758},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Flips: A flexible partitioning strategy near memory processing architecture for recommendation system},
   volume       = {36},
@@ -2946,7 +3009,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Task-aware service placement for distributed learning in wireless edge networks. <em>TPDS</em>, <em>36</em>(4), 731-744. (<a href='https://doi.org/10.1109/TPDS.2025.3539620'>www</a>)
+(2025). Task-aware service placement for distributed learning in wireless edge networks. <em>TPDS</em>, <em>36</em>(4), 731--744. (<a href='https://doi.org/10.1109/TPDS.2025.3539620'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2957,7 +3020,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {731-744},
+  pages        = {731--744},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Task-aware service placement for distributed learning in wireless edge networks},
   volume       = {36},
@@ -2967,7 +3030,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Co-designing transformer architectures for distributed inference with low communication. <em>TPDS</em>, <em>36</em>(4), 717-730. (<a href='https://doi.org/10.1109/TPDS.2024.3521582'>www</a>)
+(2025). Co-designing transformer architectures for distributed inference with low communication. <em>TPDS</em>, <em>36</em>(4), 717--730. (<a href='https://doi.org/10.1109/TPDS.2024.3521582'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2978,7 +3041,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {717-730},
+  pages        = {717--730},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Co-designing transformer architectures for distributed inference with low communication},
   volume       = {36},
@@ -2988,7 +3051,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Spread+: Scalable model aggregation in federated learning with non-IID data. <em>TPDS</em>, <em>36</em>(4), 701-716. (<a href='https://doi.org/10.1109/TPDS.2025.3539738'>www</a>)
+(2025). Spread+: Scalable model aggregation in federated learning with non-IID data. <em>TPDS</em>, <em>36</em>(4), 701--716. (<a href='https://doi.org/10.1109/TPDS.2025.3539738'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -2999,7 +3062,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {701-716},
+  pages        = {701--716},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Spread+: Scalable model aggregation in federated learning with non-IID data},
   volume       = {36},
@@ -3009,7 +3072,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Beelog: Online log compaction for dependable systems. <em>TPDS</em>, <em>36</em>(4), 689-700. (<a href='https://doi.org/10.1109/TPDS.2025.3541628'>www</a>)
+(2025). Beelog: Online log compaction for dependable systems. <em>TPDS</em>, <em>36</em>(4), 689--700. (<a href='https://doi.org/10.1109/TPDS.2025.3541628'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3020,7 +3083,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {689-700},
+  pages        = {689--700},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Beelog: Online log compaction for dependable systems},
   volume       = {36},
@@ -3030,7 +3093,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). EfficientMoE: Optimizing mixture-of-experts model training with adaptive load balance. <em>TPDS</em>, <em>36</em>(4), 677-688. (<a href='https://doi.org/10.1109/TPDS.2025.3539297'>www</a>)
+(2025). EfficientMoE: Optimizing mixture-of-experts model training with adaptive load balance. <em>TPDS</em>, <em>36</em>(4), 677--688. (<a href='https://doi.org/10.1109/TPDS.2025.3539297'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3041,7 +3104,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {677-688},
+  pages        = {677--688},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {EfficientMoE: Optimizing mixture-of-experts model training with adaptive load balance},
   volume       = {36},
@@ -3051,7 +3114,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A note on “AESM2 attribute-based encrypted search for multi-owner and multi-user distributed systems”. <em>TPDS</em>, <em>36</em>(4), 675-676. (<a href='https://doi.org/10.1109/TPDS.2025.3531446'>www</a>)
+(2025). A note on “AESM2 attribute-based encrypted search for multi-owner and multi-user distributed systems”. <em>TPDS</em>, <em>36</em>(4), 675--676. (<a href='https://doi.org/10.1109/TPDS.2025.3531446'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3062,7 +3125,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {675-676},
+  pages        = {675--676},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A note on “AESM2 attribute-based encrypted search for multi-owner and multi-user distributed systems”},
   volume       = {36},
@@ -3072,7 +3135,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). SMDP-based dynamic batching for improving responsiveness and energy efficiency of batch services. <em>TPDS</em>, <em>36</em>(4), 659-674. (<a href='https://doi.org/10.1109/TPDS.2025.3526283'>www</a>)
+(2025). SMDP-based dynamic batching for improving responsiveness and energy efficiency of batch services. <em>TPDS</em>, <em>36</em>(4), 659--674. (<a href='https://doi.org/10.1109/TPDS.2025.3526283'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3083,7 +3146,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {659-674},
+  pages        = {659--674},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {SMDP-based dynamic batching for improving responsiveness and energy efficiency of batch services},
   volume       = {36},
@@ -3093,7 +3156,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). FHE4DMM: A low-latency distributed matrix multiplication with fully homomorphic encryption. <em>TPDS</em>, <em>36</em>(4), 645-658. (<a href='https://doi.org/10.1109/TPDS.2025.3534846'>www</a>)
+(2025). FHE4DMM: A low-latency distributed matrix multiplication with fully homomorphic encryption. <em>TPDS</em>, <em>36</em>(4), 645--658. (<a href='https://doi.org/10.1109/TPDS.2025.3534846'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3104,7 +3167,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {645-658},
+  pages        = {645--658},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {FHE4DMM: A low-latency distributed matrix multiplication with fully homomorphic encryption},
   volume       = {36},
@@ -3114,7 +3177,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Monte: SFCs migration scheme in the distributed programmable data plane. <em>TPDS</em>, <em>36</em>(4), 633-644. (<a href='https://doi.org/10.1109/TPDS.2025.3532467'>www</a>)
+(2025). Monte: SFCs migration scheme in the distributed programmable data plane. <em>TPDS</em>, <em>36</em>(4), 633--644. (<a href='https://doi.org/10.1109/TPDS.2025.3532467'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3125,7 +3188,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {633-644},
+  pages        = {633--644},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Monte: SFCs migration scheme in the distributed programmable data plane},
   volume       = {36},
@@ -3135,7 +3198,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Paralfetch: Fast application launch on personal Computing/Communication devices. <em>TPDS</em>, <em>36</em>(4), 616-632. (<a href='https://doi.org/10.1109/TPDS.2024.3525337'>www</a>)
+(2025). Paralfetch: Fast application launch on personal Computing/Communication devices. <em>TPDS</em>, <em>36</em>(4), 616--632. (<a href='https://doi.org/10.1109/TPDS.2024.3525337'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3146,7 +3209,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {4},
   number       = {4},
-  pages        = {616-632},
+  pages        = {616--632},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Paralfetch: Fast application launch on personal Computing/Communication devices},
   volume       = {36},
@@ -3156,7 +3219,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A collaborative service composition approach considering providers’ self-interest and minimal service sharing. <em>TPDS</em>, <em>36</em>(3), 598-615. (<a href='https://doi.org/10.1109/TPDS.2025.3534283'>www</a>)
+(2025). A collaborative service composition approach considering providers’ self-interest and minimal service sharing. <em>TPDS</em>, <em>36</em>(3), 598--615. (<a href='https://doi.org/10.1109/TPDS.2025.3534283'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3167,7 +3230,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {598-615},
+  pages        = {598--615},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A collaborative service composition approach considering providers’ self-interest and minimal service sharing},
   volume       = {36},
@@ -3177,7 +3240,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Collaborative edge-cloud data transfer optimization for industrial internet of things. <em>TPDS</em>, <em>36</em>(3), 580-597. (<a href='https://doi.org/10.1109/TPDS.2025.3532261'>www</a>)
+(2025). Collaborative edge-cloud data transfer optimization for industrial internet of things. <em>TPDS</em>, <em>36</em>(3), 580--597. (<a href='https://doi.org/10.1109/TPDS.2025.3532261'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3188,7 +3251,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {580-597},
+  pages        = {580--597},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Collaborative edge-cloud data transfer optimization for industrial internet of things},
   volume       = {36},
@@ -3198,7 +3261,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). A comparative study of sampling methods with cross-validation in the FedHome framework. <em>TPDS</em>, <em>36</em>(3), 570-579. (<a href='https://doi.org/10.1109/TPDS.2025.3526238'>www</a>)
+(2025). A comparative study of sampling methods with cross-validation in the FedHome framework. <em>TPDS</em>, <em>36</em>(3), 570--579. (<a href='https://doi.org/10.1109/TPDS.2025.3526238'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3209,7 +3272,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {570-579},
+  pages        = {570--579},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {A comparative study of sampling methods with cross-validation in the FedHome framework},
   volume       = {36},
@@ -3219,7 +3282,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). AsyncFedGAN: An efficient and staleness-aware asynchronous federated learning framework for generative adversarial networks. <em>TPDS</em>, <em>36</em>(3), 553-569. (<a href='https://doi.org/10.1109/TPDS.2024.3521016'>www</a>)
+(2025). AsyncFedGAN: An efficient and staleness-aware asynchronous federated learning framework for generative adversarial networks. <em>TPDS</em>, <em>36</em>(3), 553--569. (<a href='https://doi.org/10.1109/TPDS.2024.3521016'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3230,7 +3293,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {553-569},
+  pages        = {553--569},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {AsyncFedGAN: An efficient and staleness-aware asynchronous federated learning framework for generative adversarial networks},
   volume       = {36},
@@ -3240,7 +3303,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Survey on characterizing and understanding GNNs from a computer architecture perspective. <em>TPDS</em>, <em>36</em>(3), 537-552. (<a href='https://doi.org/10.1109/TPDS.2025.3532089'>www</a>)
+(2025). Survey on characterizing and understanding GNNs from a computer architecture perspective. <em>TPDS</em>, <em>36</em>(3), 537--552. (<a href='https://doi.org/10.1109/TPDS.2025.3532089'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3251,7 +3314,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {537-552},
+  pages        = {537--552},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Survey on characterizing and understanding GNNs from a computer architecture perspective},
   volume       = {36},
@@ -3261,7 +3324,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). $ \mathsf{GPABE} $<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi mathvariant="sans-serif">GPABE</mml:mi></mml:math>: GPU-based parallelization framework for attribute-based encryption schemes. <em>TPDS</em>, <em>36</em>(3), 520-536. (<a href='https://doi.org/10.1109/TPDS.2025.3529776'>www</a>)
+(2025). $ \mathsf{GPABE} $<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi mathvariant="sans-serif">GPABE</mml:mi></mml:math>: GPU-based parallelization framework for attribute-based encryption schemes. <em>TPDS</em>, <em>36</em>(3), 520--536. (<a href='https://doi.org/10.1109/TPDS.2025.3529776'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3272,7 +3335,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {520-536},
+  pages        = {520--536},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {$ \mathsf{GPABE} $<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:mi mathvariant="sans-serif">GPABE</mml:mi></mml:math>: GPU-based parallelization framework for attribute-based encryption schemes},
   volume       = {36},
@@ -3282,7 +3345,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). ViTeGNN: Towards versatile inference of temporal graph neural networks on FPGA. <em>TPDS</em>, <em>36</em>(3), 502-519. (<a href='https://doi.org/10.1109/TPDS.2024.3521897'>www</a>)
+(2025). ViTeGNN: Towards versatile inference of temporal graph neural networks on FPGA. <em>TPDS</em>, <em>36</em>(3), 502--519. (<a href='https://doi.org/10.1109/TPDS.2024.3521897'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3293,7 +3356,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {502-519},
+  pages        = {502--519},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {ViTeGNN: Towards versatile inference of temporal graph neural networks on FPGA},
   volume       = {36},
@@ -3303,7 +3366,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Towards efficient verifiable cloud storage and distribution for large-scale data streaming. <em>TPDS</em>, <em>36</em>(3), 487-501. (<a href='https://doi.org/10.1109/TPDS.2025.3526642'>www</a>)
+(2025). Towards efficient verifiable cloud storage and distribution for large-scale data streaming. <em>TPDS</em>, <em>36</em>(3), 487--501. (<a href='https://doi.org/10.1109/TPDS.2025.3526642'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3314,7 +3377,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {487-501},
+  pages        = {487--501},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Towards efficient verifiable cloud storage and distribution for large-scale data streaming},
   volume       = {36},
@@ -3324,7 +3387,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). HTLL: Latency-aware scalable blocking mutex. <em>TPDS</em>, <em>36</em>(3), 471-486. (<a href='https://doi.org/10.1109/TPDS.2025.3526859'>www</a>)
+(2025). HTLL: Latency-aware scalable blocking mutex. <em>TPDS</em>, <em>36</em>(3), 471--486. (<a href='https://doi.org/10.1109/TPDS.2025.3526859'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3335,7 +3398,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {471-486},
+  pages        = {471--486},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {HTLL: Latency-aware scalable blocking mutex},
   volume       = {36},
@@ -3345,7 +3408,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Response time analysis and optimal priority assignment for global non-preemptive fixed-priority rigid gang scheduling. <em>TPDS</em>, <em>36</em>(3), 455-470. (<a href='https://doi.org/10.1109/TPDS.2025.3529218'>www</a>)
+(2025). Response time analysis and optimal priority assignment for global non-preemptive fixed-priority rigid gang scheduling. <em>TPDS</em>, <em>36</em>(3), 455--470. (<a href='https://doi.org/10.1109/TPDS.2025.3529218'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3356,7 +3419,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {455-470},
+  pages        = {455--470},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Response time analysis and optimal priority assignment for global non-preemptive fixed-priority rigid gang scheduling},
   volume       = {36},
@@ -3366,7 +3429,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Chasing common knowledge: Joint large model selection and pulling in MEC with parameter sharing. <em>TPDS</em>, <em>36</em>(3), 437-454. (<a href='https://doi.org/10.1109/TPDS.2025.3527649'>www</a>)
+(2025). Chasing common knowledge: Joint large model selection and pulling in MEC with parameter sharing. <em>TPDS</em>, <em>36</em>(3), 437--454. (<a href='https://doi.org/10.1109/TPDS.2025.3527649'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3377,7 +3440,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {437-454},
+  pages        = {437--454},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Chasing common knowledge: Joint large model selection and pulling in MEC with parameter sharing},
   volume       = {36},
@@ -3387,7 +3450,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). High performance householder QR factorization on emerging GPU architectures using tensor cores. <em>TPDS</em>, <em>36</em>(3), 422-436. (<a href='https://doi.org/10.1109/TPDS.2024.3522776'>www</a>)
+(2025). High performance householder QR factorization on emerging GPU architectures using tensor cores. <em>TPDS</em>, <em>36</em>(3), 422--436. (<a href='https://doi.org/10.1109/TPDS.2024.3522776'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3398,7 +3461,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {422-436},
+  pages        = {422--436},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {High performance householder QR factorization on emerging GPU architectures using tensor cores},
   volume       = {36},
@@ -3408,7 +3471,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). HpT: Hybrid acceleration of spatio-temporal attention model training on heterogeneous manycore architectures. <em>TPDS</em>, <em>36</em>(3), 407-421. (<a href='https://doi.org/10.1109/TPDS.2024.3522781'>www</a>)
+(2025). HpT: Hybrid acceleration of spatio-temporal attention model training on heterogeneous manycore architectures. <em>TPDS</em>, <em>36</em>(3), 407--421. (<a href='https://doi.org/10.1109/TPDS.2024.3522781'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3419,7 +3482,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {407-421},
+  pages        = {407--421},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {HpT: Hybrid acceleration of spatio-temporal attention model training on heterogeneous manycore architectures},
   volume       = {36},
@@ -3429,7 +3492,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Integrated and fungible scheduling of deep learning workloads using multi-agent reinforcement learning. <em>TPDS</em>, <em>36</em>(3), 391-406. (<a href='https://doi.org/10.1109/TPDS.2024.3522333'>www</a>)
+(2025). Integrated and fungible scheduling of deep learning workloads using multi-agent reinforcement learning. <em>TPDS</em>, <em>36</em>(3), 391--406. (<a href='https://doi.org/10.1109/TPDS.2024.3522333'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3440,7 +3503,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {391-406},
+  pages        = {391--406},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Integrated and fungible scheduling of deep learning workloads using multi-agent reinforcement learning},
   volume       = {36},
@@ -3450,7 +3513,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Sparrow: Expediting smart contract execution for blockchain sharding via inter-shard caching. <em>TPDS</em>, <em>36</em>(3), 377-390. (<a href='https://doi.org/10.1109/TPDS.2024.3522016'>www</a>)
+(2025). Sparrow: Expediting smart contract execution for blockchain sharding via inter-shard caching. <em>TPDS</em>, <em>36</em>(3), 377--390. (<a href='https://doi.org/10.1109/TPDS.2024.3522016'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3461,7 +3524,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {377-390},
+  pages        = {377--390},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Sparrow: Expediting smart contract execution for blockchain sharding via inter-shard caching},
   volume       = {36},
@@ -3471,7 +3534,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Online elastic resource provisioning with QoS guarantee in container-based cloud computing. <em>TPDS</em>, <em>36</em>(3), 361-376. (<a href='https://doi.org/10.1109/TPDS.2024.3522085'>www</a>)
+(2025). Online elastic resource provisioning with QoS guarantee in container-based cloud computing. <em>TPDS</em>, <em>36</em>(3), 361--376. (<a href='https://doi.org/10.1109/TPDS.2024.3522085'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3482,7 +3545,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {3},
   number       = {3},
-  pages        = {361-376},
+  pages        = {361--376},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Online elastic resource provisioning with QoS guarantee in container-based cloud computing},
   volume       = {36},
@@ -3492,7 +3555,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). CAT: Cellular automata on tensor cores. <em>TPDS</em>, <em>36</em>(2), 341-355. (<a href='https://doi.org/10.1109/TPDS.2024.3520395'>www</a>)
+(2025). CAT: Cellular automata on tensor cores. <em>TPDS</em>, <em>36</em>(2), 341--355. (<a href='https://doi.org/10.1109/TPDS.2024.3520395'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3503,7 +3566,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {341-355},
+  pages        = {341--355},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {CAT: Cellular automata on tensor cores},
   volume       = {36},
@@ -3513,7 +3576,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Fine-grained QoS control via tightly-coupled bandwidth monitoring and regulation for FPGA-based heterogeneous SoCs. <em>TPDS</em>, <em>36</em>(2), 326-340. (<a href='https://doi.org/10.1109/TPDS.2024.3513416'>www</a>)
+(2025). Fine-grained QoS control via tightly-coupled bandwidth monitoring and regulation for FPGA-based heterogeneous SoCs. <em>TPDS</em>, <em>36</em>(2), 326--340. (<a href='https://doi.org/10.1109/TPDS.2024.3513416'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3524,7 +3587,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {326-340},
+  pages        = {326--340},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Fine-grained QoS control via tightly-coupled bandwidth monitoring and regulation for FPGA-based heterogeneous SoCs},
   volume       = {36},
@@ -3534,7 +3597,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Leveraging graph analysis to pinpoint root causes of scalability issues for parallel applications. <em>TPDS</em>, <em>36</em>(2), 308-325. (<a href='https://doi.org/10.1109/TPDS.2024.3485789'>www</a>)
+(2025). Leveraging graph analysis to pinpoint root causes of scalability issues for parallel applications. <em>TPDS</em>, <em>36</em>(2), 308--325. (<a href='https://doi.org/10.1109/TPDS.2024.3485789'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3545,7 +3608,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {308-325},
+  pages        = {308--325},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Leveraging graph analysis to pinpoint root causes of scalability issues for parallel applications},
   volume       = {36},
@@ -3555,7 +3618,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). UMPIPE: Unequal microbatches-based pipeline parallelism for deep neural network training. <em>TPDS</em>, <em>36</em>(2), 293-307. (<a href='https://doi.org/10.1109/TPDS.2024.3515804'>www</a>)
+(2025). UMPIPE: Unequal microbatches-based pipeline parallelism for deep neural network training. <em>TPDS</em>, <em>36</em>(2), 293--307. (<a href='https://doi.org/10.1109/TPDS.2024.3515804'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3566,7 +3629,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {293-307},
+  pages        = {293--307},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {UMPIPE: Unequal microbatches-based pipeline parallelism for deep neural network training},
   volume       = {36},
@@ -3576,7 +3639,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Spreeze: High-throughput parallel reinforcement learning framework. <em>TPDS</em>, <em>36</em>(2), 282-292. (<a href='https://doi.org/10.1109/TPDS.2024.3497986'>www</a>)
+(2025). Spreeze: High-throughput parallel reinforcement learning framework. <em>TPDS</em>, <em>36</em>(2), 282--292. (<a href='https://doi.org/10.1109/TPDS.2024.3497986'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3587,7 +3650,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {282-292},
+  pages        = {282--292},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Spreeze: High-throughput parallel reinforcement learning framework},
   volume       = {36},
@@ -3597,7 +3660,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). TOP: Task-based operator parallelism for asynchronous deep learning inference on GPU. <em>TPDS</em>, <em>36</em>(2), 266-281. (<a href='https://doi.org/10.1109/TPDS.2024.3511543'>www</a>)
+(2025). TOP: Task-based operator parallelism for asynchronous deep learning inference on GPU. <em>TPDS</em>, <em>36</em>(2), 266--281. (<a href='https://doi.org/10.1109/TPDS.2024.3511543'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3608,7 +3671,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {266-281},
+  pages        = {266--281},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {TOP: Task-based operator parallelism for asynchronous deep learning inference on GPU},
   volume       = {36},
@@ -3618,7 +3681,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Object proxy patterns for accelerating distributed applications. <em>TPDS</em>, <em>36</em>(2), 253-265. (<a href='https://doi.org/10.1109/TPDS.2024.3511347'>www</a>)
+(2025). Object proxy patterns for accelerating distributed applications. <em>TPDS</em>, <em>36</em>(2), 253--265. (<a href='https://doi.org/10.1109/TPDS.2024.3511347'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3629,7 +3692,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {253-265},
+  pages        = {253--265},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Object proxy patterns for accelerating distributed applications},
   volume       = {36},
@@ -3639,7 +3702,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). An efficient GPU algorithm for lattice boltzmann method on sparse complex geometries. <em>TPDS</em>, <em>36</em>(2), 239-252. (<a href='https://doi.org/10.1109/TPDS.2024.3510810'>www</a>)
+(2025). An efficient GPU algorithm for lattice boltzmann method on sparse complex geometries. <em>TPDS</em>, <em>36</em>(2), 239--252. (<a href='https://doi.org/10.1109/TPDS.2024.3510810'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3650,7 +3713,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {239-252},
+  pages        = {239--252},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {An efficient GPU algorithm for lattice boltzmann method on sparse complex geometries},
   volume       = {36},
@@ -3660,7 +3723,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Towards universal performance modeling for machine learning training on multi-GPU platforms. <em>TPDS</em>, <em>36</em>(2), 226-238. (<a href='https://doi.org/10.1109/TPDS.2024.3507814'>www</a>)
+(2025). Towards universal performance modeling for machine learning training on multi-GPU platforms. <em>TPDS</em>, <em>36</em>(2), 226--238. (<a href='https://doi.org/10.1109/TPDS.2024.3507814'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3671,7 +3734,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {226-238},
+  pages        = {226--238},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Towards universal performance modeling for machine learning training on multi-GPU platforms},
   volume       = {36},
@@ -3681,7 +3744,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). DegaFL: Decentralized gradient aggregation for cross-silo federated learning. <em>TPDS</em>, <em>36</em>(2), 212-225. (<a href='https://doi.org/10.1109/TPDS.2024.3501581'>www</a>)
+(2025). DegaFL: Decentralized gradient aggregation for cross-silo federated learning. <em>TPDS</em>, <em>36</em>(2), 212--225. (<a href='https://doi.org/10.1109/TPDS.2024.3501581'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3692,7 +3755,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {212-225},
+  pages        = {212--225},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {DegaFL: Decentralized gradient aggregation for cross-silo federated learning},
   volume       = {36},
@@ -3702,7 +3765,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Slark: A performance robust decentralized inter-datacenter deadline-aware coflows scheduling framework with local information. <em>TPDS</em>, <em>36</em>(2), 197-211. (<a href='https://doi.org/10.1109/TPDS.2024.3508275'>www</a>)
+(2025). Slark: A performance robust decentralized inter-datacenter deadline-aware coflows scheduling framework with local information. <em>TPDS</em>, <em>36</em>(2), 197--211. (<a href='https://doi.org/10.1109/TPDS.2024.3508275'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3713,7 +3776,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {197-211},
+  pages        = {197--211},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Slark: A performance robust decentralized inter-datacenter deadline-aware coflows scheduling framework with local information},
   volume       = {36},
@@ -3723,7 +3786,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Cost-effective and low-latency data placement in edge environment based on PageRank-inspired regional value. <em>TPDS</em>, <em>36</em>(2), 185-196. (<a href='https://doi.org/10.1109/TPDS.2024.3506625'>www</a>)
+(2025). Cost-effective and low-latency data placement in edge environment based on PageRank-inspired regional value. <em>TPDS</em>, <em>36</em>(2), 185--196. (<a href='https://doi.org/10.1109/TPDS.2024.3506625'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3734,7 +3797,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {185-196},
+  pages        = {185--196},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Cost-effective and low-latency data placement in edge environment based on PageRank-inspired regional value},
   volume       = {36},
@@ -3744,7 +3807,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). GreenFlow: A carbon-efficient scheduler for deep learning workloads. <em>TPDS</em>, <em>36</em>(2), 168-184. (<a href='https://doi.org/10.1109/TPDS.2024.3470074'>www</a>)
+(2025). GreenFlow: A carbon-efficient scheduler for deep learning workloads. <em>TPDS</em>, <em>36</em>(2), 168--184. (<a href='https://doi.org/10.1109/TPDS.2024.3470074'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3755,7 +3818,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {168-184},
+  pages        = {168--184},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {GreenFlow: A carbon-efficient scheduler for deep learning workloads},
   volume       = {36},
@@ -3765,7 +3828,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Joint dynamic data and model parallelism for distributed training of DNNs over heterogeneous infrastructure. <em>TPDS</em>, <em>36</em>(2), 150-167. (<a href='https://doi.org/10.1109/TPDS.2024.3506588'>www</a>)
+(2025). Joint dynamic data and model parallelism for distributed training of DNNs over heterogeneous infrastructure. <em>TPDS</em>, <em>36</em>(2), 150--167. (<a href='https://doi.org/10.1109/TPDS.2024.3506588'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3776,7 +3839,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {150-167},
+  pages        = {150--167},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Joint dynamic data and model parallelism for distributed training of DNNs over heterogeneous infrastructure},
   volume       = {36},
@@ -3786,7 +3849,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Two-dimensional balanced partitioning and efficient caching for distributed graph analysis. <em>TPDS</em>, <em>36</em>(2), 133-149. (<a href='https://doi.org/10.1109/TPDS.2024.3501292'>www</a>)
+(2025). Two-dimensional balanced partitioning and efficient caching for distributed graph analysis. <em>TPDS</em>, <em>36</em>(2), 133--149. (<a href='https://doi.org/10.1109/TPDS.2024.3501292'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3797,7 +3860,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {133-149},
+  pages        = {133--149},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Two-dimensional balanced partitioning and efficient caching for distributed graph analysis},
   volume       = {36},
@@ -3807,7 +3870,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). The impact of service demand variability on data center performance. <em>TPDS</em>, <em>36</em>(2), 120-132. (<a href='https://doi.org/10.1109/TPDS.2024.3497792'>www</a>)
+(2025). The impact of service demand variability on data center performance. <em>TPDS</em>, <em>36</em>(2), 120--132. (<a href='https://doi.org/10.1109/TPDS.2024.3497792'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3818,7 +3881,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {120-132},
+  pages        = {120--132},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {The impact of service demand variability on data center performance},
   volume       = {36},
@@ -3828,7 +3891,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). H5Intent: Autotuning HDF5 with user intent. <em>TPDS</em>, <em>36</em>(2), 108-119. (<a href='https://doi.org/10.1109/TPDS.2024.3492704'>www</a>)
+(2025). H5Intent: Autotuning HDF5 with user intent. <em>TPDS</em>, <em>36</em>(2), 108--119. (<a href='https://doi.org/10.1109/TPDS.2024.3492704'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3839,7 +3902,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {2},
   number       = {2},
-  pages        = {108-119},
+  pages        = {108--119},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {H5Intent: Autotuning HDF5 with user intent},
   volume       = {36},
@@ -3849,7 +3912,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Dissecting the software-based measurement of CPU energy consumption: A comparative analysis. <em>TPDS</em>, <em>36</em>(1), 96-107. (<a href='https://doi.org/10.1109/TPDS.2024.3492336'>www</a>)
+(2025). Dissecting the software-based measurement of CPU energy consumption: A comparative analysis. <em>TPDS</em>, <em>36</em>(1), 96--107. (<a href='https://doi.org/10.1109/TPDS.2024.3492336'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3860,7 +3923,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {1},
   number       = {1},
-  pages        = {96-107},
+  pages        = {96--107},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Dissecting the software-based measurement of CPU energy consumption: A comparative analysis},
   volume       = {36},
@@ -3870,7 +3933,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Edge data deduplication under uncertainties: A robust optimization approach. <em>TPDS</em>, <em>36</em>(1), 84-95. (<a href='https://doi.org/10.1109/TPDS.2024.3493959'>www</a>)
+(2025). Edge data deduplication under uncertainties: A robust optimization approach. <em>TPDS</em>, <em>36</em>(1), 84--95. (<a href='https://doi.org/10.1109/TPDS.2024.3493959'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3881,7 +3944,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {1},
   number       = {1},
-  pages        = {84-95},
+  pages        = {84--95},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Edge data deduplication under uncertainties: A robust optimization approach},
   volume       = {36},
@@ -3891,7 +3954,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Retrospecting available CPU resources: SMT-aware scheduling to prevent SLA violations in data centers. <em>TPDS</em>, <em>36</em>(1), 67-83. (<a href='https://doi.org/10.1109/TPDS.2024.3494879'>www</a>)
+(2025). Retrospecting available CPU resources: SMT-aware scheduling to prevent SLA violations in data centers. <em>TPDS</em>, <em>36</em>(1), 67--83. (<a href='https://doi.org/10.1109/TPDS.2024.3494879'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3902,7 +3965,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {1},
   number       = {1},
-  pages        = {67-83},
+  pages        = {67--83},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Retrospecting available CPU resources: SMT-aware scheduling to prevent SLA violations in data centers},
   volume       = {36},
@@ -3912,7 +3975,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Ripple: Enabling decentralized data deduplication at the edge. <em>TPDS</em>, <em>36</em>(1), 55-66. (<a href='https://doi.org/10.1109/TPDS.2024.3493953'>www</a>)
+(2025). Ripple: Enabling decentralized data deduplication at the edge. <em>TPDS</em>, <em>36</em>(1), 55--66. (<a href='https://doi.org/10.1109/TPDS.2024.3493953'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3923,7 +3986,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {1},
   number       = {1},
-  pages        = {55-66},
+  pages        = {55--66},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Ripple: Enabling decentralized data deduplication at the edge},
   volume       = {36},
@@ -3933,7 +3996,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Balanced splitting: A framework for achieving zero-wait in the multiserver-job model. <em>TPDS</em>, <em>36</em>(1), 43-54. (<a href='https://doi.org/10.1109/TPDS.2024.3493631'>www</a>)
+(2025). Balanced splitting: A framework for achieving zero-wait in the multiserver-job model. <em>TPDS</em>, <em>36</em>(1), 43--54. (<a href='https://doi.org/10.1109/TPDS.2024.3493631'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3944,7 +4007,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {1},
   number       = {1},
-  pages        = {43-54},
+  pages        = {43--54},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Balanced splitting: A framework for achieving zero-wait in the multiserver-job model},
   volume       = {36},
@@ -3954,7 +4017,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). EdgeHydra: Fault-tolerant edge data distribution based on erasure coding. <em>TPDS</em>, <em>36</em>(1), 29-42. (<a href='https://doi.org/10.1109/TPDS.2024.3493034'>www</a>)
+(2025). EdgeHydra: Fault-tolerant edge data distribution based on erasure coding. <em>TPDS</em>, <em>36</em>(1), 29--42. (<a href='https://doi.org/10.1109/TPDS.2024.3493034'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3965,7 +4028,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {1},
   number       = {1},
-  pages        = {29-42},
+  pages        = {29--42},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {EdgeHydra: Fault-tolerant edge data distribution based on erasure coding},
   volume       = {36},
@@ -3975,7 +4038,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Algorithms for data sharing-aware task allocation in edge computing systems. <em>TPDS</em>, <em>36</em>(1), 15-28. (<a href='https://doi.org/10.1109/TPDS.2024.3486184'>www</a>)
+(2025). Algorithms for data sharing-aware task allocation in edge computing systems. <em>TPDS</em>, <em>36</em>(1), 15--28. (<a href='https://doi.org/10.1109/TPDS.2024.3486184'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -3986,7 +4049,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {1},
   number       = {1},
-  pages        = {15-28},
+  pages        = {15--28},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Algorithms for data sharing-aware task allocation in edge computing systems},
   volume       = {36},
@@ -3996,7 +4059,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Real relative encoding genetic algorithm for workflow scheduling in heterogeneous distributed computing systems. <em>TPDS</em>, <em>36</em>(1), 1-14. (<a href='https://doi.org/10.1109/TPDS.2024.3492210'>www</a>)
+(2025). Real relative encoding genetic algorithm for workflow scheduling in heterogeneous distributed computing systems. <em>TPDS</em>, <em>36</em>(1), 1--14. (<a href='https://doi.org/10.1109/TPDS.2024.3492210'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -4007,7 +4070,7 @@
   journal      = {IEEE Transactions on Parallel and Distributed Systems},
   month        = {1},
   number       = {1},
-  pages        = {1-14},
+  pages        = {1--14},
   shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
   title        = {Real relative encoding genetic algorithm for workflow scheduling in heterogeneous distributed computing systems},
   volume       = {36},

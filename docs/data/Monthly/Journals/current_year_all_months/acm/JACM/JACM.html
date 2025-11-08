@@ -25,11 +25,158 @@
 </head>
 <body>
 
-<h2 id="jacm">JACM - 30</h2>
+<h2 id="jacm">JACM - 37</h2>
 <ul>
 <li><details>
 <summary>
-(2025). Expected constant round byzantine broadcast under dishonest majority. <em>JACM</em>, <em>72</em>(4), 1-39. (<a href='https://doi.org/10.1145/3748254'>www</a>)
+(2025). The complexity of computing KKT solutions of quadratic programs. <em>JACM</em>, <em>72</em>(5), 1--48. (<a href='https://doi.org/10.1145/3745017'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It is well known that solving a (non-convex) quadratic program is NP -hard. We show that the problem remains hard even if we are only looking for a Karush–Kuhn–Tucker (KKT) point, instead of a global optimum. Namely, we prove that computing a KKT point of a quadratic polynomial over the domain [0,1] n is complete for the class CLS = PPAD ∩ PLS .},
+  archive      = {J_JACM},
+  author       = {John Fearnley and Paul Goldberg and Alexandros Hollender and Rahul Savani},
+  doi          = {10.1145/3745017},
+  journal      = {Journal of the ACM},
+  month        = {10},
+  number       = {5},
+  pages        = {1--48},
+  shortjournal = {J. ACM},
+  title        = {The complexity of computing KKT solutions of quadratic programs},
+  volume       = {72},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parameterized inapproximability hypothesis under ETH. <em>JACM</em>, <em>72</em>(5), 1--40. (<a href='https://doi.org/10.1145/3749982'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Parameterized Inapproximability Hypothesis (PIH) asserts that no fixed parameter tractable (FPT) algorithm can distinguish a satisfiable CSP instance, parameterized by the number of variables, from one where every assignment fails to satisfy an ɛ fraction of constraints for some absolute constant ɛ > 0. PIH plays the role of the PCP theorem in parameterized complexity. However, PIH has only been established under the Gap Exponential Time Hypothesis (ETH), a very strong assumption with an inherent gap. In this work, we prove PIH under the ETH. This is the first proof of PIH from a gap-free assumption. Our proof is self-contained and elementary. We identify an ETH-hard CSP whose variables take vector values, and constraints are either linear or of a special parallel structure. Both kinds of constraints can be checked with constant soundness via a “parallel PCP of proximity” based on the Walsh-Hadamard code.},
+  archive      = {J_JACM},
+  author       = {Venkatesan Guruswami and Bingkai Lin and Xuandi Ren and Yican Sun and Kewen Wu},
+  doi          = {10.1145/3749982},
+  journal      = {Journal of the ACM},
+  month        = {10},
+  number       = {5},
+  pages        = {1--40},
+  shortjournal = {J. ACM},
+  title        = {Parameterized inapproximability hypothesis under ETH},
+  volume       = {72},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimal multi-distribution learning. <em>JACM</em>, <em>72</em>(5), 1--71. (<a href='https://doi.org/10.1145/3760256'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-distribution learning (MDL), which seeks to learn a shared model that minimizes the worst-case risk across k distinct data distributions, has emerged as a unified framework in response to the evolving demand for robustness, fairness, multi-group collaboration, and so on. Achieving data-efficient MDL necessitates adaptive sampling, also called on-demand sampling, throughout the learning process. However, there exist substantial gaps between the state-of-the-art upper and lower bounds on the optimal sample complexity. Focusing on a hypothesis class of Vapnik–Chervonenkis (VC) dimension d , we propose a novel algorithm that yields an ɛ-optimal randomized hypothesis with a sample complexity on the order of \(\frac{d+k}{\varepsilon ^2}\) (modulo some logarithmic factor), matching the best-known lower bound. Our algorithmic ideas and theory are further extended to accommodate Rademacher classes. The proposed algorithms are oracle-efficient, which access the hypothesis class solely through an empirical risk minimization oracle. Additionally, we establish the necessity of improper learning, revealing a large sample size barrier when only deterministic, proper hypotheses are permitted. These findings resolve three open problems presented in COLT 2023 (i.e., Awasthi et al. [ 4 , Problems 1, 3, and 4]).},
+  archive      = {J_JACM},
+  author       = {Zihan Zhang and Wenhao Zhan and Yuxin Chen and Simon S. Du and Jason Lee},
+  doi          = {10.1145/3760256},
+  journal      = {Journal of the ACM},
+  month        = {10},
+  number       = {5},
+  pages        = {1--71},
+  shortjournal = {J. ACM},
+  title        = {Optimal multi-distribution learning},
+  volume       = {72},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Coverability in VASS revisited: Improving rackoff’s bounds to obtain conditional optimality. <em>JACM</em>, <em>72</em>(5), 1--27. (<a href='https://doi.org/10.1145/3762178'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Seminal results establish that the coverability problem for Vector Addition Systems with States (VASS) is in EXPSPACE (Rackoff, ’78) and is EXPSPACE -hard already under unary encodings (Lipton, ’76). More precisely, Rosier and Yen later utilise Rackoff’s bounding technique to show that if coverability holds then there is a run of length at most \(n^{2^{\mathcal {O}(d \log (d))}}\) , where d is the dimension and n is the size of the given unary VASS. Earlier, Lipton showed that there exist instances of coverability in d -dimensional unary VASS that are only witnessed by runs of length at least \(n^{2^{\Omega (d)}}\) . Our first result closes this gap. We improve the upper bound by removing the twice-exponentiated \(\log (d)\) factor, thus matching Lipton’s lower bound. This closes the corresponding gap for the exact space required to decide coverability. This also yields a deterministic \(n^{2^{\mathcal {O}(d)}}\) -time algorithm for coverability. Our second result is a matching lower bound, that there does not exist a deterministic \(n^{2^{o(d)}}\) -time algorithm, conditioned upon the exponential time hypothesis. When analysing coverability, a standard proof technique is to consider VASS with bounded counters. Bounded VASS make for an interesting and popular model due to strong connections with timed automata. Withal, we study a natural setting where the counter bound is linear in the size of the VASS. Here the trivial exhaustive search algorithm runs in \(\mathcal {O}(n^{d+1})\) time. We give evidence to this being near-optimal. We prove that in dimension one this trivial algorithm is conditionally optimal, by showing that \(n^{2-o(1)}\) time is required under the k -cycle hypothesis. In general, for any fixed dimension d ≥ 4, we show that \(n^{d-2-o(1)}\) time is required under the 3-uniform hyperclique hypothesis.},
+  archive      = {J_JACM},
+  author       = {Marvin Künnemann and Filip Mazowiecki and Lia Schütze and Henry Sinclair-Banks and Karol Węgrzycki},
+  doi          = {10.1145/3762178},
+  journal      = {Journal of the ACM},
+  month        = {10},
+  number       = {5},
+  pages        = {1--27},
+  shortjournal = {J. ACM},
+  title        = {Coverability in VASS revisited: Improving rackoff’s bounds to obtain conditional optimality},
+  volume       = {72},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The kikuchi hierarchy and tensor PCA. <em>JACM</em>, <em>72</em>(5), 1--40. (<a href='https://doi.org/10.1145/3762806'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For the tensor principal component analysis (tensor PCA) problem, we propose a new hierarchy of increasingly powerful algorithms with increasing runtime. Our hierarchy is analogous to the sum-of-squares (SOS) hierarchy but is instead inspired by statistical physics and related algorithms such as belief propagation and AMP (approximate message passing). Our level-ℓ algorithm can be thought of as a linearized message-passing algorithm that keeps track of ℓ-wise dependencies among the hidden variables. Specifically, our algorithms are spectral methods based on the Kikuchi Hessian , which generalizes the well-studied Bethe Hessian to the higher-order Kikuchi free energies. It is known that AMP, the flagship algorithm of statistical physics, has substantially worse performance than SOS for tensor PCA. In this work, we ‘redeem’ the statistical physics approach by showing that our hierarchy gives a polynomial-time algorithm matching the performance of SOS. Our hierarchy also yields a continuum of subexponential-time algorithms, and we prove that these achieve the same (conjecturally optimal) tradeoff between runtime and statistical power as SOS. Our proofs are much simpler than prior work, and also apply to the related problem of refuting random k -XOR formulas. The results we present here apply to tensor PCA for tensors of all orders, and to k -XOR when k is even. Our methods suggest a new avenue for systematically obtaining optimal algorithms for Bayesian inference problems, and our results constitute a step toward unifying the statistical physics and sum-of-squares approaches to algorithm design.},
+  archive      = {J_JACM},
+  author       = {Alexander Wein and Ahmed El Alaoui and Cristopher Moore},
+  doi          = {10.1145/3762806},
+  journal      = {Journal of the ACM},
+  month        = {10},
+  number       = {5},
+  pages        = {1--40},
+  shortjournal = {J. ACM},
+  title        = {The kikuchi hierarchy and tensor PCA},
+  volume       = {72},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Envy-free cake-cutting for four agents. <em>JACM</em>, <em>72</em>(5), 1--54. (<a href='https://doi.org/10.1145/3765615'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the envy-free cake-cutting problem, we are given a resource, usually called a cake and represented as the [0,1] interval, and a set of n agents with heterogeneous preferences over pieces of the cake. The goal is to divide the cake among the n agents such that no agent is envious of any other agent. Even under a very general preferences model, this fundamental fair division problem is known to always admit an exact solution where each agent obtains a connected piece of the cake; we study the complexity of finding an approximate solution, i.e., a connected ɛ-envy-free allocation. For monotone valuations of cake pieces, Deng, Qi, and Saberi (2012) gave an efficient (poly(log (1/ɛ)) queries) algorithm for three agents and posed the open problem of four (or more) monotone agents. Even for the special case of additive valuations, Brânzei and Nisan (2022) conjectured an Ω (1/ɛ) lower bound on the number of queries for four agents. We provide the first efficient algorithm for finding a connected ɛ-envy-free allocation with four monotone agents. We also prove that as soon as valuations are allowed to be non-monotone , the problem becomes hard: it becomes PPAD -hard, requires poly(1/ɛ) queries in the black-box model, and even poly(1/ɛ) communication complexity . This constitutes, to the best of our knowledge, the first intractability result for any version of the cake-cutting problem in the communication complexity model.},
+  archive      = {J_JACM},
+  author       = {Alexandros Hollender and Aviad Rubinstein},
+  doi          = {10.1145/3765615},
+  journal      = {Journal of the ACM},
+  month        = {10},
+  number       = {5},
+  pages        = {1--54},
+  shortjournal = {J. ACM},
+  title        = {Envy-free cake-cutting for four agents},
+  volume       = {72},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bayesian design principles for frequentist sequential learning. <em>JACM</em>, <em>72</em>(5), 1--65. (<a href='https://doi.org/10.1145/3766898'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We develop a general theory to optimize the frequentist regret for sequential learning problems, from which efficient bandit and reinforcement learning algorithms can be derived via unified Bayesian principles. Building on the recent Decision-Estimation Coefficient (DEC) framework, we propose a novel optimization approach to generate “algorithmic beliefs” at each round and use Bayesian posteriors for decision-making. The optimization objective, termed “Algorithmic Information Ratio” (AIR), represents an intrinsic complexity measure that effectively characterizes the frequentist regret of any algorithm. Although AIR’s minimax regret aligns with that provided by DEC, it additionally offers an algorithm-dependent perspective–distinct from a minimax complexity–facilitating algorithm design and analysis. Specifically, AIR enables deriving explicit algorithms via belief parameterization and provides clear approximation guidelines with provable guarantees. Moreover, the resulting algorithms have a simple structure and are computationally efficient for several representative problems. We illustrate our framework with a novel algorithm for multi-armed bandits that performs strongly across stochastic, adversarial, and non-stationary environments, and demonstrate applicability to linear bandits, convex bandits, and reinforcement learning.},
+  archive      = {J_JACM},
+  author       = {Yunbei Xu and Assaf Zeevi},
+  doi          = {10.1145/3766898},
+  journal      = {Journal of the ACM},
+  month        = {10},
+  number       = {5},
+  pages        = {1--65},
+  shortjournal = {J. ACM},
+  title        = {Bayesian design principles for frequentist sequential learning},
+  volume       = {72},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Expected constant round byzantine broadcast under dishonest majority. <em>JACM</em>, <em>72</em>(4), 1--39. (<a href='https://doi.org/10.1145/3748254'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -40,7 +187,7 @@
   journal      = {Journal of the ACM},
   month        = {8},
   number       = {4},
-  pages        = {1-39},
+  pages        = {1--39},
   shortjournal = {J. ACM},
   title        = {Expected constant round byzantine broadcast under dishonest majority},
   volume       = {72},
@@ -50,7 +197,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Superpolynomial lower bounds against low-depth algebraic circuits. <em>JACM</em>, <em>72</em>(4), 1-35. (<a href='https://doi.org/10.1145/3734215'>www</a>)
+(2025). Superpolynomial lower bounds against low-depth algebraic circuits. <em>JACM</em>, <em>72</em>(4), 1--35. (<a href='https://doi.org/10.1145/3734215'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -61,7 +208,7 @@
   journal      = {Journal of the ACM},
   month        = {7},
   number       = {4},
-  pages        = {1-35},
+  pages        = {1--35},
   shortjournal = {J. ACM},
   title        = {Superpolynomial lower bounds against low-depth algebraic circuits},
   volume       = {72},
@@ -71,7 +218,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Negative-weight single-source shortest paths in near-linear time. <em>JACM</em>, <em>72</em>(4), 1-34. (<a href='https://doi.org/10.1145/3742890'>www</a>)
+(2025). Negative-weight single-source shortest paths in near-linear time. <em>JACM</em>, <em>72</em>(4), 1--34. (<a href='https://doi.org/10.1145/3742890'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -82,7 +229,7 @@
   journal      = {Journal of the ACM},
   month        = {7},
   number       = {4},
-  pages        = {1-34},
+  pages        = {1--34},
   shortjournal = {J. ACM},
   title        = {Negative-weight single-source shortest paths in near-linear time},
   volume       = {72},
@@ -92,7 +239,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Vertex connectivity in poly-logarithmic max-flows. <em>JACM</em>, <em>72</em>(4), 1-34. (<a href='https://doi.org/10.1145/3743670'>www</a>)
+(2025). Vertex connectivity in poly-logarithmic max-flows. <em>JACM</em>, <em>72</em>(4), 1--34. (<a href='https://doi.org/10.1145/3743670'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -103,7 +250,7 @@
   journal      = {Journal of the ACM},
   month        = {7},
   number       = {4},
-  pages        = {1-34},
+  pages        = {1--34},
   shortjournal = {J. ACM},
   title        = {Vertex connectivity in poly-logarithmic max-flows},
   volume       = {72},
@@ -113,7 +260,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Adaptive and fair transformation for recoverable mutual exclusion. <em>JACM</em>, <em>72</em>(4), 1-61. (<a href='https://doi.org/10.1145/3744236'>www</a>)
+(2025). Adaptive and fair transformation for recoverable mutual exclusion. <em>JACM</em>, <em>72</em>(4), 1--61. (<a href='https://doi.org/10.1145/3744236'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -124,7 +271,7 @@
   journal      = {Journal of the ACM},
   month        = {7},
   number       = {4},
-  pages        = {1-61},
+  pages        = {1--61},
   shortjournal = {J. ACM},
   title        = {Adaptive and fair transformation for recoverable mutual exclusion},
   volume       = {72},
@@ -134,7 +281,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Nested dissection meets IPMs: Planar min-cost flow in nearly-linear time. <em>JACM</em>, <em>72</em>(4), 1-75. (<a href='https://doi.org/10.1145/3744639'>www</a>)
+(2025). Nested dissection meets IPMs: Planar min-cost flow in nearly-linear time. <em>JACM</em>, <em>72</em>(4), 1--75. (<a href='https://doi.org/10.1145/3744639'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -145,7 +292,7 @@
   journal      = {Journal of the ACM},
   month        = {7},
   number       = {4},
-  pages        = {1-75},
+  pages        = {1--75},
   shortjournal = {J. ACM},
   title        = {Nested dissection meets IPMs: Planar min-cost flow in nearly-linear time},
   volume       = {72},
@@ -155,7 +302,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Deterministic minimum cut in poly-logarithmic maximum flows. <em>JACM</em>, <em>72</em>(4), 1-18. (<a href='https://doi.org/10.1145/3744737'>www</a>)
+(2025). Deterministic minimum cut in poly-logarithmic maximum flows. <em>JACM</em>, <em>72</em>(4), 1--18. (<a href='https://doi.org/10.1145/3744737'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -166,7 +313,7 @@
   journal      = {Journal of the ACM},
   month        = {7},
   number       = {4},
-  pages        = {1-18},
+  pages        = {1--18},
   shortjournal = {J. ACM},
   title        = {Deterministic minimum cut in poly-logarithmic maximum flows},
   volume       = {72},
@@ -176,7 +323,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Computing a fixed point of contraction maps in polynomial queries. <em>JACM</em>, <em>72</em>(4), 1-20. (<a href='https://doi.org/10.1145/3744738'>www</a>)
+(2025). Computing a fixed point of contraction maps in polynomial queries. <em>JACM</em>, <em>72</em>(4), 1--20. (<a href='https://doi.org/10.1145/3744738'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -187,7 +334,7 @@
   journal      = {Journal of the ACM},
   month        = {7},
   number       = {4},
-  pages        = {1-20},
+  pages        = {1--20},
   shortjournal = {J. ACM},
   title        = {Computing a fixed point of contraction maps in polynomial queries},
   volume       = {72},
@@ -197,7 +344,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Compressing CFI graphs and lower bounds for the weisfeiler-leman refinements. <em>JACM</em>, <em>72</em>(3), 1-27. (<a href='https://doi.org/10.1145/3727978'>www</a>)
+(2025). Compressing CFI graphs and lower bounds for the weisfeiler-leman refinements. <em>JACM</em>, <em>72</em>(3), 1--27. (<a href='https://doi.org/10.1145/3727978'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -208,7 +355,7 @@
   journal      = {Journal of the ACM},
   month        = {6},
   number       = {3},
-  pages        = {1-27},
+  pages        = {1--27},
   shortjournal = {J. ACM},
   title        = {Compressing CFI graphs and lower bounds for the weisfeiler-leman refinements},
   volume       = {72},
@@ -218,7 +365,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Settling the sample complexity of online reinforcement learning. <em>JACM</em>, <em>72</em>(3), 1-63. (<a href='https://doi.org/10.1145/3733592'>www</a>)
+(2025). Settling the sample complexity of online reinforcement learning. <em>JACM</em>, <em>72</em>(3), 1--63. (<a href='https://doi.org/10.1145/3733592'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -229,7 +376,7 @@
   journal      = {Journal of the ACM},
   month        = {6},
   number       = {3},
-  pages        = {1-63},
+  pages        = {1--63},
   shortjournal = {J. ACM},
   title        = {Settling the sample complexity of online reinforcement learning},
   volume       = {72},
@@ -239,7 +386,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Quantum weakest preconditions for reasoning about expected runtimes of quantum programs. <em>JACM</em>, <em>72</em>(3), 1-51. (<a href='https://doi.org/10.1145/3734516'>www</a>)
+(2025). Quantum weakest preconditions for reasoning about expected runtimes of quantum programs. <em>JACM</em>, <em>72</em>(3), 1--51. (<a href='https://doi.org/10.1145/3734516'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -250,7 +397,7 @@
   journal      = {Journal of the ACM},
   month        = {6},
   number       = {3},
-  pages        = {1-51},
+  pages        = {1--51},
   shortjournal = {J. ACM},
   title        = {Quantum weakest preconditions for reasoning about expected runtimes of quantum programs},
   volume       = {72},
@@ -260,7 +407,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Consistency of relations over monoids. <em>JACM</em>, <em>72</em>(3), 1-47. (<a href='https://doi.org/10.1145/3721855'>www</a>)
+(2025). Consistency of relations over monoids. <em>JACM</em>, <em>72</em>(3), 1--47. (<a href='https://doi.org/10.1145/3721855'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -271,7 +418,7 @@
   journal      = {Journal of the ACM},
   month        = {5},
   number       = {3},
-  pages        = {1-47},
+  pages        = {1--47},
   shortjournal = {J. ACM},
   title        = {Consistency of relations over monoids},
   volume       = {72},
@@ -281,7 +428,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Maximum flow and minimum-cost flow in almost-linear time. <em>JACM</em>, <em>72</em>(3), 1-103. (<a href='https://doi.org/10.1145/3728631'>www</a>)
+(2025). Maximum flow and minimum-cost flow in almost-linear time. <em>JACM</em>, <em>72</em>(3), 1--103. (<a href='https://doi.org/10.1145/3728631'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -292,7 +439,7 @@
   journal      = {Journal of the ACM},
   month        = {5},
   number       = {3},
-  pages        = {1-103},
+  pages        = {1--103},
   shortjournal = {J. ACM},
   title        = {Maximum flow and minimum-cost flow in almost-linear time},
   volume       = {72},
@@ -302,7 +449,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Better-than-2 approximations for weighted tree augmentation and applications to steiner tree. <em>JACM</em>, <em>72</em>(2), 1-40. (<a href='https://doi.org/10.1145/3722101'>www</a>)
+(2025). Better-than-2 approximations for weighted tree augmentation and applications to steiner tree. <em>JACM</em>, <em>72</em>(2), 1--40. (<a href='https://doi.org/10.1145/3722101'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -313,7 +460,7 @@
   journal      = {Journal of the ACM},
   month        = {4},
   number       = {2},
-  pages        = {1-40},
+  pages        = {1--40},
   shortjournal = {J. ACM},
   title        = {Better-than-2 approximations for weighted tree augmentation and applications to steiner tree},
   volume       = {72},
@@ -323,7 +470,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). 2-approximation for prize-collecting steiner forest. <em>JACM</em>, <em>72</em>(2), 1-27. (<a href='https://doi.org/10.1145/3722551'>www</a>)
+(2025). 2-approximation for prize-collecting steiner forest. <em>JACM</em>, <em>72</em>(2), 1--27. (<a href='https://doi.org/10.1145/3722551'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -334,7 +481,7 @@
   journal      = {Journal of the ACM},
   month        = {4},
   number       = {2},
-  pages        = {1-27},
+  pages        = {1--27},
   shortjournal = {J. ACM},
   title        = {2-approximation for prize-collecting steiner forest},
   volume       = {72},
@@ -344,7 +491,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). On the monniaux problem in abstract interpretation. <em>JACM</em>, <em>72</em>(2), 1-51. (<a href='https://doi.org/10.1145/3704632'>www</a>)
+(2025). On the monniaux problem in abstract interpretation. <em>JACM</em>, <em>72</em>(2), 1--51. (<a href='https://doi.org/10.1145/3704632'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -355,7 +502,7 @@
   journal      = {Journal of the ACM},
   month        = {3},
   number       = {2},
-  pages        = {1-51},
+  pages        = {1--51},
   shortjournal = {J. ACM},
   title        = {On the monniaux problem in abstract interpretation},
   volume       = {72},
@@ -365,7 +512,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Memory checking requires logarithmic overhead. <em>JACM</em>, <em>72</em>(2), 1-43. (<a href='https://doi.org/10.1145/3707202'>www</a>)
+(2025). Memory checking requires logarithmic overhead. <em>JACM</em>, <em>72</em>(2), 1--43. (<a href='https://doi.org/10.1145/3707202'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -376,7 +523,7 @@
   journal      = {Journal of the ACM},
   month        = {3},
   number       = {2},
-  pages        = {1-43},
+  pages        = {1--43},
   shortjournal = {J. ACM},
   title        = {Memory checking requires logarithmic overhead},
   volume       = {72},
@@ -386,7 +533,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Acceleration by stepsize hedging: Multi-step descent and the silver stepsize schedule. <em>JACM</em>, <em>72</em>(2), 1-38. (<a href='https://doi.org/10.1145/3708502'>www</a>)
+(2025). Acceleration by stepsize hedging: Multi-step descent and the silver stepsize schedule. <em>JACM</em>, <em>72</em>(2), 1--38. (<a href='https://doi.org/10.1145/3708502'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -397,7 +544,7 @@
   journal      = {Journal of the ACM},
   month        = {3},
   number       = {2},
-  pages        = {1-38},
+  pages        = {1--38},
   shortjournal = {J. ACM},
   title        = {Acceleration by stepsize hedging: Multi-step descent and the silver stepsize schedule},
   volume       = {72},
@@ -407,7 +554,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Private low-rank approximation for covariance matrices, dyson brownian motion, and eigenvalue-gap bounds for gaussian perturbations. <em>JACM</em>, <em>72</em>(2), 1-88. (<a href='https://doi.org/10.1145/3716496'>www</a>)
+(2025). Private low-rank approximation for covariance matrices, dyson brownian motion, and eigenvalue-gap bounds for gaussian perturbations. <em>JACM</em>, <em>72</em>(2), 1--88. (<a href='https://doi.org/10.1145/3716496'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -418,7 +565,7 @@
   journal      = {Journal of the ACM},
   month        = {3},
   number       = {2},
-  pages        = {1-88},
+  pages        = {1--88},
   shortjournal = {J. ACM},
   title        = {Private low-rank approximation for covariance matrices, dyson brownian motion, and eigenvalue-gap bounds for gaussian perturbations},
   volume       = {72},
@@ -428,7 +575,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Proving as fast as computing: Succinct arguments with constant prover overhead. <em>JACM</em>, <em>72</em>(2), 1-54. (<a href='https://doi.org/10.1145/3721477'>www</a>)
+(2025). Proving as fast as computing: Succinct arguments with constant prover overhead. <em>JACM</em>, <em>72</em>(2), 1--54. (<a href='https://doi.org/10.1145/3721477'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -439,7 +586,7 @@
   journal      = {Journal of the ACM},
   month        = {3},
   number       = {2},
-  pages        = {1-54},
+  pages        = {1--54},
   shortjournal = {J. ACM},
   title        = {Proving as fast as computing: Succinct arguments with constant prover overhead},
   volume       = {72},
@@ -449,7 +596,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Integer programs with bounded subdeterminants and two nonzeros per row. <em>JACM</em>, <em>72</em>(1), 1-50. (<a href='https://doi.org/10.1145/3695985'>www</a>)
+(2025). Integer programs with bounded subdeterminants and two nonzeros per row. <em>JACM</em>, <em>72</em>(1), 1--50. (<a href='https://doi.org/10.1145/3695985'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -460,7 +607,7 @@
   journal      = {Journal of the ACM},
   month        = {1},
   number       = {1},
-  pages        = {1-50},
+  pages        = {1--50},
   shortjournal = {J. ACM},
   title        = {Integer programs with bounded subdeterminants and two nonzeros per row},
   volume       = {72},
@@ -470,7 +617,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Subsampling suffices for adaptive data analysis. <em>JACM</em>, <em>72</em>(1), 1-45. (<a href='https://doi.org/10.1145/3698104'>www</a>)
+(2025). Subsampling suffices for adaptive data analysis. <em>JACM</em>, <em>72</em>(1), 1--45. (<a href='https://doi.org/10.1145/3698104'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -481,7 +628,7 @@
   journal      = {Journal of the ACM},
   month        = {1},
   number       = {1},
-  pages        = {1-45},
+  pages        = {1--45},
   shortjournal = {J. ACM},
   title        = {Subsampling suffices for adaptive data analysis},
   volume       = {72},
@@ -491,7 +638,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Orbit-finite linear programming. <em>JACM</em>, <em>72</em>(1), 1-39. (<a href='https://doi.org/10.1145/3703909'>www</a>)
+(2025). Orbit-finite linear programming. <em>JACM</em>, <em>72</em>(1), 1--39. (<a href='https://doi.org/10.1145/3703909'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -502,7 +649,7 @@
   journal      = {Journal of the ACM},
   month        = {1},
   number       = {1},
-  pages        = {1-39},
+  pages        = {1--39},
   shortjournal = {J. ACM},
   title        = {Orbit-finite linear programming},
   volume       = {72},
@@ -512,7 +659,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Hardness of approximate diameter: Now for undirected graphs. <em>JACM</em>, <em>72</em>(1), 1-32. (<a href='https://doi.org/10.1145/3704631'>www</a>)
+(2025). Hardness of approximate diameter: Now for undirected graphs. <em>JACM</em>, <em>72</em>(1), 1--32. (<a href='https://doi.org/10.1145/3704631'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -523,7 +670,7 @@
   journal      = {Journal of the ACM},
   month        = {1},
   number       = {1},
-  pages        = {1-32},
+  pages        = {1--32},
   shortjournal = {J. ACM},
   title        = {Hardness of approximate diameter: Now for undirected graphs},
   volume       = {72},
@@ -533,7 +680,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Quantitative coding and complexity theory of data: Part i: Motivation, definition, consequences. <em>JACM</em>, <em>72</em>(1), 1-39. (<a href='https://doi.org/10.1145/3705609'>www</a>)
+(2025). Quantitative coding and complexity theory of data: Part i: Motivation, definition, consequences. <em>JACM</em>, <em>72</em>(1), 1--39. (<a href='https://doi.org/10.1145/3705609'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -544,7 +691,7 @@
   journal      = {Journal of the ACM},
   month        = {1},
   number       = {1},
-  pages        = {1-39},
+  pages        = {1--39},
   shortjournal = {J. ACM},
   title        = {Quantitative coding and complexity theory of data: Part i: Motivation, definition, consequences},
   volume       = {72},
@@ -554,7 +701,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Correct and complete type checking and certified erasure for , in. <em>JACM</em>, <em>72</em>(1), 1-74. (<a href='https://doi.org/10.1145/3706056'>www</a>)
+(2025). Correct and complete type checking and certified erasure for , in. <em>JACM</em>, <em>72</em>(1), 1--74. (<a href='https://doi.org/10.1145/3706056'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -565,7 +712,7 @@
   journal      = {Journal of the ACM},
   month        = {1},
   number       = {1},
-  pages        = {1-74},
+  pages        = {1--74},
   shortjournal = {J. ACM},
   title        = {Correct and complete type checking and certified erasure for , in},
   volume       = {72},
@@ -575,7 +722,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Flow-augmentation i: Directed graphs. <em>JACM</em>, <em>72</em>(1), 1-38. (<a href='https://doi.org/10.1145/3706103'>www</a>)
+(2025). Flow-augmentation i: Directed graphs. <em>JACM</em>, <em>72</em>(1), 1--38. (<a href='https://doi.org/10.1145/3706103'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -586,7 +733,7 @@
   journal      = {Journal of the ACM},
   month        = {1},
   number       = {1},
-  pages        = {1-38},
+  pages        = {1--38},
   shortjournal = {J. ACM},
   title        = {Flow-augmentation i: Directed graphs},
   volume       = {72},
@@ -596,7 +743,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Geometric embeddability of complexes is ∃ℝ-complete. <em>JACM</em>, <em>72</em>(1), 1-26. (<a href='https://doi.org/10.1145/3707201'>www</a>)
+(2025). Geometric embeddability of complexes is ∃ℝ-complete. <em>JACM</em>, <em>72</em>(1), 1--26. (<a href='https://doi.org/10.1145/3707201'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -607,7 +754,7 @@
   journal      = {Journal of the ACM},
   month        = {1},
   number       = {1},
-  pages        = {1-26},
+  pages        = {1--26},
   shortjournal = {J. ACM},
   title        = {Geometric embeddability of complexes is ∃ℝ-complete},
   volume       = {72},
@@ -617,7 +764,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). An efficient quantum factoring algorithm. <em>JACM</em>, <em>72</em>(1), 1-13. (<a href='https://doi.org/10.1145/3708471'>www</a>)
+(2025). An efficient quantum factoring algorithm. <em>JACM</em>, <em>72</em>(1), 1--13. (<a href='https://doi.org/10.1145/3708471'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -628,7 +775,7 @@
   journal      = {Journal of the ACM},
   month        = {1},
   number       = {1},
-  pages        = {1-13},
+  pages        = {1--13},
   shortjournal = {J. ACM},
   title        = {An efficient quantum factoring algorithm},
   volume       = {72},
@@ -638,7 +785,7 @@
 </details></li>
 <li><details>
 <summary>
-(2025). Parallelize single-site dynamics up to dobrushin criterion. <em>JACM</em>, <em>72</em>(1), 1-33. (<a href='https://doi.org/10.1145/3708558'>www</a>)
+(2025). Parallelize single-site dynamics up to dobrushin criterion. <em>JACM</em>, <em>72</em>(1), 1--33. (<a href='https://doi.org/10.1145/3708558'>www</a>)
 </summary>
 <textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
 @article{ ,
@@ -649,7 +796,7 @@
   journal      = {Journal of the ACM},
   month        = {1},
   number       = {1},
-  pages        = {1-33},
+  pages        = {1--33},
   shortjournal = {J. ACM},
   title        = {Parallelize single-site dynamics up to dobrushin criterion},
   volume       = {72},
